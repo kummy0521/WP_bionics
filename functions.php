@@ -5,16 +5,17 @@ function my_theme_enqueue_assets() {
 
     // Slick Carousel（CDN）
     wp_enqueue_style(
-        'slick-carousel', 
+        'slick-carousel',
         'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css',
-        array(), 
+        array(),
         null
     );
 
     // テーマ内のCSS
-    wp_enqueue_style('slider-style', get_template_directory_uri() . '/css/slider.css');
-    wp_enqueue_style('base-style', get_template_directory_uri() . '/css/base.css');
-    wp_enqueue_style('top-style', get_template_directory_uri() . '/css/top.css');
+    // wp_enqueue_style('slider-style', get_template_directory_uri() . '/css/slider.css');
+    // wp_enqueue_style('base-style', get_template_directory_uri() . '/css/base.css');
+    // wp_enqueue_style('top-style', get_template_directory_uri() . '/css/top.css');
+    wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css');
 
     // --- JavaScript読み込み ---
 
