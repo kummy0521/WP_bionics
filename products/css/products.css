@@ -1,0 +1,1284 @@
+@charset "UTF-8";
+
+/* メインビジュアル 動画をループ再生で表示させる（後で動画に差し替え） */
+.mv_video {
+  width: 100%;
+  height: 100vh;
+}
+
+/* mv上に配置のキャッチコピー */
+.products_mv {
+  position: relative;
+  margin-bottom: 150px;
+  overflow: hidden;
+  z-index: -1;
+}
+.products_mv video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.mv_products_tablet {
+  display: none;
+}
+.mv_products_SP {
+  display: none;
+}
+
+.products_mv_title {
+  position: absolute;
+  top: 65%;
+  left: 35%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.products_mv_headline {
+  color: #222;
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 48px;
+  letter-spacing: 0.4em;
+}
+
+.products_mv_description {
+  font-size: 20px;
+  letter-spacing: 0.5rem;
+  line-height: 1.7em;
+  margin-top: 40px;
+}
+
+/* ===メインビジュアルここまで=== */
+
+/* ===↓ AQUBIO SERIESセクションここから=== */
+.aqubio_series {
+  margin-top: 160px;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.aqubio_series_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 64px;
+}
+
+/* ※下線の長さはminwidth-1440pmでwidthの値調整 */
+.aqubio_series_title::after {
+  content: "";
+  display: block;
+  width: 27%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.aqubio_series_title_jp {
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  color: #222;
+  margin-top: 8px;
+}
+
+.aqubio_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aqubio_box:first-child {
+  margin-top: 50px;
+}
+
+.aqubio_box:nth-child(n + 2) {
+  margin-top: 125px;
+}
+
+.aqubio_description_first {
+  font-size: 20px;
+  margin-right: 2em;
+}
+.aqubio_description_second {
+  font-size: 20px;
+  margin-left: 3em;
+}
+.aqubio_description_third {
+  font-size: 20px;
+  margin-right: 2em;
+}
+
+.aqubio_minibox {
+  width: 50%;
+}
+/* AQUBIOのLPへのリンクボタン外側 */
+.button_area_aqubio_lp {
+  display: block;
+  justify-content: center;
+  margin-top: 166px;
+  text-align: center;
+}
+
+.btn {
+  /*アニメーションの起点とするためrelativeを指定*/
+  position: relative;
+  overflow: hidden;
+  /*ボタンの形状*/
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #222;
+  /* ボーダーの色と太さ */
+  padding: 10px 30px;
+  text-align: center;
+  outline: none;
+  /*アニメーションの指定*/
+  transition: ease 0.2s;
+}
+
+/*ボタン内spanの形状*/
+.btn span {
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: #222;
+  position: relative;
+  z-index: 3;
+  /*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color: #333;
+}
+
+.btn:hover span {
+  color: #fff;
+}
+
+/*== 背景が流れる（斜め） */
+.bgskew::before {
+  content: "";
+  /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: -130%;
+  /*色や形状*/
+  background: #333;
+  width: 120%;
+  height: 100%;
+  transform: skewX(-25deg);
+}
+
+/*hoverした時のアニメーション*/
+.bgskew:hover::before {
+  animation: skewanime 0.5s forwards;
+  /*アニメーションの名前と速度を定義*/
+}
+
+@keyframes skewanime {
+  100% {
+    left: -10%;
+    /*画面の見えていない左から右へ移動する終了地点*/
+  }
+}
+
+/* ===AQUBIO FUNCTION & SPECIFICATIONセクションここから=== */
+.aqubio_fnc_spec_first {
+  background: rgb(11, 37, 90);
+  background: linear-gradient(
+    16deg,
+    rgba(11, 37, 90, 1) 2%,
+    rgba(69, 111, 195, 1) 100%
+  );
+  margin-top: 210px;
+  padding-bottom: 100px;
+}
+.aqubio_fnc_spec_inner {
+  display: flex;
+  justify-content: center;
+}
+
+.aqubio_fnc_spec_title {
+  color: #fff;
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  border-left: solid 3px #d9d9d9;
+  border-right: solid 3px #d9d9d9;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.aqubio_fnc_spec_container {
+  background-color: #fff;
+  margin: 8em 5em;
+  padding-bottom: 100px;
+}
+
+.aqubio_fnc_spec_subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 48px;
+  margin-top: 70px;
+}
+
+.aqubio_spec_img {
+  padding: 56px 41px 0px 41px;
+}
+.aqubio_spec_img_SP {
+  display: none;
+}
+
+.aqubio_fnc_spec_table {
+  margin-top: 59px;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.aqubio_fnc_spec_table tr {
+  border-collapse: collapse;
+  border-top: solid 1px #d9d9d9;
+  border-bottom: solid 1px #d9d9d9;
+}
+.aqubio_fnc_spec_table th {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.aqubio_fnc_spec_table th span {
+  display: block;
+  background-color: #c2bebe;
+  padding-left: 21px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.aqubio_fnc_spec_table td {
+  padding-left: 38px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+}
+.about_aqubioh {
+  margin-top: 15px;
+}
+.aqubio_fnc_spec_second {
+  background: rgb(11, 37, 90);
+  background: linear-gradient(
+    16deg,
+    rgba(69, 111, 195, 1) 2%,
+    rgba(11, 37, 90, 1) 100%
+  );
+  padding-bottom: 100px;
+}
+
+/* ===Bio-COBRAセクションここから=== */
+.bio_cobra {
+  margin-top: 160px;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.bio_cobra_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 64px;
+}
+
+/* ※下線の長さはminwidth-1440pmでwidthの値調整 */
+.bio_cobra_title::after {
+  content: "";
+  display: block;
+  width: 36%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+.bio_cobra_title_jp {
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  color: #222;
+  margin-top: 8px;
+}
+.bio_cobra_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bio_cobra_box:first-child {
+  margin-top: 50px;
+}
+
+.bio_cobra_box:nth-child(n + 2) {
+  margin-top: 125px;
+}
+
+.bio_cobra_description_first {
+  font-size: 20px;
+  margin-left: 3em;
+}
+.bio_cobra_description_second {
+  font-size: 20px;
+  margin-right: 3em;
+}
+.bio_cobra_description_third {
+  font-size: 20px;
+  margin-left: 3em;
+}
+
+.bio_cobra_minibox {
+  width: 50%;
+}
+/*Bio-COBRA FUNCTION & SPECIFICATIONセクションここから */
+.bio_cobra_fnc_spec {
+  background: rgb(138, 196, 228);
+  background: linear-gradient(
+    203deg,
+    rgba(138, 196, 228, 1) 1%,
+    rgba(65, 109, 134, 1) 85%
+  );
+  margin-top: 210px;
+  padding-bottom: 100px;
+}
+.bio_cobra_fnc_spec_inner {
+  display: flex;
+  justify-content: center;
+}
+
+.bio_cobra_fnc_spec_title {
+  color: #222;
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  border-left: solid 3px #d9d9d9;
+  border-right: solid 3px #d9d9d9;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.bio_cobra_fnc_spec_container {
+  background-color: #fff;
+  margin: 8em 5em;
+  padding-bottom: 100px;
+}
+
+.bio_cobra_fnc_spec_subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 48px;
+  margin-top: 70px;
+}
+
+.bio_cobra_spec_img {
+  padding: 56px 41px 0px 41px;
+}
+.bio_cobra_spec_img_SP {
+  display: none;
+}
+.bio_cobra_fnc_spec_table {
+  margin-top: 59px;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.bio_cobra_fnc_spec_table tr {
+  border-collapse: collapse;
+  border-top: solid 1px #d9d9d9;
+  border-bottom: solid 1px #d9d9d9;
+}
+
+.bio_cobra_fnc_spec_table th {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 21px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.bio_cobra_fnc_spec_table th span {
+  display: block;
+  background-color: #c2bebe;
+  padding-left: 21px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.bio_cobra_fnc_spec_table td {
+  padding-left: 38px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+}
+/* ===↓ va-300セクションここから=== */
+.va-300 {
+  margin-top: 160px;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.va-300_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 64px;
+}
+
+/* ※下線の長さはminwidth-1440pmでwidthの値調整 */
+.va-300_title::after {
+  content: "";
+  display: block;
+  width: 27%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.va-300_title_jp {
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  color: #222;
+  margin-top: 8px;
+}
+
+.va-300_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.va-300_box:first-child {
+  margin-top: 50px;
+}
+
+.va-300_box:nth-child(n + 2) {
+  margin-top: 125px;
+}
+
+.va-300_description_first {
+  font-size: 20px;
+  margin-right: 2em;
+}
+.va-300_description_second {
+  font-size: 20px;
+  margin-left: 3em;
+}
+.va-300_description_third {
+  font-size: 20px;
+  margin-right: 2em;
+}
+
+.va-300_minibox {
+  width: 50%;
+}
+/*VA-300 FUNCTION & SPECIFICATIONセクションここから */
+.va-300_fnc_spec {
+  background: rgb(21, 53, 119);
+  background: linear-gradient(
+    10deg,
+    rgba(21, 53, 119, 1) 32%,
+    rgba(105, 170, 205, 1) 96%
+  );
+  padding-bottom: 100px;
+  margin-top: 210px;
+  padding-bottom: 100px;
+}
+
+.va-300_fnc_spec_inner {
+  display: flex;
+  justify-content: center;
+}
+
+.va-300_fnc_spec_title {
+  color: #ffffff;
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  border-left: solid 3px #d9d9d9;
+  border-right: solid 3px #d9d9d9;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.va-300_fnc_spec_container {
+  background-color: #fff;
+  margin: 8em 5em;
+  padding-bottom: 100px;
+}
+
+.va-300_fnc_spec_subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 48px;
+  margin-top: 70px;
+}
+
+.va-300_spec_img {
+  padding: 56px 41px 0px 41px;
+}
+
+.va-300_spec_img_SP {
+  display: none;
+}
+
+.va-300_fnc_spec_table {
+  margin-top: 59px;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.va-300_fnc_spec_table tr {
+  border-collapse: collapse;
+  border-top: solid 1px #d9d9d9;
+  border-bottom: solid 1px #d9d9d9;
+}
+
+.va-300_fnc_spec_table th {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 21px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.va-300_fnc_spec_table th span {
+  display: block;
+  background-color: #c2bebe;
+  padding-left: 21px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.va-300_fnc_spec_table td {
+  padding-left: 38px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+}
+
+/*TOTAL MANAGEMENT SYSTEMセクションここから */
+
+.totla_ms {
+  margin-top: 140px;
+  margin-bottom: 272px;
+  padding-left: 16%;
+  padding-right: 14%;
+}
+.total_ms_cotainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.total_ms_title_small_jp {
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  color: #222;
+  padding-bottom: 19px;
+}
+.total_ms_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  position: relative;
+}
+
+.total_ms_title::before {
+  content: "";
+  display: block;
+  width: 33%;
+  height: 3px;
+  background-color: #d9d9d9;
+  margin-bottom: 5px;
+  position: absolute;
+  left: 34%;
+  top: -22%;
+}
+
+.total_ms_text {
+  margin-top: 33px;
+  font-size: 18px;
+}
+.total_ms_video_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total_ms_video_box video {
+  width: clamp(19.625rem, 5.408rem + 60.66vw, 60rem);
+  margin-top: 80px;
+}
+
+/*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+/* レスポンシブ（1200px） */
+/* ここでAQUBIO SeriesQUBIO Seriesセクション / Bio-COBRAセクション 各パーツ・余白の調整開始 */
+@media (max-width: 1200px) {
+  .products_mv_title {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+  }
+
+  .aqubio_series {
+    margin-top: 160px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .aqubio_description_first {
+    margin-right: 1em;
+    /* テキストの大きさclamp関数で指定
+Noto Sans JPの場合（画面幅MAX1200px以上のときフォント20px、
+      画面幅MAX860px以下のときフォント16px、その間の画面幅はフォントサイズ柔軟に可変） */
+    font-size: clamp(1rem, 0.368rem + 1.18vw, 1.25rem);
+  }
+  .aqubio_description_second {
+    margin-right: 1em;
+    /* テキストの大きさclamp関数で指定
+Noto Sans JPの場合（画面幅MAX1200px以上のときフォント20px、
+      画面幅MAX860px以下のときフォント16px、その間の画面幅はフォントサイズ柔軟に可変） */
+    font-size: clamp(1rem, 0.368rem + 1.18vw, 1.25rem);
+  }
+}
+.aqubio_description_third {
+  margin-right: 1em;
+  /* テキストの大きさclamp関数で指定
+Noto Sans JPの場合（画面幅MAX1200px以上のときフォント20px、
+      画面幅MAX860px以下のときフォント16px、その間の画面幅はフォントサイズ柔軟に可変） */
+  font-size: clamp(1rem, 0.368rem + 1.18vw, 1.25rem);
+}
+.bio_cobra {
+  margin-top: 160px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.bio_cobra_description_first {
+  margin-left: 2em;
+  font-size: clamp(1rem, 0.368rem + 1.18vw, 1.25rem);
+}
+.bio_cobra_description_second {
+  margin-right: 2em;
+  font-size: clamp(1rem, 0.368rem + 1.18vw, 1.25rem);
+}
+.bio_cobra_description_third {
+  margin-right: 2em;
+  font-size: clamp(1rem, 0.368rem + 1.18vw, 1.25rem);
+}
+.va-300 {
+  margin-top: 160px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.va-300_description_first {
+  margin-right: 1em;
+  font-size: clamp(1rem, 0.368rem + 1.18vw, 1.25rem);
+}
+.va-300_description_second {
+  margin-right: 1em;
+  font-size: clamp(1rem, 0.368rem + 1.18vw, 1.25rem);
+}
+.total_ms_text {
+  /* テキストの大きさclamp関数で指定
+Noto Sans JPの場合（画面幅MAX1200px以上のときフォント18px、
+      画面幅MAX860px以下のときフォント14px、その間の画面幅はフォントサイズ柔軟に可変） */
+
+  margin-right: 2em;
+  font-size: clamp(0.875rem, 0.216rem + 1.21vw, 1.125rem);
+  .total_ms_text {
+    margin-top: 33px;
+    font-size: 18px;
+  }
+}
+/* レスポンシブ（1010px） */
+@media (max-width: 1010px) {
+  .products_mv_title {
+    position: absolute;
+    top: 71%;
+    left: 42%;
+  }
+}
+
+/* レスポンシブ（940px） */
+
+@media (max-width: 940px) {
+  .aqubio_series {
+    margin-top: 100px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .products_mv_title {
+    position: absolute;
+    top: 71%;
+    left: 45%;
+  }
+}
+
+/* レスポンシブ（860px）ここから mv画像tablet版、Specセクション画像SP版に切り替え */
+@media (max-width: 860px) {
+  .products_mv {
+    width: 100%;
+  }
+
+  .mv_video {
+    display: none;
+    position: relative;
+  }
+
+  .mv_products_tablet {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .products_mv_title {
+    position: absolute;
+    top: 70%;
+    left: 49%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .products_mv_headline {
+    font-size: 46px;
+    letter-spacing: 0.4em;
+  }
+  .products_mv_description {
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    margin-top: 24px;
+  }
+  /* AQUBIOここから */
+
+  .aqubio_series_title {
+    font-size: 58px;
+  }
+  .aqubio_box {
+    flex-direction: column;
+  }
+
+  .aqubio_box:first-child {
+    flex-direction: column-reverse;
+  }
+
+  .aqubio_box:last-child {
+    flex-direction: column-reverse;
+  }
+  .aqubio_minibox {
+    width: 72%;
+  }
+
+  .aqubio_description_first {
+    margin-top: 1em;
+    margin-right: 1em;
+  }
+
+  .aqubio_description_second {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .aqubio_description_third {
+    margin-top: 1em;
+    margin-right: 1em;
+  }
+  /* AQUBIOのLPへのリンクボタン外側 */
+  .button_area_aqubio_lp {
+    margin-top: 120px;
+  }
+
+  /* AQUBIOのLPにリンクのボタン内側 */
+  .btn span {
+    font-size: 16px;
+  }
+
+  /* AQUBIOここまで */
+
+  /* Bio-COBRAここから */
+
+  .bio_cobra_title {
+    font-size: 58px;
+  }
+
+  .bio_cobra_box {
+    flex-direction: column;
+  }
+
+  .bio_cobra_box:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .bio_cobra_minibox {
+    width: 72%;
+  }
+  .bio_cobra_description_first {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  .bio_cobra_description_second {
+    margin-right: -1em;
+    margin-left: 0;
+    margin-top: 1em;
+  }
+  .bio_cobra_description_third {
+    margin-top: 1em;
+    margin-left: 0;
+  }
+  /* Bio-COBRAここまで */
+
+  /* va-300ここから */
+  .va-300_title {
+    font-size: 58px;
+  }
+  .va-300_box {
+    flex-direction: column;
+  }
+
+  .va-300_box:first-child {
+    flex-direction: column-reverse;
+  }
+
+  .va-300_box:last-child {
+    flex-direction: column-reverse;
+  }
+  .va-300_minibox {
+    width: 100%;
+  }
+
+  .va-300_description_first {
+    margin-top: 1em;
+    margin-right: 1em;
+  }
+
+  .va-300_description_second {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .va-300_description_third {
+    margin-top: 1em;
+    margin-right: 1em;
+  }
+  /* va-300ここまで */
+  .aqubio_fnc_spec_first {
+    margin-top: 160px;
+    padding-bottom: 20px;
+  }
+
+  .aqubio_fnc_spec_second {
+    padding-bottom: 60px;
+  }
+  .aqubio_spec_img {
+    display: none;
+  }
+  .aqubio_spec_img_SP {
+    display: block;
+    padding: 56px 65px 0px 65px;
+  }
+
+  .bio_cobra_fnc_spec {
+    padding-bottom: 60px;
+  }
+
+  .bio_cobra_spec_img {
+    display: none;
+  }
+  .bio_cobra_spec_img_SP {
+    display: block;
+    padding: 56px 65px 0px 65px;
+  }
+  .va-300_fnc_spec {
+    margin-top: 160px;
+    padding-bottom: 20px;
+  }
+  .va-300_spec_img {
+    display: none;
+  }
+  .va-300_spec_img_SP {
+    display: block;
+    padding: 56px 65px 0px 65px;
+  }
+}
+/* レスポンシブ（768px）ここから */
+@media (max-width: 768px) {
+  .products_mv_title {
+    position: absolute;
+    top: 68%;
+    left: 48%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .products_mv_headline {
+    font-size: 44px;
+    letter-spacing: 0.3em;
+  }
+  .products_mv_description {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+
+  .aqubio_minibox {
+    width: 85%;
+  }
+
+  .bio_cobra_minibox {
+    width: 80%;
+  }
+  .bio_cobra_fnc_spec {
+    padding-bottom: 30px;
+  }
+
+  .aqubio_fnc_spec_container {
+    margin: 8em 4em;
+  }
+
+  .bio_cobra_fnc_spec_container {
+    margin: 8em 4em;
+  }
+
+  .aqubio_spec_img_SP {
+    padding: 56px 70px 0px 70px;
+  }
+
+  .bio_cobra_spec_img_SP {
+    padding: 56px 70px 0px 70px;
+  }
+
+  .totla_ms {
+    margin-top: 140px;
+    margin-bottom: 160px;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+}
+/* スマホ（680px）レスポンシブ ここから mv画像SP版に切り替え、SpecセクションテキストSP版に切り替え*/
+@media (max-width: 680px) {
+  .mv_products_tablet {
+    display: none;
+  }
+
+  .mv_products_SP {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .products_mv_title {
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .products_mv_headline {
+    font-size: 44px;
+    letter-spacing: 0.3em;
+  }
+
+  .products_mv_description {
+    letter-spacing: 0.4em;
+    white-space: normal;
+  }
+
+  .aqubio_series_title {
+    font-size: 50px;
+  }
+
+  .aqubio_fnc_spec_container {
+    margin: 6em 2em;
+  }
+  .aqubio_fnc_spec_table {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .aqubio_fnc_spec_table td {
+    padding-left: 20px;
+  }
+  .bio_cobra_title {
+    font-size: 50px;
+  }
+
+  .bio_cobra_fnc_spec_container {
+    margin: 6em 2em;
+  }
+  .bio_cobra_fnc_spec_table {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .bio_cobra_fnc_spec_table th {
+    padding-left: 4px;
+  }
+  .bio_cobra_fnc_spec_table td {
+    padding-left: 20px;
+  }
+  .va-300_title {
+    font-size: 50px;
+  }
+
+  .va-300_fnc_spec_container {
+    margin: 6em 2em;
+  }
+  .va-300_fnc_spec_table {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .va-300_fnc_spec_table td {
+    padding-left: 20px;
+  }
+  .total_ms_title::before {
+    top: -14%;
+  }
+}
+/* スマホ（570px）レスポンシブ ここから*/
+@media (max-width: 570px) {
+  .products_mv_title {
+    position: absolute;
+    top: 72%;
+    left: 47%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .products_mv_headline {
+    font-size: 44px;
+    letter-spacing: 0.2em;
+  }
+  .products_mv_description {
+    margin-top: 17px;
+  }
+  .aqubio_box:nth-child(n + 2) {
+    margin-top: 90px;
+  }
+
+  .aqubio_minibox {
+    width: 100%;
+  }
+  .bio_cobra_box:nth-child(n + 2) {
+    margin-top: 90px;
+  }
+
+  .bio_cobra_minibox {
+    width: 100%;
+  }
+  .va-300_box:nth-child(n + 2) {
+    margin-top: 90px;
+  }
+
+  .va-300_minibox {
+    width: 100%;
+  }
+  /* AQUBIOのLPへのリンクボタン外側 */
+  .button_area_aqubio_lp {
+    margin-top: 90px;
+  }
+
+  /* AQUBIOのLPにリンクのボタン内側 */
+  .btn span {
+    font-size: 14px;
+  }
+  .aqubio_fnc_spec_first {
+    margin-top: 110px;
+    padding-bottom: 20px;
+  }
+
+  .aqubio_fnc_spec_table th {
+    display: block;
+    width: 100%;
+  }
+  .aqubio_fnc_spec_table td {
+    display: block;
+    width: 100%;
+    padding-left: 12px;
+    padding-top: 0;
+  }
+
+  .bio_cobra_fnc_spec {
+    margin-top: 120px;
+    padding-bottom: 100px;
+  }
+  .bio_cobra_fnc_spec_table th {
+    display: block;
+    width: 100%;
+  }
+
+  .bio_cobra_fnc_spec_table td {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+  }
+  .va-300_fnc_spec {
+    margin-top: 120px;
+    padding-bottom: 100px;
+  }
+  .va-300_fnc_spec_table th {
+    display: block;
+    width: 100%;
+    padding-left: 2px;
+  }
+
+  .va-300_fnc_spec_table td {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+  }
+  .total_ms_title::before {
+    top: -10%;
+  }
+}
+
+/* スマホ（450px）レスポンシブ */
+@media (max-width: 450px) {
+  .products_mv_headline {
+    font-size: 38px;
+    letter-spacing: 0.2em;
+  }
+  .products_mv_description {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+  .aqubio_fnc_spec_container {
+    margin: 4em 1.5em;
+  }
+  .aqubio_fnc_spec_title {
+    font-size: 26px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  .bio_cobra_fnc_spec_container {
+    margin: 4em 1.5em;
+  }
+  .bio_cobra_fnc_spec_title {
+    font-size: 26px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    margin-top: 50px;
+  }
+  .va-300_fnc_spec_container {
+    margin: 4em 1.5em;
+  }
+
+  .va-300_fnc_spec_title {
+    font-size: 26px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    margin-top: 50px;
+  }
+  .aqubio_fnc_spec_table td {
+    padding-left: 10px;
+  }
+  .bio_cobra_fnc_spec_table td {
+    padding-left: 12px;
+  }
+  .va-300_fnc_spec_table td {
+    padding-left: 12px;
+  }
+  .totla_ms {
+    margin-top: 100px;
+    margin-bottom: 120px;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .total_ms_title::before {
+    top: -8%;
+  }
+}
+/* スマホ（400px）レスポンシブ */
+@media (max-width: 400px) {
+  .products_mv_title {
+    position: absolute;
+    top: 72%;
+    left: 51%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+  .products_mv_description {
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.5em;
+  }
+}
+/* スマホ（375px）レスポンシブ */
+@media (max-width: 375px) {
+  .products_mv_title {
+    position: absolute;
+    top: 66%;
+    left: 51%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+  .products_mv_headline {
+    font-size: 38px;
+    letter-spacing: 0.1em;
+  }
+  /* AQUBIOのLPへのリンクボタン外側 */
+  .button_area_aqubio_lp {
+    margin-top: 70px;
+  }
+
+  /* AQUBIOのLPにリンクのボタン内側 */
+  .btn span {
+    font-size: 13px;
+  }
+  .aqubio_fnc_spec_title {
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-top: 40px;
+  }
+  .bio_cobra_fnc_spec_title {
+    font-size: 24px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-top: 40px;
+  }
+  .va-300_fnc_spec_title {
+    font-size: 24px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-top: 40px;
+  }
+}

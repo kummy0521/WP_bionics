@@ -1,0 +1,1440 @@
+@charset "UTF-8";
+/* TOPのProductsセクションのみに該当するボタン位置 */
+.button_area {
+  margin-top: 54px;
+  margin-bottom: 87px;
+  display: flex;
+  justify-content: center;
+}
+/* メインビジュアル（画像３枚をフェードインアウトで表示させる */
+.top_mv {
+  width: 100%;
+}
+.top_mv {
+  position: relative;
+}
+.mv_top_tablet {
+  display: none;
+}
+.mv_top_SP {
+  display: none;
+}
+
+.top_mv_title {
+  position: absolute;
+  top: 71%;
+  left: 45%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.top_mv_headline_PC {
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 0.12em;
+}
+.top_mv_headline_SP {
+  display: none;
+}
+
+.top_mv_description {
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0.4rem;
+  line-height: 1.5em;
+  margin-top: 33px;
+}
+
+/* ===メインビジュアルここまで=== */
+
+/* 
+/* ===Conceptセクションここから=== */
+
+.concept {
+  margin-top: 167px;
+  padding-left: 8em;
+}
+
+.concept_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+}
+.concept_title::before {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.concept_text {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 25px;
+}
+
+/* ===Technologyセクションここから=== */
+
+.technology {
+  margin-top: 310px;
+  padding-left: 8em;
+}
+
+.technology_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+  /* padding-top: 111px;
+  margin-top: 111px; */
+}
+
+.technology_title::before {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.technology_text {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 2px;
+}
+
+.feature {
+  margin-top: 82px;
+  padding-left: 8em;
+}
+
+.feature_inner {
+  display: flex;
+}
+.feature_container_left {
+  width: 70%;
+  min-width: 63%;
+  max-width: 70%;
+}
+
+.feature_title {
+  color: #1b1c80;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  border-left: solid 3px #d9d9d9;
+  border-right: solid 3px #d9d9d9;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+}
+.feature_number_img {
+  width: 134px;
+  /* height: 221px;
+  padding-top: 90px; */
+}
+
+.feature_box_for_number {
+  position: relative;
+}
+
+/* 最初の項目のみ指定する */
+.feature_box_for_number:first-child {
+  margin-top: 70px;
+}
+
+/* 項目２番目から最後までを指定する */
+.feature_box_for_number:nth-child(n + 2) {
+  padding-top: 90px;
+}
+
+.feature_box_for_text {
+  margin-top: -100px;
+  margin-left: 6em;
+}
+
+.feature_lead_sentencs {
+  font-size: 20px;
+  font-weight: 500;
+}
+.feature_text {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.feature_img_sp {
+  display: none;
+}
+
+.feature_container_right {
+  padding-left: 2%;
+  margin-top: 70px;
+}
+/* ===How It Worksセクションここから=== */
+.howitworks {
+  margin-top: 90px;
+  padding-left: 8em;
+}
+
+.howitworks_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  border-left: solid 3px #d9d9d9;
+  border-right: solid 3px #d9d9d9;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.howitworks_text {
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 22px;
+}
+
+.howitworks_container {
+  display: flex;
+  align-items: center;
+  padding-top: 65px;
+}
+
+.howitworks_box_for_img {
+  width: 60%;
+}
+
+.howitworks_box_for_text {
+  padding-right: 8em;
+  padding-top: 4em;
+}
+
+.authentification_flow {
+  font-size: 16px;
+  font-weight: 400;
+}
+/*==================================================
+「TECHNOLOGYについてもっと見る」横並びのための設定
+===================================*/
+
+.technology_gnavi {
+  display: flex;
+  margin: 0 0 50px 0;
+  list-style: none;
+  margin-top: 100px;
+  justify-content: center;
+}
+.technology_gnavi_text {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  display: inline-block;
+}
+.technology_gnavi li a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #333;
+  border: solid 1px #333;
+}
+.technology_gnavi li {
+  margin-bottom: 20px;
+}
+
+/*==================================================
+　5-3-5 左から右に背景が伸びる
+===================================*/
+
+/*背景の設定*/
+
+.technology_gnavi li a {
+  /*背景色の基点とするためrelativeを指定*/
+  position: relative;
+}
+
+.technology_gnavi li a::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  /*背景の形状*/
+  width: 0;
+  height: 100%;
+  background: #0481a2;
+  /*アニメーションの指定*/
+  transition: all 0.5s;
+  opacity: 0;
+  /*はじめは透過0*/
+}
+
+/*現在地とhoverの設定*/
+/* .technology_gnavi li.current a::after, */
+.technology_gnavi li a:hover::after {
+  /*背景の形状*/
+  width: 100%;
+  /*横幅を伸ばす*/
+  opacity: 1;
+  /*不透明に*/
+}
+
+/* .technology_gnavi li.current a, */
+.technology_gnavi li a:hover {
+  color: #fff;
+  border: transparent;
+  /* 枠線は透過 */
+}
+
+/* ===Productsセクションここから=== */
+.products {
+  background: rgb(138, 196, 228);
+  background: linear-gradient(
+    225deg,
+    rgba(138, 196, 228, 1) 8%,
+    rgba(65, 109, 134, 1) 100%
+  );
+  padding-bottom: 8em;
+  padding-left: 8em;
+  padding-right: 8em;
+  margin-top: 140px;
+}
+
+.products_title {
+  color: #ffffff;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+  padding-top: 65px;
+  padding-bottom: 44px;
+}
+.products_title::before {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+.products_container_row_first {
+  display: flex;
+}
+.products_container_row_second {
+  display: flex;
+  margin-top: 153px;
+}
+
+.products_box {
+  background-color: #ffffff;
+  /* width: 50%; */
+  max-width: 50%;
+}
+.products_box:first-child {
+  margin-right: 8em;
+}
+
+.products_name {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  border-left: solid 3px #d9d9d9;
+  padding-left: 13px;
+  margin-top: 37px;
+  margin-left: 37px;
+}
+.products_text {
+  font-size: 16px;
+  margin-top: 34px;
+  margin-left: 52px;
+}
+
+/* Productsセクション用ボタン（ただし、全ページのABOUT USセクションでボタン配置が異なるため、
+ ABOUT USのボタンはbutton_area_aboutus、buttonとしてbase.cssへ） */
+.btn {
+  /*アニメーションの起点とするためrelativeを指定*/
+  position: relative;
+  overflow: hidden;
+  /*ボタンの形状*/
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #222;
+  /* ボーダーの色と太さ */
+  padding: 10px 30px;
+  text-align: center;
+  outline: none;
+  /*アニメーションの指定*/
+  transition: ease 0.2s;
+}
+
+/*ボタン内spanの形状*/
+.btn span {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: center;
+  font-size: 20px;
+
+  color: #222222;
+  position: relative;
+  z-index: 3;
+  /*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color: #333;
+}
+
+.btn:hover span {
+  color: #fff;
+}
+
+/*== 背景が流れる（斜め） */
+.bgskew::before {
+  content: "";
+  /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: -130%;
+  /*色や形状*/
+  background: #333;
+  width: 120%;
+  height: 100%;
+  transform: skewX(-25deg);
+}
+
+/*hoverした時のアニメーション*/
+.bgskew:hover::before {
+  animation: skewanime 0.9s forwards;
+  /*アニメーションの名前と速度を定義*/
+}
+
+@keyframes skewanime {
+  100% {
+    left: -10%;
+    /*画面の見えていない左から右へ移動する終了地点*/
+  }
+}
+
+.button_area {
+  justify-content: center;
+}
+/*↓Newsセクションここから */
+.news {
+  margin-top: 210px;
+  padding-left: 8em;
+  padding-right: 8em;
+}
+.news_wrapper {
+  display: flex;
+  column-gap: 7vw;
+}
+
+.news_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+}
+
+.news_title::before {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+/*==================================================
+共通　横並びのための設定
+===================================*/
+
+.gnavi {
+  display: flex;
+  flex-wrap: wrap;
+  /*スマホ表示折り返し用なのでPCのみなら不要*/
+  margin: 0 0 50px 0;
+  list-style: none;
+}
+.gnavi_text {
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+  font-style: normal;
+}
+.gnavi li a {
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: #333;
+}
+/*==================================================
+5-3-3 左から右に線が伸びる（テキストの下部）ここから↓
+===================================*/
+.gnavi li a {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+}
+
+/* .gnavi li.current a, */
+.gnavi li a:hover {
+  color: #333;
+}
+
+.gnavi li a::after {
+  content: "";
+  /*絶対配置でテキスト下に配置する線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+  /*線の形状*/
+  width: 99%;
+  height: 3px;
+  background: #1b1c80;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  /*X方向0、Y方向1*/
+  transform-origin: left top;
+  /*左上基点*/
+}
+
+/*hoverの設定*/
+.gnavi li a:hover::after {
+  transform: scale(1, 1);
+  /*X方向にスケール拡大*/
+}
+/*==================================================
+　左から右に縁で囲われる（矢印の周囲）
+===================================*/
+.gnavi li span a {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  margin-right: 2%;
+}
+
+.gnavi li span a::after {
+  content: "";
+  /*絶対配置で矢印の周囲に配置する丸線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  /*線の形状*/
+  width: 45px;
+  height: 45px;
+  border: solid 3px #1b1c80;
+  border-radius: 50%;
+  background: transparent;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0, 0);
+  /*X方向0、Y方向1*/
+  transform-origin: center;
+  /*左上基点*/
+}
+/* ホバーしたときに小さな矢印が動く速度 */
+.news_arrow_link .small_arrow {
+  transition: 0.3s;
+}
+
+/* news_arrow_link（aのクラス名）がホバーした時に、小さな矢印を右に8px移動させる */
+.news_arrow_link:hover .small_arrow {
+  transform: translateX(8px);
+}
+
+/* ホバー時に出現させるためのJSで追加される hover-effect クラス付与、「news一覧へ」テキスト下線と「→」円の同時出現 */
+.gnavi li a.hover-effect::after {
+  transform: scale(1, 1);
+}
+
+.gnavi li span a.hover-effect::after {
+  transform: scale(1, 1);
+}
+
+/* 矢印も移動させたい場合は以下も追加 */
+.news_arrow_link.hover-effect .small_arrow {
+  transform: translateX(8px);
+}
+/* ===============================================
+ここまで↑左から右に縁で囲われる（矢印の周囲） */
+
+.news_box_content {
+  border-bottom: solid 1px #d9d9d9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.news_box_content:first-child {
+  border-top: solid 1px #d9d9d9;
+}
+.news_box_content a {
+  text-decoration: none;
+  padding: 10px 0;
+}
+.news_box_content span {
+  display: inline-block;
+  background-color: #d9d9d9;
+  border-radius: 6px;
+  padding: 4px 20px;
+}
+.news_box_content time {
+  display: inline-block;
+  margin-left: 1.5vw;
+}
+.news_box_content p {
+  display: inline-block;
+  margin-left: 1vw;
+  margin-top: 14px;
+}
+
+/*↓Achievementsセクションここから */
+.achievements {
+  margin-top: 78px;
+  padding-left: 8em;
+  padding-right: 8em;
+}
+.achievements_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+  margin-top: 220px;
+}
+
+.achievements_title::before {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.achievements_text {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 6px;
+}
+
+.achievements_small_title {
+  color: #222;
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  margin-top: 47px;
+}
+
+.achievements_small_title::after {
+  content: "";
+  display: block;
+  width: 45%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.achievements_small_title_jp {
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #222;
+  margin-top: 8px;
+  padding-left: 1.5em;
+}
+
+.achievements_container {
+  display: flex;
+  padding-top: 51px;
+}
+.achievements_headline {
+  font-size: clamp(0.875rem, 0.705rem + 0.73vw, 1.25rem);
+
+  padding-left: 35px;
+}
+
+.achievements_box {
+  border-left: solid 3px #222;
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+}
+.achievements_box:last-child {
+  border-right: solid 3px #222;
+}
+
+.achievements_wrp {
+  display: flex;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.achievements_minibox_img {
+  display: inline-block;
+  width: clamp(3.313rem, 2.611rem + 2.99vw, 5.063rem);
+}
+
+.achievements_minibox_text {
+  width: 60%;
+  padding: 20px 6px;
+}
+.for_number {
+  font-size: clamp(0.875rem, 0.705rem + 0.73vw, 1.25rem);
+}
+
+.for_number span {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(5rem, -9.634rem + 19.51vw, 10rem);
+}
+
+/*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+
+/* レスポンシブ（1440px以上） */
+@media (min-width: 1440px) {
+  .top_mv_description {
+    font-size: 20px;
+    letter-spacing: 0.5rem;
+  }
+  .technology_gnavi_text {
+    font-size: 24px;
+  }
+}
+/* レスポンシブ（1440px以下） */
+@media (max-width: 1440px) {
+  .howitworks_box_for_text {
+    padding-top: 4em;
+    padding-left: 4%;
+    padding-right: 4em;
+  }
+
+  .feature_container_left {
+    width: 70%;
+    min-width: 56%;
+    max-width: 70%;
+  }
+}
+/* レスポンシブ（1300px） */
+@media (max-width: 1300px) {
+  .feature_container_left {
+    width: 70%;
+    min-width: 50%;
+    max-width: 70%;
+  }
+  .feature_box_for_number:nth-child(n + 2) {
+    padding-top: 50px;
+  }
+  .achievements_wrp {
+    padding: 0 1em;
+  }
+}
+
+/* レスポンシブ（1180px） */
+/* ここでAchievementsセクション切り替え */
+@media (max-width: 1180px) {
+  .top_mv_title {
+    position: absolute;
+    top: 53%;
+    left: 43%;
+  }
+  .top_mv_headline_PC {
+    font-weight: 600;
+    font-size: 38px;
+    letter-spacing: 0.12em;
+  }
+
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.4rem;
+    line-height: 1.5em;
+    margin-top: 25px;
+  }
+  .howitworks_container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 42px;
+    padding-left: 0em;
+  }
+  .howitworks_box_for_img {
+    width: 70%;
+  }
+
+  .achievements_wrp {
+    margin-bottom: 20px;
+    border-bottom: solid 2px #222;
+  }
+  .achievements_box {
+    border: none;
+    width: 100%;
+  }
+  .achievements_box:last-child {
+    border: none;
+  }
+}
+
+/* レスポンシブ（1040px）ヘッダー→ハンバーガーに切り替えのブレイクポイント */
+/* ここでTechnologyセクション、Productsセクション、ニュースセクションもレスポンシブデザインに切り替え */
+@media (max-width: 1040px) {
+  .top_mv_title {
+    position: absolute;
+    top: 51%;
+    left: 47%;
+  }
+
+  .top_mv_headline_PC {
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+  }
+
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.3rem;
+    line-height: 1.4em;
+    margin-top: 15px;
+  }
+  .concept {
+    margin-top: 76px;
+    padding-left: 4em;
+  }
+  .concept_text {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 25px;
+  }
+
+  .technology {
+    margin-top: 180px;
+    padding-left: 4em;
+  }
+  .technology_text {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 2px;
+  }
+  .feature_img_sp {
+    display: block;
+    margin-top: 60px;
+  }
+  .feature_box_for_text {
+    margin-top: -100px;
+    margin-left: 6em;
+    margin-right: 6em;
+  }
+
+  .feature_container_left {
+    width: 100%;
+    max-width: none;
+  }
+
+  .feature_container_right {
+    display: none;
+  }
+
+  .feature {
+    margin-top: 82px;
+    padding-left: 4em;
+  }
+  .howitworks {
+    margin-top: 126px;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .feature_box_for_number:nth-child(n + 2) {
+    padding-top: 40px;
+  }
+  .howitworks_text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 22px;
+  }
+  .products {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .products_container_row_first {
+    flex-direction: column;
+  }
+  .products_container_row_second {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .products_box {
+    background-color: transparent;
+    max-width: none;
+  }
+  .products_minibox a {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .products_box:first-child {
+    margin-right: 0;
+  }
+
+  .products_minibox {
+    flex-direction: column-reverse;
+  }
+  .products_name {
+    font-size: 34px;
+  }
+  .products_text {
+    font-size: 18px;
+    margin-top: 34px;
+    margin-left: 52px;
+    margin-bottom: 24px;
+  }
+  .button_area {
+    margin-top: 54px;
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    background-color: #fff;
+  }
+  .news_wrapper {
+    flex-direction: column;
+  }
+  .news_container_left {
+    display: flex;
+  }
+  .gnavi {
+    margin: 50px 0 0 35px;
+  }
+  .news_box_content:first-child {
+    border-top: solid 1px #d9d9d9;
+    margin-top: 50px;
+  }
+  .news {
+    margin-top: 170px;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .achievements {
+    margin-top: 78px;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .achievements_text {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 6px;
+  }
+}
+/* レスポンシブ（992px） */
+@media (max-width: 992px) {
+  .top_mv_title {
+    position: absolute;
+    top: 51%;
+    left: 47%;
+  }
+
+  .top_mv_headline_PC {
+    font-weight: 600;
+    font-size: 34px;
+    letter-spacing: 0.1em;
+  }
+
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.2rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+  }
+  .achievements_container {
+    padding-top: 51px;
+    flex-direction: column;
+  }
+  .achievements_box {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .achievements_minibox_img {
+    display: inline-block;
+    width: 20%;
+    padding: 2%;
+  }
+  .achievements_minibox_img img {
+    width: clamp(3.313rem, 2.553rem + 3.24vw, 4.563rem);
+  }
+
+  .achievements_minibox_text {
+    width: 75%;
+    padding: 20px 35px;
+  }
+  /* 数値の大きさはviewport最大992pxでフォント120px、viewport最小375pxでフォント50pxで換算 */
+  .for_number span {
+    font-size: clamp(3.125rem, 0.466rem + 11.35vw, 7.5rem);
+  }
+}
+/* レスポンシブ（940px） */
+@media (max-width: 940px) {
+  .top_mv_title {
+    position: absolute;
+    top: 51%;
+    left: 47%;
+  }
+  .top_mv_headline_PC {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+  }
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+  }
+
+  .feature_box_for_text {
+    margin-top: -100px;
+    margin-left: 5em;
+    margin-right: 4em;
+  }
+}
+/* レスポンシブ（860px）ここからコンセプトのimg3なし */
+
+@media (max-width: 860px) {
+  .top_mv .slider {
+    display: none;
+  }
+  .top_mv_title {
+    position: absolute;
+    top: 73%;
+    left: 48%;
+  }
+  .mv_top_tablet {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .concept_title {
+    font-size: 66px;
+  }
+  .technology_title {
+    font-size: 66px;
+  }
+  .feature_img_sp {
+    display: block;
+    margin-top: 40px;
+  }
+  .howitworks_box_for_img {
+    width: 80%;
+  }
+  .technology_gnavi_text {
+    font-size: 16px;
+  }
+  .products_title {
+    font-size: 66px;
+  }
+
+  .achievements_title {
+    font-size: 66px;
+    margin-top: 110px;
+  }
+}
+/* レスポンシブ（768px）ここからコンセプトのimg2もなし、コンセプト、bridalfair、フッターはスマホverへ */
+@media (max-width: 768px) {
+  .top_mv_title {
+    position: absolute;
+    top: 74%;
+    left: 48%;
+  }
+  .top_mv_headline_PC {
+    display: none;
+  }
+  .top_mv_headline_SP {
+    display: block;
+    color: #fff;
+    font-family: "Noto Sans JP";
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+  }
+
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+  }
+  .concept_text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 25px;
+    padding-right: 4em;
+  }
+  .technology_text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 2px;
+    padding-right: 4em;
+  }
+  .feature_lead_sentencs {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .feature_text {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .howitworks_box_for_text {
+    padding-right: 1em;
+
+    padding-top: 3em;
+    padding-left: 1%;
+  }
+  .products {
+    margin-top: 120px;
+  }
+  .authentification_flow {
+    font-size: 15px;
+  }
+  .achievements_text {
+    font-size: 16px;
+  }
+  .achievements_minibox_text {
+    width: 75%;
+    padding: 20px 20px;
+  }
+}
+/* スマホ（680px）レスポンシブ ここから*/
+
+@media (max-width: 680px) {
+  .mv_top_tablet {
+    display: none;
+  }
+  .top_mv_title {
+    position: absolute;
+    top: 78%;
+    left: 56%;
+  }
+  .top_mv_headline_SP {
+    display: block;
+    color: #fff;
+    font-family: "Noto Sans JP";
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+  }
+
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+  }
+  .mv_top_SP {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .top_mv_title {
+    position: absolute;
+    top: 78%;
+    left: 37%;
+  }
+
+  .top_mv_headline_SP {
+    display: block;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+  }
+
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+    white-space: normal;
+  }
+  .concept_title {
+    font-size: 60px;
+  }
+  .howitworks_box_for_img {
+    width: 90%;
+  }
+  .technology_title {
+    font-size: 60px;
+  }
+
+  .products_title {
+    font-size: 60px;
+  }
+  .products_name {
+    margin-left: 4px;
+    font-size: 32px;
+  }
+
+  .products_text {
+    font-size: 18px;
+    margin-top: 34px;
+    margin-left: 20px;
+    margin-bottom: 24px;
+  }
+
+  .achievements_title {
+    font-size: 60px;
+    margin-top: 110px;
+  }
+}
+/* スマホ（570px）レスポンシブ ここから 各セクションpadding-left: 4em→3emへ*/
+@media (max-width: 570px) {
+  .top_mv_title {
+    position: absolute;
+    top: 76%;
+    left: 41%;
+  }
+
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+    white-space: normal;
+  }
+  .concept {
+    margin-top: 76px;
+    padding-left: 3em;
+  }
+  .concept_text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 25px;
+    padding-right: 3em;
+  }
+  .technology {
+    margin-top: 180px;
+    padding-left: 3em;
+  }
+  .technology_text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 2px;
+    padding-right: 3em;
+  }
+  .feature {
+    margin-top: 82px;
+    padding-left: 3em;
+  }
+  .feature_text {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .howitworks {
+    margin-top: 126px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .technology_gnavi_text {
+    font-size: 15px;
+  }
+  .products {
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 100px;
+  }
+  .products_name {
+    margin-left: 0;
+  }
+  .products_text {
+    margin-left: 16px;
+  }
+  .news_text {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+/* スマホ（470px）レスポンシブ Achivementの大見出し80px以下に調整*/
+@media (max-width: 470px) {
+  .top_mv_title {
+    position: absolute;
+    top: 76%;
+    left: 41%;
+  }
+  .top_mv_headline_SP {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+  }
+  .top_mv_description {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+    white-space: normal;
+  }
+  .concept {
+    margin-top: 76px;
+    padding-left: 2em;
+  }
+  .concept_title {
+    font-size: 50px;
+  }
+  .concept_text {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 25px;
+    padding-right: 2em;
+  }
+  .technology {
+    margin-top: 180px;
+    padding-left: 2em;
+  }
+  .technology_title {
+    font-size: 50px;
+  }
+  .technology_text {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 2px;
+    padding-right: 2em;
+  }
+  .technology_gnavi {
+    margin-top: 80px;
+  }
+  .feature {
+    margin-top: 82px;
+    padding-left: 2em;
+  }
+  .feature_lead_sentencs {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .howitworks {
+    margin-top: 126px;
+  }
+  .authentification_flow {
+    font-size: 14px;
+  }
+  .feature_text {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .howitworks_box_for_img {
+    width: 100%;
+  }
+  .products {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 90px;
+  }
+  .products_title {
+    font-size: 50px;
+  }
+  .products_name {
+    margin-left: 4px;
+    font-size: 32px;
+  }
+
+  .products_text {
+    font-size: 16px;
+    margin-top: 34px;
+    margin-left: 14px;
+    margin-bottom: 24px;
+  }
+
+  .news {
+    margin-top: 110px;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .news_text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .achievements {
+    margin-top: 78px;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .achievements_title {
+    font-size: 50px;
+    margin-top: 110px;
+  }
+  .achievements_text {
+    font-size: 14px;
+  }
+}
+/* スマホ（400px）レスポンシブ */
+@media (max-width: 400px) {
+  .top_mv_title {
+    position: absolute;
+    top: 73%;
+    left: 43%;
+  }
+  .technology {
+    margin-top: 110px;
+    padding-left: 2em;
+  }
+  .howitworks {
+    margin-top: 110px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .technology_gnavi {
+    margin-top: 60px;
+  }
+  .products {
+    margin-top: 80px;
+  }
+}
+/* スマホ（375px）レスポンシブ */
+@media (max-width: 375px) {
+  .top_mv_title {
+    position: absolute;
+    top: 72%;
+    left: 45%;
+  }
+  .technology_gnavi_text {
+    font-size: 14px;
+  }
+  .news {
+    margin-top: 78px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .achievements {
+    margin-top: 78px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .achievements_minibox_text {
+    width: 75%;
+    padding: 20px 10px;
+  }
+}

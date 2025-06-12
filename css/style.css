@@ -1,0 +1,2699 @@
+@charset "UTF-8";
+/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p, table, blockquote, address, pre, iframe, form, figure, dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  clear: both;
+  /* 1 */
+  overflow: visible;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  margin: 0;
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b, strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code, kbd, samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub, sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+img, embed, object, iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable
+ */
+button, input, optgroup, select, textarea {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+  vertical-align: middle;
+  color: inherit;
+  border-radius: 0;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button, input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button, select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button, [type=button], [type=reset], [type=submit] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+button[disabled], [type=button][disabled], [type=reset][disabled], [type=submit][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  color: inherit;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  /* 1 */
+  font: inherit;
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td, th {
+  padding: 0;
+  vertical-align: top;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Misc */
+/* ============================================ */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* サイト全体共通 */
+html {
+  scroll-padding-top: 211px;
+  /* モダンブラウザ向けの解決策 */
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #222;
+  /* letter-spacing: 0.6em;
+      line-height: 1.8em; */
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+/* a:hover {
+  opacity: 0.7;
+} */
+/* コンテンツ幅1200px */
+.wrapper_big {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* コンテンツ幅960px */
+.wrapper_medium {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* コンテンツ幅800px */
+.wrapper_small {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+.wrp_mv {
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  top: -1%;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.header_wrap {
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_logo {
+  height: 69px;
+  /* width: 100%; */
+}
+
+.header_nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 34px 15px;
+}
+
+.header_nav li {
+  margin-right: 25px;
+}
+
+.header_nav li:first-child {
+  margin-left: 18px;
+}
+
+.header_nav li a:hover {
+  color: #28639a;
+}
+
+.header_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin-top: 26px;
+  font-family: "roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.header_wrap.js_header_active {
+  margin: 0 0;
+  background-color: rgba(255, 255, 255, 0.88);
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.075));
+          filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.075));
+  -webkit-transition-duration: 0.3s ease;
+          transition-duration: 0.3s ease;
+  border-bottom: solid 1px transparent;
+}
+
+.header_nav.js_nav_modifier {
+  background-color: transparent;
+}
+
+/* ヘッダーナビ内Contactボタンのみ他と異なる仕様 */
+.nav_button {
+  display: block;
+  border: 1px solid rgb(40, 99, 154);
+  padding: 9px 41px;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: rgb(40, 99, 154);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.nav_button {
+  margin-right: 15px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.nav_button:hover {
+  color: #ffffff;
+  background-color: #183755;
+  border: 1px solid #183755;
+}
+
+.nav_button_language:hover {
+  color: #183755;
+}
+
+.nav_button_language {
+  margin-right: 30px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  position: relative;
+}
+
+.under_bar {
+  border: solid 1.9px #183755;
+  width: 9px;
+  position: absolute;
+  right: 107px;
+  bottom: 23px;
+}
+
+/*==================================================
+　5-3-11 左右から線が伸びて枠線になるアニメーション
+===================================*/
+/*線の基点位置*/
+.nav_button_language::before,
+.nav_button_language::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  /*線の形状*/
+  width: 0;
+  height: 3px;
+  background: #183755;
+  /*アニメーションの指定*/
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.nav_button_language::before {
+  right: 0;
+  top: 0;
+}
+
+.nav_button_language::after {
+  left: 0;
+  bottom: 0;
+}
+
+/*線の基点位置2 spanタグ*/
+.nav_button_language span {
+  padding: 11px 18px;
+  display: block;
+}
+
+.nav_button_language span::before,
+.nav_button_language span::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  /*線の形状*/
+  width: 5px;
+  height: 0;
+  background: #183755;
+  /*アニメーションの指定*/
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.nav_button_language span::before {
+  left: 0;
+  top: 0;
+}
+
+.nav_button_language span::after {
+  right: 0;
+  bottom: 0;
+}
+
+/*現在地とhoverした際の線の変化*/
+.nav_button_language.current::before,
+.nav_button_language.current::after,
+.nav_button_language:hover::before,
+.nav_button_language:hover::after {
+  width: 100%;
+  /*横幅を100%に*/
+}
+
+.nav_button_language.current span::before,
+.nav_button_language.current span::after,
+.nav_button_language:hover span::before,
+.nav_button_language:hover span::after {
+  height: 100%;
+  /*縦幅を100%に*/
+}
+
+/*==================================================
+ここまで左右から線が伸びて枠線になるアニメーション
+===================================*/
+/*==================================================
+/* ハンバーガー部分 1040px（max-width: 1040px)以下までは非表示にさせておく*/
+.nav_hamburger {
+  display: none;
+}
+
+/* ↓ABOUT USセクション TOPページはmargin-top122px 他ページは適宜調整*/
+.aboutus {
+  margin-top: 122px;
+}
+
+.wrp_aboutus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutus_inner_gradation {
+  background: rgb(11, 37, 90);
+  background: linear-gradient(11deg, rgb(11, 37, 90) 24%, rgb(75, 119, 209) 100%);
+  width: 60%;
+  padding-left: 8em;
+  padding-top: 93px;
+}
+
+.aboutus_title {
+  display: inline;
+  color: #ffffff;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+}
+
+.aboutus_title::before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.aboutus_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 55px;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
+}
+
+.aboutus_box_left {
+  width: 25%;
+  margin-right: 2%;
+}
+
+.aboutus_box_right {
+  width: 25%;
+}
+
+.aboutus_list li {
+  color: #fff;
+  border-bottom: solid 1px;
+  padding-bottom: 30px;
+  font-size: 16px;
+}
+
+/* リスト内の２番目から最後までを指定する */
+.aboutus_list li:nth-child(n+2) {
+  padding-top: 32px;
+}
+
+.aboutus_inner_img {
+  width: 40%;
+}
+
+.aboutus_inner_img img {
+  width: 100;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* 共通ボタン */
+.button_area_aboutus {
+  margin-top: 60px;
+  margin-bottom: 8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  color: #222222;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  stroke: #222222;
+  border: solid 1px;
+  background-color: #fff;
+  padding: 10px 65px;
+  display: block;
+}
+
+/* フッター */
+.footer {
+  background-color: #f5f0dc;
+  font-size: 15px;
+}
+
+.footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_logo {
+  display: block;
+  height: 69px;
+  width: auto;
+}
+
+.footer_box_left {
+  width: 40%;
+  background-color: #fff;
+  padding-top: 8em;
+  padding-left: 9em;
+  padding-bottom: 5em;
+}
+
+.footer_box_right {
+  width: 60%;
+  background-color: #eef1f2;
+  padding-top: 8em;
+  padding-left: 9em;
+  padding-right: 7em;
+  padding-bottom: 16em;
+}
+
+.companyinfo_list_address {
+  margin-top: 24px;
+}
+
+.companyinfo_list_tel_fax {
+  margin-top: 11px;
+}
+
+.footer_minibox_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_title {
+  display: inline;
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+}
+
+.copy_right {
+  background-color: #444;
+  height: 40px;
+}
+
+.copy_right_text {
+  font-size: 15px;
+  text-align: right;
+  color: #fff;
+  padding-top: 10px;
+  padding-right: 40px;
+}
+
+/* ホバーしたときに矢印が動く速度 */
+.contact_arrow_link .arrow {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+/* contact_arrow_link（aのクラス名）がホバーした時に、矢印を右に20px移動させる */
+.contact_arrow_link:hover .arrow {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.arrow {
+  height: 18px;
+  width: 46px;
+}
+
+/* -----------------要素がふわっと現れるjsのクラス付与ここから----------------- */
+.effect-fade {
+  opacity: 0;
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
+  -webkit-transition: all 2000ms;
+  transition: all 2000ms;
+}
+
+.effect-scroll {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+/*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+/* レスポンシブ（1440px） フッター右側調整のみ*/
+@media (max-width: 1440px) {
+  .footer_box_right {
+    padding-left: 7em;
+  }
+}
+/* レスポンシブ（1230px） フッター左右調整*/
+@media (max-width: 1230px) {
+  .footer_box_right {
+    padding-left: 5em;
+  }
+  .footer_box_left {
+    padding-left: 4em;
+  }
+}
+/* レスポンシブ（1080px） フッター左右調整*/
+@media (max-width: 1080px) {
+  .footer_box_right {
+    padding-left: 4em;
+  }
+  .footer_box_left {
+    padding-left: 3em;
+  }
+}
+/* レスポンシブ（1040px）ヘッダー、ABOUT USセクション、フッター：レスポンシブデザインに切り替え */
+@media (max-width: 1040px) {
+  .button_area {
+    margin-top: 80px;
+    margin-bottom: 190px;
+  }
+  /* 画面幅1040px以下でナビはハンバーガーに変化 */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .header_wrap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-top: 20px;
+    padding-left: 35px;
+  }
+  /* jsと連動して画面幅1040px以下でクラスを削除する */
+  .header_wrap.js_header_active {
+    background-color: transparent;
+  }
+  /* ハンバーガーを開いた状態の背面が画面幅1040px以下でも存在し続けるための配色 */
+  .header_nav.js_nav_modifier {
+    background-color: rgba(95, 92, 92, 0.9);
+  }
+  .header_nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(95, 92, 92, 0.9);
+    gap: 1em;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  .nav_hamburger {
+    display: block;
+    width: 75px;
+    height: 55px;
+    background-image: url(../img/hamburger_open.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    z-index: 50;
+  }
+  .nav_button {
+    margin-right: 28px;
+  }
+  .header_nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  .header_nav li:first-child {
+    margin-left: 2px;
+  }
+  .nav_open .header_nav {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .nav_open .nav_hamburger {
+    background-image: url(../img/hamburger_close.png);
+  }
+  .wrp_aboutus {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutus_inner_gradation {
+    width: 100%;
+  }
+  .aboutus_inner_img {
+    display: none;
+  }
+  .footer_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer_box_right {
+    width: 100%;
+    background-color: #eef1f2;
+    padding-top: 5em;
+    padding-bottom: 9em;
+    padding-left: 8em;
+  }
+  .footer_box_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 5em;
+    padding-left: 9em;
+  }
+  .button_area {
+    margin-bottom: 180px;
+  }
+  .copy_right {
+    background-color: #444;
+    height: 38px;
+  }
+  .copy_right_text {
+    font-size: 13px;
+    text-align: right;
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 30px;
+  }
+}
+/* レスポンシブ（860px） */
+@media (max-width: 860px) {
+  .aboutus_title {
+    font-size: 64px;
+  }
+  .contact_title {
+    font-size: 68px;
+  }
+}
+/* レスポンシブ（768px）フッターはスマホverへ */
+@media (max-width: 768px) {
+  .aboutus_inner_gradation {
+    padding-left: 6em;
+    padding-top: 93px;
+  }
+  .aboutus_list li {
+    color: #fff;
+    border-bottom: solid 1px;
+    padding-bottom: 30px;
+    font-size: 14px;
+  }
+  .footer_box_right {
+    padding-left: 5em;
+  }
+  .footer_box_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 5em;
+  }
+  .companyinfo_list_address {
+    margin-top: 12px;
+  }
+}
+/* スマホ（680px）レスポンシブ */
+@media (max-width: 680px) {
+  .aboutus_title {
+    font-size: 60px;
+  }
+  .contact_title {
+    font-size: 64px;
+  }
+}
+/* スマホ（570px）レスポンシブ */
+@media (max-width: 570px) {
+  .contact_text {
+    margin-top: 10px;
+  }
+  .footer {
+    font-size: 14px;
+  }
+  .copy_right {
+    height: 30px;
+  }
+  .copy_right_text {
+    font-size: 10px;
+    text-align: right;
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+}
+/* スマホ（470px）レスポンシブ */
+@media (max-width: 470px) {
+  .aboutus_title {
+    font-size: 50px;
+  }
+  .contact_title {
+    font-size: 54px;
+  }
+  .aboutus_inner_gradation {
+    padding-left: 3em;
+    padding-top: 93px;
+  }
+  .footer {
+    font-size: 13px;
+  }
+  .footer_box_right {
+    padding-left: 3em;
+  }
+  .footer_box_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 4em;
+  }
+}
+/* スマホ（420px）レスポンシブ */
+@media (max-width: 420px) {
+  .footer {
+    font-size: 12px;
+  }
+}
+/* TOPのProductsセクションのみに該当するボタン位置 */
+.button_area {
+  margin-top: 54px;
+  margin-bottom: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* メインビジュアル（画像３枚をフェードインアウトで表示させる */
+.top_mv {
+  width: 100%;
+}
+
+.top_mv {
+  position: relative;
+}
+
+.mv_top_tablet {
+  display: none;
+}
+
+.mv_top_SP {
+  display: none;
+}
+
+.top_mv_title {
+  position: absolute;
+  top: 71%;
+  left: 45%;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.top_mv_headline_PC {
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 0.12em;
+}
+
+.top_mv_headline_SP {
+  display: none;
+}
+
+.top_mv_description {
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 0.4rem;
+  line-height: 1.5em;
+  margin-top: 33px;
+}
+
+/* ===メインビジュアルここまで=== */
+/* 
+/* ===Conceptセクションここから=== */
+.concept {
+  margin-top: 167px;
+  padding-left: 8em;
+}
+
+.concept_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+}
+
+.concept_title::before {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.concept_text {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 25px;
+}
+
+/* ===Technologyセクションここから=== */
+.technology {
+  margin-top: 310px;
+  padding-left: 8em;
+}
+
+.technology_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+  /* padding-top: 111px;
+  margin-top: 111px; */
+}
+
+.technology_title::before {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.technology_text {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 2px;
+}
+
+.feature {
+  margin-top: 82px;
+  padding-left: 8em;
+}
+
+.feature_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature_container_left {
+  width: 70%;
+  min-width: 63%;
+  max-width: 70%;
+}
+
+.feature_title {
+  color: #1b1c80;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  border-left: solid 3px #d9d9d9;
+  border-right: solid 3px #d9d9d9;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.feature_number_img {
+  width: 134px;
+  /* height: 221px;
+  padding-top: 90px; */
+}
+
+.feature_box_for_number {
+  position: relative;
+}
+
+/* 最初の項目のみ指定する */
+.feature_box_for_number:first-child {
+  margin-top: 70px;
+}
+
+/* 項目２番目から最後までを指定する */
+.feature_box_for_number:nth-child(n+2) {
+  padding-top: 90px;
+}
+
+.feature_box_for_text {
+  margin-top: -100px;
+  margin-left: 6em;
+}
+
+.feature_lead_sentencs {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.feature_text {
+  font-size: 16px;
+  padding-top: 10px;
+}
+
+.feature_img_sp {
+  display: none;
+}
+
+.feature_container_right {
+  padding-left: 2%;
+  margin-top: 70px;
+}
+
+/* ===How It Worksセクションここから=== */
+.howitworks {
+  margin-top: 90px;
+  padding-left: 8em;
+}
+
+.howitworks_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  border-left: solid 3px #d9d9d9;
+  border-right: solid 3px #d9d9d9;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+.howitworks_text {
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 22px;
+}
+
+.howitworks_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 65px;
+}
+
+.howitworks_box_for_img {
+  width: 60%;
+}
+
+.howitworks_box_for_text {
+  padding-right: 8em;
+  padding-top: 4em;
+}
+
+.authentification_flow {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*==================================================
+「TECHNOLOGYについてもっと見る」横並びのための設定
+===================================*/
+.technology_gnavi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 50px 0;
+  list-style: none;
+  margin-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.technology_gnavi_text {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.technology_gnavi li a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #333;
+  border: solid 1px #333;
+}
+
+.technology_gnavi li {
+  margin-bottom: 20px;
+}
+
+/*==================================================
+　5-3-5 左から右に背景が伸びる
+===================================*/
+/*背景の設定*/
+.technology_gnavi li a {
+  /*背景色の基点とするためrelativeを指定*/
+  position: relative;
+}
+
+.technology_gnavi li a::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  /*背景の形状*/
+  width: 0;
+  height: 100%;
+  background: #0481a2;
+  /*アニメーションの指定*/
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  /*はじめは透過0*/
+}
+
+/*現在地とhoverの設定*/
+/* .technology_gnavi li.current a::after, */
+.technology_gnavi li a:hover::after {
+  /*背景の形状*/
+  width: 100%;
+  /*横幅を伸ばす*/
+  opacity: 1;
+  /*不透明に*/
+}
+
+/* .technology_gnavi li.current a, */
+.technology_gnavi li a:hover {
+  color: #fff;
+  border: transparent;
+  /* 枠線は透過 */
+}
+
+/* ===Productsセクションここから=== */
+.products {
+  background: rgb(138, 196, 228);
+  background: linear-gradient(225deg, rgb(138, 196, 228) 8%, rgb(65, 109, 134) 100%);
+  padding-bottom: 8em;
+  padding-left: 8em;
+  padding-right: 8em;
+  margin-top: 140px;
+}
+
+.products_title {
+  color: #ffffff;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+  padding-top: 65px;
+  padding-bottom: 44px;
+}
+
+.products_title::before {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.products_container_row_first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products_container_row_second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 153px;
+}
+
+.products_box {
+  background-color: #ffffff;
+  /* width: 50%; */
+  max-width: 50%;
+}
+
+.products_box:first-child {
+  margin-right: 8em;
+}
+
+.products_name {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  border-left: solid 3px #d9d9d9;
+  padding-left: 13px;
+  margin-top: 37px;
+  margin-left: 37px;
+}
+
+.products_text {
+  font-size: 16px;
+  margin-top: 34px;
+  margin-left: 52px;
+}
+
+/* Productsセクション用ボタン（ただし、全ページのABOUT USセクションでボタン配置が異なるため、
+ ABOUT USのボタンはbutton_area_aboutus、buttonとしてbase.cssへ） */
+.btn {
+  /*アニメーションの起点とするためrelativeを指定*/
+  position: relative;
+  overflow: hidden;
+  /*ボタンの形状*/
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #222;
+  /* ボーダーの色と太さ */
+  padding: 10px 30px;
+  text-align: center;
+  outline: none;
+  /*アニメーションの指定*/
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
+}
+
+/*ボタン内spanの形状*/
+.btn span {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  color: #222222;
+  position: relative;
+  z-index: 3;
+  /*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color: #333;
+}
+
+.btn:hover span {
+  color: #fff;
+}
+
+/*== 背景が流れる（斜め） */
+.bgskew::before {
+  content: "";
+  /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: -130%;
+  /*色や形状*/
+  background: #333;
+  width: 120%;
+  height: 100%;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+}
+
+/*hoverした時のアニメーション*/
+.bgskew:hover::before {
+  -webkit-animation: skewanime 0.9s forwards;
+          animation: skewanime 0.9s forwards;
+  /*アニメーションの名前と速度を定義*/
+}
+
+@-webkit-keyframes skewanime {
+  100% {
+    left: -10%;
+    /*画面の見えていない左から右へ移動する終了地点*/
+  }
+}
+
+@keyframes skewanime {
+  100% {
+    left: -10%;
+    /*画面の見えていない左から右へ移動する終了地点*/
+  }
+}
+.button_area {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*↓Newsセクションここから */
+.news {
+  margin-top: 210px;
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+.news_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 7vw;
+     -moz-column-gap: 7vw;
+          column-gap: 7vw;
+}
+
+.news_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+}
+
+.news_title::before {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+/*==================================================
+共通　横並びのための設定
+===================================*/
+.gnavi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*スマホ表示折り返し用なのでPCのみなら不要*/
+  margin: 0 0 50px 0;
+  list-style: none;
+}
+
+.gnavi_text {
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+  font-style: normal;
+}
+
+.gnavi li a {
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+/*==================================================
+5-3-3 左から右に線が伸びる（テキストの下部）ここから↓
+===================================*/
+.gnavi li a {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+}
+
+/* .gnavi li.current a, */
+.gnavi li a:hover {
+  color: #333;
+}
+
+.gnavi li a::after {
+  content: "";
+  /*絶対配置でテキスト下に配置する線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+  /*線の形状*/
+  width: 99%;
+  height: 3px;
+  background: #1b1c80;
+  /*アニメーションの指定*/
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  /*X方向0、Y方向1*/
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  /*左上基点*/
+}
+
+/*hoverの設定*/
+.gnavi li a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  /*X方向にスケール拡大*/
+}
+
+/*==================================================
+　左から右に縁で囲われる（矢印の周囲）
+===================================*/
+.gnavi li span a {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  margin-right: 2%;
+}
+
+.gnavi li span a::after {
+  content: "";
+  /*絶対配置で矢印の周囲に配置する丸線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  /*線の形状*/
+  width: 45px;
+  height: 45px;
+  border: solid 3px #1b1c80;
+  border-radius: 50%;
+  background: transparent;
+  /*アニメーションの指定*/
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  /*X方向0、Y方向1*/
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  /*左上基点*/
+}
+
+/* ホバーしたときに小さな矢印が動く速度 */
+.news_arrow_link .small_arrow {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* news_arrow_link（aのクラス名）がホバーした時に、小さな矢印を右に8px移動させる */
+.news_arrow_link:hover .small_arrow {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+}
+
+/* ホバー時に出現させるためのJSで追加される hover-effect クラス付与、「news一覧へ」テキスト下線と「→」円の同時出現 */
+.gnavi li a.hover-effect::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.gnavi li span a.hover-effect::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+/* 矢印も移動させたい場合は以下も追加 */
+.news_arrow_link.hover-effect .small_arrow {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+}
+
+/* ===============================================
+ここまで↑左から右に縁で囲われる（矢印の周囲） */
+.news_box_content {
+  border-bottom: solid 1px #d9d9d9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.news_box_content:first-child {
+  border-top: solid 1px #d9d9d9;
+}
+
+.news_box_content a {
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.news_box_content span {
+  display: inline-block;
+  background-color: #d9d9d9;
+  border-radius: 6px;
+  padding: 4px 20px;
+}
+
+.news_box_content time {
+  display: inline-block;
+  margin-left: 1.5vw;
+}
+
+.news_box_content p {
+  display: inline-block;
+  margin-left: 1vw;
+  margin-top: 14px;
+}
+
+/*↓Achievementsセクションここから */
+.achievements {
+  margin-top: 78px;
+  padding-left: 8em;
+  padding-right: 8em;
+}
+
+.achievements_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+  margin-top: 220px;
+}
+
+.achievements_title::before {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.achievements_text {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 6px;
+}
+
+.achievements_small_title {
+  color: #222;
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  margin-top: 47px;
+}
+
+.achievements_small_title::after {
+  content: "";
+  display: block;
+  width: 45%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.achievements_small_title_jp {
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #222;
+  margin-top: 8px;
+  padding-left: 1.5em;
+}
+
+.achievements_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 51px;
+}
+
+.achievements_headline {
+  font-size: clamp(0.875rem, 0.705rem + 0.73vw, 1.25rem);
+  padding-left: 35px;
+}
+
+.achievements_box {
+  border-left: solid 3px #222;
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.achievements_box:last-child {
+  border-right: solid 3px #222;
+}
+
+.achievements_wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2em;
+}
+
+.achievements_minibox_img {
+  display: inline-block;
+  width: clamp(3.313rem, 2.611rem + 2.99vw, 5.063rem);
+}
+
+.achievements_minibox_text {
+  width: 60%;
+  padding: 20px 6px;
+}
+
+.for_number {
+  font-size: clamp(0.875rem, 0.705rem + 0.73vw, 1.25rem);
+}
+
+.for_number span {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(5rem, -9.634rem + 19.51vw, 10rem);
+}
+
+/*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+/* レスポンシブ（1440px以上） */
+@media (min-width: 1440px) {
+  .top_mv_description {
+    font-size: 20px;
+    letter-spacing: 0.5rem;
+  }
+  .technology_gnavi_text {
+    font-size: 24px;
+  }
+}
+/* レスポンシブ（1440px以下） */
+@media (max-width: 1440px) {
+  .howitworks_box_for_text {
+    padding-top: 4em;
+    padding-left: 4%;
+    padding-right: 4em;
+  }
+  .feature_container_left {
+    width: 70%;
+    min-width: 56%;
+    max-width: 70%;
+  }
+}
+/* レスポンシブ（1300px） */
+@media (max-width: 1300px) {
+  .feature_container_left {
+    width: 70%;
+    min-width: 50%;
+    max-width: 70%;
+  }
+  .feature_box_for_number:nth-child(n+2) {
+    padding-top: 50px;
+  }
+  .achievements_wrp {
+    padding: 0 1em;
+  }
+}
+/* レスポンシブ（1180px） */
+/* ここでAchievementsセクション切り替え */
+@media (max-width: 1180px) {
+  .top_mv_title {
+    position: absolute;
+    top: 53%;
+    left: 43%;
+  }
+  .top_mv_headline_PC {
+    font-weight: 600;
+    font-size: 38px;
+    letter-spacing: 0.12em;
+  }
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.4rem;
+    line-height: 1.5em;
+    margin-top: 25px;
+  }
+  .howitworks_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 42px;
+    padding-left: 0em;
+  }
+  .howitworks_box_for_img {
+    width: 70%;
+  }
+  .achievements_wrp {
+    margin-bottom: 20px;
+    border-bottom: solid 2px #222;
+  }
+  .achievements_box {
+    border: none;
+    width: 100%;
+  }
+  .achievements_box:last-child {
+    border: none;
+  }
+}
+/* レスポンシブ（1040px）ヘッダー→ハンバーガーに切り替えのブレイクポイント */
+/* ここでTechnologyセクション、Productsセクション、ニュースセクションもレスポンシブデザインに切り替え */
+@media (max-width: 1040px) {
+  .top_mv_title {
+    position: absolute;
+    top: 51%;
+    left: 47%;
+  }
+  .top_mv_headline_PC {
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+  }
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.3rem;
+    line-height: 1.4em;
+    margin-top: 15px;
+  }
+  .concept {
+    margin-top: 76px;
+    padding-left: 4em;
+  }
+  .concept_text {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 25px;
+  }
+  .technology {
+    margin-top: 180px;
+    padding-left: 4em;
+  }
+  .technology_text {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 2px;
+  }
+  .feature_img_sp {
+    display: block;
+    margin-top: 60px;
+  }
+  .feature_box_for_text {
+    margin-top: -100px;
+    margin-left: 6em;
+    margin-right: 6em;
+  }
+  .feature_container_left {
+    width: 100%;
+    max-width: none;
+  }
+  .feature_container_right {
+    display: none;
+  }
+  .feature {
+    margin-top: 82px;
+    padding-left: 4em;
+  }
+  .howitworks {
+    margin-top: 126px;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .feature_box_for_number:nth-child(n+2) {
+    padding-top: 40px;
+  }
+  .howitworks_text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 22px;
+  }
+  .products {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .products_container_row_first {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .products_container_row_second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+  }
+  .products_box {
+    background-color: transparent;
+    max-width: none;
+  }
+  .products_minibox a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .products_box:first-child {
+    margin-right: 0;
+  }
+  .products_minibox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .products_name {
+    font-size: 34px;
+  }
+  .products_text {
+    font-size: 18px;
+    margin-top: 34px;
+    margin-left: 52px;
+    margin-bottom: 24px;
+  }
+  .button_area {
+    margin-top: 54px;
+    margin-bottom: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btn {
+    background-color: #fff;
+  }
+  .news_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news_container_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gnavi {
+    margin: 50px 0 0 35px;
+  }
+  .news_box_content:first-child {
+    border-top: solid 1px #d9d9d9;
+    margin-top: 50px;
+  }
+  .news {
+    margin-top: 170px;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .achievements {
+    margin-top: 78px;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .achievements_text {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 6px;
+  }
+}
+/* レスポンシブ（992px） */
+@media (max-width: 992px) {
+  .top_mv_title {
+    position: absolute;
+    top: 51%;
+    left: 47%;
+  }
+  .top_mv_headline_PC {
+    font-weight: 600;
+    font-size: 34px;
+    letter-spacing: 0.1em;
+  }
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.2rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+  }
+  .achievements_container {
+    padding-top: 51px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .achievements_box {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .achievements_minibox_img {
+    display: inline-block;
+    width: 20%;
+    padding: 2%;
+  }
+  .achievements_minibox_img img {
+    width: clamp(3.313rem, 2.553rem + 3.24vw, 4.563rem);
+  }
+  .achievements_minibox_text {
+    width: 75%;
+    padding: 20px 35px;
+  }
+  /* 数値の大きさはviewport最大992pxでフォント120px、viewport最小375pxでフォント50pxで換算 */
+  .for_number span {
+    font-size: clamp(3.125rem, 0.466rem + 11.35vw, 7.5rem);
+  }
+}
+/* レスポンシブ（940px） */
+@media (max-width: 940px) {
+  .top_mv_title {
+    position: absolute;
+    top: 51%;
+    left: 47%;
+  }
+  .top_mv_headline_PC {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+  }
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+  }
+  .feature_box_for_text {
+    margin-top: -100px;
+    margin-left: 5em;
+    margin-right: 4em;
+  }
+}
+/* レスポンシブ（860px）ここからコンセプトのimg3なし */
+@media (max-width: 860px) {
+  .top_mv .slider {
+    display: none;
+  }
+  .top_mv_title {
+    position: absolute;
+    top: 73%;
+    left: 48%;
+  }
+  .mv_top_tablet {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .concept_title {
+    font-size: 66px;
+  }
+  .technology_title {
+    font-size: 66px;
+  }
+  .feature_img_sp {
+    display: block;
+    margin-top: 40px;
+  }
+  .howitworks_box_for_img {
+    width: 80%;
+  }
+  .technology_gnavi_text {
+    font-size: 16px;
+  }
+  .products_title {
+    font-size: 66px;
+  }
+  .achievements_title {
+    font-size: 66px;
+    margin-top: 110px;
+  }
+}
+/* レスポンシブ（768px）ここからコンセプトのimg2もなし、コンセプト、bridalfair、フッターはスマホverへ */
+@media (max-width: 768px) {
+  .top_mv_title {
+    position: absolute;
+    top: 74%;
+    left: 48%;
+  }
+  .top_mv_headline_PC {
+    display: none;
+  }
+  .top_mv_headline_SP {
+    display: block;
+    color: #fff;
+    font-family: "Noto Sans JP";
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+  }
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+  }
+  .concept_text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 25px;
+    padding-right: 4em;
+  }
+  .technology_text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 2px;
+    padding-right: 4em;
+  }
+  .feature_lead_sentencs {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .feature_text {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .howitworks_box_for_text {
+    padding-right: 1em;
+    padding-top: 3em;
+    padding-left: 1%;
+  }
+  .products {
+    margin-top: 120px;
+  }
+  .authentification_flow {
+    font-size: 15px;
+  }
+  .achievements_text {
+    font-size: 16px;
+  }
+  .achievements_minibox_text {
+    width: 75%;
+    padding: 20px 20px;
+  }
+}
+/* スマホ（680px）レスポンシブ ここから*/
+@media (max-width: 680px) {
+  .mv_top_tablet {
+    display: none;
+  }
+  .top_mv_title {
+    position: absolute;
+    top: 78%;
+    left: 56%;
+  }
+  .top_mv_headline_SP {
+    display: block;
+    color: #fff;
+    font-family: "Noto Sans JP";
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+  }
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+  }
+  .mv_top_SP {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .top_mv_title {
+    position: absolute;
+    top: 78%;
+    left: 37%;
+  }
+  .top_mv_headline_SP {
+    display: block;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.1em;
+  }
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+    white-space: normal;
+  }
+  .concept_title {
+    font-size: 60px;
+  }
+  .howitworks_box_for_img {
+    width: 90%;
+  }
+  .technology_title {
+    font-size: 60px;
+  }
+  .products_title {
+    font-size: 60px;
+  }
+  .products_name {
+    margin-left: 4px;
+    font-size: 32px;
+  }
+  .products_text {
+    font-size: 18px;
+    margin-top: 34px;
+    margin-left: 20px;
+    margin-bottom: 24px;
+  }
+  .achievements_title {
+    font-size: 60px;
+    margin-top: 110px;
+  }
+}
+/* スマホ（570px）レスポンシブ ここから 各セクションpadding-left: 4em→3emへ*/
+@media (max-width: 570px) {
+  .top_mv_title {
+    position: absolute;
+    top: 76%;
+    left: 41%;
+  }
+  .top_mv_description {
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+    white-space: normal;
+  }
+  .concept {
+    margin-top: 76px;
+    padding-left: 3em;
+  }
+  .concept_text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 25px;
+    padding-right: 3em;
+  }
+  .technology {
+    margin-top: 180px;
+    padding-left: 3em;
+  }
+  .technology_text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 2px;
+    padding-right: 3em;
+  }
+  .feature {
+    margin-top: 82px;
+    padding-left: 3em;
+  }
+  .feature_text {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .howitworks {
+    margin-top: 126px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .technology_gnavi_text {
+    font-size: 15px;
+  }
+  .products {
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 100px;
+  }
+  .products_name {
+    margin-left: 0;
+  }
+  .products_text {
+    margin-left: 16px;
+  }
+  .news_text {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+/* スマホ（470px）レスポンシブ Achivementの大見出し80px以下に調整*/
+@media (max-width: 470px) {
+  .top_mv_title {
+    position: absolute;
+    top: 76%;
+    left: 41%;
+  }
+  .top_mv_headline_SP {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+  }
+  .top_mv_description {
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.1rem;
+    line-height: 1.4em;
+    margin-top: 11px;
+    white-space: normal;
+  }
+  .concept {
+    margin-top: 76px;
+    padding-left: 2em;
+  }
+  .concept_title {
+    font-size: 50px;
+  }
+  .concept_text {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 25px;
+    padding-right: 2em;
+  }
+  .technology {
+    margin-top: 180px;
+    padding-left: 2em;
+  }
+  .technology_title {
+    font-size: 50px;
+  }
+  .technology_text {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 2px;
+    padding-right: 2em;
+  }
+  .technology_gnavi {
+    margin-top: 80px;
+  }
+  .feature {
+    margin-top: 82px;
+    padding-left: 2em;
+  }
+  .feature_lead_sentencs {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .howitworks {
+    margin-top: 126px;
+  }
+  .authentification_flow {
+    font-size: 14px;
+  }
+  .feature_text {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .howitworks_box_for_img {
+    width: 100%;
+  }
+  .products {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 90px;
+  }
+  .products_title {
+    font-size: 50px;
+  }
+  .products_name {
+    margin-left: 4px;
+    font-size: 32px;
+  }
+  .products_text {
+    font-size: 16px;
+    margin-top: 34px;
+    margin-left: 14px;
+    margin-bottom: 24px;
+  }
+  .news {
+    margin-top: 110px;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .news_text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .achievements {
+    margin-top: 78px;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .achievements_title {
+    font-size: 50px;
+    margin-top: 110px;
+  }
+  .achievements_text {
+    font-size: 14px;
+  }
+}
+/* スマホ（400px）レスポンシブ */
+@media (max-width: 400px) {
+  .top_mv_title {
+    position: absolute;
+    top: 73%;
+    left: 43%;
+  }
+  .technology {
+    margin-top: 110px;
+    padding-left: 2em;
+  }
+  .howitworks {
+    margin-top: 110px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .technology_gnavi {
+    margin-top: 60px;
+  }
+  .products {
+    margin-top: 80px;
+  }
+}
+/* スマホ（375px）レスポンシブ */
+@media (max-width: 375px) {
+  .top_mv_title {
+    position: absolute;
+    top: 72%;
+    left: 45%;
+  }
+  .technology_gnavi_text {
+    font-size: 14px;
+  }
+  .news {
+    margin-top: 78px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .achievements {
+    margin-top: 78px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  .achievements_minibox_text {
+    width: 75%;
+    padding: 20px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

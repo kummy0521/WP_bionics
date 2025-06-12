@@ -1,0 +1,692 @@
+@charset "UTF-8";
+/* サイト全体共通 */
+html {
+  scroll-padding-top: 111px;
+  /* モダンブラウザ向けの解決策 */
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #222;
+  /* letter-spacing: 0.6em;
+      line-height: 1.8em; */
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  transition: 0.6s;
+}
+
+/* a:hover {
+  opacity: 0.7;
+} */
+/* コンテンツ幅1200px */
+.wrapper_big {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* コンテンツ幅960px */
+.wrapper_medium {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* コンテンツ幅800px */
+.wrapper_small {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+.wrp_mv {
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  top: -1%;
+
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.header_wrap {
+  position: sticky;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_logo {
+  height: 69px;
+  /* width: 100%; */
+}
+.header_nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 34px 15px;
+}
+.header_nav li {
+  margin-right: 25px;
+}
+.header_nav li:first-child {
+  margin-left: 18px;
+}
+.header_nav li a:hover {
+  color: #28639a;
+}
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  margin-top: 26px;
+  font-family: "roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #222;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.header_wrap.js_header_active {
+  margin: 0 0;
+  background-color: rgba(255, 255, 255, 0.88);
+  border-radius: 10px;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.075));
+  transition-duration: 0.3s ease;
+  border-bottom: solid 1px transparent;
+}
+.header_nav.js_nav_modifier {
+  background-color: transparent;
+}
+
+/* ヘッダーナビ内Contactボタンのみ他と異なる仕様 */
+.nav_button {
+  display: block;
+  border: 1px solid rgba(40, 99, 154, 1);
+  padding: 9px 41px;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: rgba(40, 99, 154, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.nav_button {
+  margin-right: 15px;
+  transition: 0.6s;
+}
+
+.nav_button:hover {
+  color: #ffffff;
+  background-color: #183755;
+  border: 1px solid #183755;
+}
+
+.nav_button_language:hover {
+  color: #183755;
+}
+
+.nav_button_language {
+  margin-right: 30px;
+  transition: 0.6s;
+  position: relative;
+}
+.under_bar {
+  border: solid 1.9px #183755;
+  width: 9px;
+  position: absolute;
+  right: 107px;
+  bottom: 23px;
+}
+
+/*==================================================
+　5-3-11 左右から線が伸びて枠線になるアニメーション
+===================================*/
+
+/*線の基点位置*/
+.nav_button_language::before,
+.nav_button_language::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  /*線の形状*/
+  width: 0;
+  height: 3px;
+  background: #183755;
+  /*アニメーションの指定*/
+  transition: all 0.2s linear;
+  transition-delay: 0.2s;
+}
+
+.nav_button_language::before {
+  right: 0;
+  top: 0;
+}
+
+.nav_button_language::after {
+  left: 0;
+  bottom: 0;
+}
+
+/*線の基点位置2 spanタグ*/
+
+.nav_button_language span {
+  padding: 11px 18px;
+  display: block;
+}
+
+.nav_button_language span::before,
+.nav_button_language span::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  /*線の形状*/
+  width: 5px;
+  height: 0;
+  background: #183755;
+  /*アニメーションの指定*/
+  transition: all 0.2s linear;
+}
+
+.nav_button_language span::before {
+  left: 0;
+  top: 0;
+}
+
+.nav_button_language span::after {
+  right: 0;
+  bottom: 0;
+}
+
+/*現在地とhoverした際の線の変化*/
+
+.nav_button_language.current::before,
+.nav_button_language.current::after,
+.nav_button_language:hover::before,
+.nav_button_language:hover::after {
+  width: 100%;
+  /*横幅を100%に*/
+}
+
+.nav_button_language.current span::before,
+.nav_button_language.current span::after,
+.nav_button_language:hover span::before,
+.nav_button_language:hover span::after {
+  height: 100%;
+  /*縦幅を100%に*/
+}
+/*==================================================
+ここまで左右から線が伸びて枠線になるアニメーション
+===================================*/
+/*==================================================
+/* ハンバーガー部分 1040px（max-width: 1040px)以下までは非表示にさせておく*/
+.nav_hamburger {
+  display: none;
+}
+
+/* ↓ABOUT USセクション TOPページはmargin-top122px 他ページは適宜調整*/
+.aboutus {
+  margin-top: 122px;
+}
+.wrp_aboutus {
+  display: flex;
+}
+
+.aboutus_inner_gradation {
+  background: rgb(11, 37, 90);
+  background: linear-gradient(
+    11deg,
+    rgba(11, 37, 90, 1) 24%,
+    rgba(75, 119, 209, 1) 100%
+  );
+  width: 60%;
+  padding-left: 8em;
+  padding-top: 93px;
+}
+
+.aboutus_title {
+  display: inline;
+  color: #ffffff;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+}
+
+.aboutus_title::before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.aboutus_container {
+  display: flex;
+  padding-top: 55px;
+  column-gap: 2em;
+}
+
+.aboutus_box_left {
+  width: 25%;
+  margin-right: 2%;
+}
+.aboutus_box_right {
+  width: 25%;
+}
+.aboutus_list li {
+  color: #fff;
+  border-bottom: solid 1px;
+  padding-bottom: 30px;
+  font-size: 16px;
+}
+
+/* リスト内の２番目から最後までを指定する */
+.aboutus_list li:nth-child(n + 2) {
+  padding-top: 32px;
+}
+
+.aboutus_inner_img {
+  width: 40%;
+}
+.aboutus_inner_img img {
+  width: 100;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 共通ボタン */
+.button_area_aboutus {
+  margin-top: 60px;
+  margin-bottom: 8em;
+  display: flex;
+}
+
+.button {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: center;
+  font-size: 20px;
+
+  color: #222222;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.6s ease 0s;
+  stroke: #222222;
+  border: solid 1px;
+  background-color: #fff;
+  padding: 10px 65px;
+  display: block;
+}
+/* フッター */
+.footer {
+  background-color: #f5f0dc;
+  font-size: 15px;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  display: block;
+  height: 69px;
+  width: auto;
+}
+
+.footer_box_left {
+  width: 40%;
+  background-color: #fff;
+  padding-top: 8em;
+  padding-left: 9em;
+  padding-bottom: 5em;
+}
+
+.footer_box_right {
+  width: 60%;
+  background-color: #eef1f2;
+  padding-top: 8em;
+  padding-left: 9em;
+  padding-right: 7em;
+  padding-bottom: 16em;
+}
+
+.companyinfo_list_address {
+  margin-top: 24px;
+}
+
+.companyinfo_list_tel_fax {
+  margin-top: 11px;
+}
+
+.footer_minibox_right {
+  display: flex;
+  align-items: center;
+}
+
+.contact_title {
+  display: inline;
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+
+  font-size: 70px;
+}
+.copy_right {
+  background-color: #444;
+  height: 40px;
+}
+.copy_right_text {
+  font-size: 15px;
+  text-align: right;
+  color: #fff;
+  padding-top: 10px;
+  padding-right: 40px;
+}
+/* ホバーしたときに矢印が動く速度 */
+.contact_arrow_link .arrow {
+  transition: 0.6s;
+}
+
+/* contact_arrow_link（aのクラス名）がホバーした時に、矢印を右に20px移動させる */
+.contact_arrow_link:hover .arrow {
+  transform: translateX(20px);
+}
+
+.arrow {
+  height: 18px;
+  width: 46px;
+}
+
+/* -----------------要素がふわっと現れるjsのクラス付与ここから----------------- */
+.effect-fade {
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 2000ms;
+}
+
+.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+/* レスポンシブ（1440px） フッター右側調整のみ*/
+@media (max-width: 1440px) {
+  .footer_box_right {
+    padding-left: 7em;
+  }
+}
+/* レスポンシブ（1230px） フッター左右調整*/
+@media (max-width: 1230px) {
+  .footer_box_right {
+    padding-left: 5em;
+  }
+  .footer_box_left {
+    padding-left: 4em;
+  }
+}
+/* レスポンシブ（1080px） フッター左右調整*/
+@media (max-width: 1080px) {
+  .footer_box_right {
+    padding-left: 4em;
+  }
+
+  .footer_box_left {
+    padding-left: 3em;
+  }
+}
+
+/* レスポンシブ（1040px）ヘッダー、ABOUT USセクション、フッター：レスポンシブデザインに切り替え */
+@media (max-width: 1040px) {
+  .button_area {
+    margin-top: 80px;
+    margin-bottom: 190px;
+  }
+  /* 画面幅1040px以下でナビはハンバーガーに変化 */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header_wrap {
+    justify-content: start;
+    padding-top: 20px;
+    padding-left: 35px;
+  }
+
+  /* jsと連動して画面幅1040px以下でクラスを削除する */
+  .header_wrap.js_header_active {
+    background-color: transparent;
+  }
+  /* ハンバーガーを開いた状態の背面が画面幅1040px以下でも存在し続けるための配色 */
+  .header_nav.js_nav_modifier {
+    background-color: rgba(95, 92, 92, 0.9);
+  }
+
+  .header_nav {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(95, 92, 92, 0.9);
+    gap: 1em;
+    transition: 0.4s;
+    transform: translateX(100%);
+  }
+
+  .nav_hamburger {
+    display: block;
+    width: 75px;
+    height: 55px;
+    background-image: url(../img/hamburger_open.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    z-index: 50;
+  }
+  .nav_button {
+    margin-right: 28px;
+  }
+  .header_nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .header_nav li:first-child {
+    margin-left: 2px;
+  }
+
+  .nav_open .header_nav {
+    transform: translateX(0);
+  }
+  .nav_open .nav_hamburger {
+    background-image: url(../img/hamburger_close.png);
+  }
+  .wrp_aboutus {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutus_inner_gradation {
+    width: 100%;
+  }
+
+  .aboutus_inner_img {
+    display: none;
+  }
+
+  .footer_container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .footer_box_right {
+    width: 100%;
+    background-color: #eef1f2;
+    padding-top: 5em;
+    padding-bottom: 9em;
+
+    padding-left: 8em;
+  }
+
+  .footer_box_left {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 5em;
+    padding-left: 9em;
+  }
+
+  .button_area {
+    margin-bottom: 180px;
+  }
+  .copy_right {
+    background-color: #444;
+    height: 38px;
+  }
+
+  .copy_right_text {
+    font-size: 13px;
+    text-align: right;
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 30px;
+  }
+}
+
+/* レスポンシブ（860px） */
+
+@media (max-width: 860px) {
+  .aboutus_title {
+    font-size: 64px;
+  }
+  .contact_title {
+    font-size: 68px;
+  }
+}
+
+/* レスポンシブ（768px）フッターはスマホverへ */
+@media (max-width: 768px) {
+  .aboutus_inner_gradation {
+    padding-left: 6em;
+    padding-top: 93px;
+  }
+  .aboutus_list li {
+    color: #fff;
+    border-bottom: solid 1px;
+    padding-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .footer_box_right {
+    padding-left: 5em;
+  }
+  .footer_box_left {
+    display: flex;
+    padding-left: 5em;
+  }
+  .companyinfo_list_address {
+    margin-top: 12px;
+  }
+}
+/* スマホ（680px）レスポンシブ */
+@media (max-width: 680px) {
+  .aboutus_title {
+    font-size: 60px;
+  }
+
+  .contact_title {
+    font-size: 64px;
+  }
+}
+
+/* スマホ（570px）レスポンシブ */
+@media (max-width: 570px) {
+  .contact_text {
+    margin-top: 10px;
+  }
+  .footer {
+    font-size: 14px;
+  }
+
+  .copy_right {
+    height: 30px;
+  }
+
+  .copy_right_text {
+    font-size: 10px;
+    text-align: right;
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+}
+
+/* スマホ（470px）レスポンシブ */
+@media (max-width: 470px) {
+  .aboutus_title {
+    font-size: 50px;
+  }
+  .contact_title {
+    font-size: 54px;
+  }
+
+  .aboutus_inner_gradation {
+    padding-left: 3em;
+    padding-top: 93px;
+  }
+  .footer {
+    font-size: 13px;
+  }
+
+  .footer_box_right {
+    padding-left: 3em;
+  }
+  .footer_box_left {
+    display: flex;
+    padding-left: 4em;
+  }
+}
+
+/* スマホ（420px）レスポンシブ */
+@media (max-width: 420px) {
+  .footer {
+    font-size: 12px;
+  }
+}
