@@ -1,4 +1,5 @@
 <?php
+
 function my_theme_enqueue_assets() {
     // --- CSS読み込み ---
 
@@ -56,4 +57,3 @@ function my_theme_enqueue_assets() {
     );
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
-?>
