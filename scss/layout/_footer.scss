@@ -1,0 +1,178 @@
+/* フッター */
+.footer {
+  background-color: #f5f0dc;
+  font-size: 15px;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  display: block;
+  height: 69px;
+  width: auto;
+}
+
+.footer_box_left {
+  width: 40%;
+  background-color: #fff;
+  padding-top: 8em;
+  padding-left: 9em;
+  padding-bottom: 5em;
+}
+
+.footer_box_right {
+  width: 60%;
+  background-color: #eef1f2;
+  padding-top: 8em;
+  padding-left: 9em;
+  padding-right: 7em;
+  padding-bottom: 16em;
+}
+
+.companyinfo_list_address {
+  margin-top: 24px;
+}
+
+.companyinfo_list_tel_fax {
+  margin-top: 11px;
+}
+
+.footer_minibox_right {
+  display: flex;
+  align-items: center;
+}
+
+.contact_title {
+  display: inline;
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+
+  font-size: 70px;
+}
+.copy_right {
+  background-color: #444;
+  height: 40px;
+}
+.copy_right_text {
+  font-size: 15px;
+  text-align: right;
+  color: #fff;
+  padding-top: 10px;
+  padding-right: 40px;
+}
+/* ホバーしたときに矢印が動く速度 */
+.contact_arrow_link .arrow {
+  transition: 0.6s;
+}
+
+/* contact_arrow_link（aのクラス名）がホバーした時に、矢印を右に20px移動させる */
+.contact_arrow_link:hover .arrow {
+  transform: translateX(20px);
+}
+
+.arrow {
+  height: 18px;
+  width: 46px;
+}
+/* レスポンシブ（1040px）ヘッダー、ABOUT USセクション、フッター：レスポンシブデザインに切り替え */
+@media (max-width: 1040px) {
+  .footer_container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .footer_box_right {
+    width: 100%;
+    background-color: #eef1f2;
+    padding-top: 5em;
+    padding-bottom: 9em;
+
+    padding-left: 8em;
+  }
+
+  .footer_box_left {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 5em;
+    padding-left: 9em;
+  }
+}
+/* レスポンシブ（860px） */
+
+@media (max-width: 860px) {
+  .contact_title {
+    font-size: 68px;
+  }
+}
+
+/* レスポンシブ（768px）フッターはスマホverへ */
+@media (max-width: 768px) {
+
+  .footer_box_right {
+    padding-left: 5em;
+  }
+  .footer_box_left {
+    display: flex;
+    padding-left: 5em;
+  }
+  .companyinfo_list_address {
+    margin-top: 12px;
+  }
+}
+/* スマホ（680px）レスポンシブ */
+@media (max-width: 680px) {
+
+  .contact_title {
+    font-size: 64px;
+  }
+}
+/* スマホ（570px）レスポンシブ */
+@media (max-width: 570px) {
+  .contact_text {
+    margin-top: 10px;
+  }
+  .footer {
+    font-size: 14px;
+  }
+
+  .copy_right {
+    height: 30px;
+  }
+
+  .copy_right_text {
+    font-size: 10px;
+    text-align: right;
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 20px;
+  }
+}
+/* スマホ（470px）レスポンシブ */
+@media (max-width: 470px) {
+  .contact_title {
+    font-size: 54px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+
+  .footer_box_right {
+    padding-left: 3em;
+  }
+  .footer_box_left {
+    display: flex;
+    padding-left: 4em;
+  }
+}
+
+/* スマホ（420px）レスポンシブ */
+@media (max-width: 420px) {
+  .footer {
+    font-size: 12px;
+  }
+}
