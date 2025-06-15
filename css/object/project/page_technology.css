@@ -1,0 +1,968 @@
+@charset "UTF-8";
+/* ＝＝＝メインビジュアル＝＝＝ */
+/* mv上に配置のキャッチコピー */
+.technology_mv {
+  position: relative;
+  width: 100%;
+}
+
+.mv_technology_tablet {
+  display: none;
+}
+
+.mv_technology_SP {
+  display: none;
+}
+
+.technology_mv_title {
+  position: absolute;
+  top: 67%;
+  left: 32%;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.technology_mv_headline {
+  color: #fff;
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 58px;
+  letter-spacing: 0.4em;
+}
+
+.technology_mv_description {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.5rem;
+  line-height: 1.7em;
+  margin-top: 40px;
+}
+
+/* ===メインビジュアルここまで=== */
+/* ===メインタイトル「血流認証とは」セクションここから=== */
+.main_title {
+  margin-top: 160px;
+  padding: 0 12em;
+}
+
+.common_title_small_jp {
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  color: #222;
+  padding-bottom: 8px;
+}
+
+.common_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 64px;
+}
+
+.common_title::before {
+  content: "";
+  display: block;
+  width: 16%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.common_text {
+  padding-top: 42px;
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: #222;
+  letter-spacing: 0.5em;
+  line-height: 1.8em;
+}
+
+/* ===「血流認証とは」の説明セクションここから=== */
+.explanation_vessel {
+  position: relative;
+  margin-top: 100px;
+}
+
+.background_img_vessel_PC {
+  width: 100%;
+}
+
+.background_img_vessel_tablet {
+  display: none;
+}
+
+.background_img_vessel_SP {
+  display: none;
+}
+
+.explanation_box {
+  position: absolute;
+  left: 40vw;
+  top: 27vh;
+  padding: 4% 4%;
+  background-color: #fff;
+  opacity: 0.87;
+  margin-right: 5%;
+}
+
+.explanation_headline {
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: #222;
+  border-left: solid 3px #b9b9b9;
+  padding-left: 10px;
+  letter-spacing: 0.5em;
+  line-height: 1.8em;
+}
+
+.explanation_text {
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  color: #222;
+  margin-top: 20px;
+  letter-spacing: 0.5em;
+  line-height: 1.8em;
+}
+
+/* ===「血流認証の仕組み」セクションここから=== */
+.howitworks_vessel {
+  margin-top: 200px;
+}
+
+.howitworks_vessel_headline_box {
+  padding: 0 12em;
+}
+
+.howitworks_vessel_headline {
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: #222;
+  border-left: solid 3px #b9b9b9;
+  padding-left: 10px;
+}
+
+.howitworks_vessel_video_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howitworks_vessel_video_box video {
+  width: 65%;
+  margin-top: 80px;
+}
+
+.howitworks_vessel_text_box {
+  margin-top: 110px;
+  padding: 0 12em;
+}
+
+.howitworks_vessel_text_first {
+  font-weight: 500;
+  letter-spacing: 0.5em;
+  line-height: 1.4em;
+}
+
+.howitworks_vessel_text_second {
+  margin-top: 47px;
+  margin-bottom: 140px;
+  font-weight: 500;
+  letter-spacing: 0.5em;
+  line-height: 1.4em;
+}
+
+/* ===「命と暮らしを守る私たちの技術」の説明セクションここから=== */
+.explanation_our_technology {
+  position: relative;
+  margin-top: 210px;
+  margin-bottom: 40px;
+}
+
+.background_img_our_technology_PC {
+  width: 100%;
+}
+
+.background_img_our_technology_tablet {
+  display: none;
+}
+
+.background_img_our_technology_SP {
+  display: none;
+}
+
+.explanation_box_our_technology {
+  position: absolute;
+  right: 26vw;
+  top: 24vh;
+  padding: 5% 6%;
+  background-color: #fff;
+  opacity: 0.87;
+}
+
+.explanation_headline_our_technology {
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: #222;
+  border-left: solid 3px #b9b9b9;
+  padding-left: 10px;
+  letter-spacing: 0.5em;
+  line-height: 1.8em;
+}
+
+.explanation_text_our_technology {
+  font-family: "Noto Sans JP";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 15px;
+  color: #222;
+  margin-top: 20px;
+  letter-spacing: 0.5em;
+  line-height: 1.8em;
+}
+
+/*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+/* レスポンシブ（1440px以下） */
+@media (max-width: 1440px) {
+  .technology_mv_title {
+    position: absolute;
+    top: 67%;
+    left: 37%;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .main_title {
+    margin-top: 160px;
+    padding: 0 11em;
+  }
+  .howitworks_vessel {
+    margin-top: 160px;
+  }
+  .howitworks_vessel_headline_box {
+    padding: 0 12em;
+  }
+  .howitworks_vessel_text_box {
+    padding: 0 12em;
+  }
+}
+/* レスポンシブ（1300px） */
+@media (max-width: 1300px) {
+  .main_title {
+    margin-top: 160px;
+    padding: 0 10em;
+  }
+  .common_text {
+    padding-top: 42px;
+    font-size: 18px;
+    letter-spacing: 0.4em;
+    line-height: 1.7em;
+  }
+  .explanation_box {
+    position: absolute;
+    left: 40vw;
+    top: 13vh;
+    padding: 4% 4%;
+    margin-right: 5%;
+  }
+  .howitworks_vessel {
+    margin-top: 160px;
+  }
+  .howitworks_vessel_headline_box {
+    padding: 0 10em;
+  }
+  .howitworks_vessel_text_box {
+    padding: 0 10em;
+  }
+  .explanation_box_our_technology {
+    right: 26vw;
+    top: 16vh;
+    padding: 5% 6%;
+  }
+}
+/* レスポンシブ（1200px） */
+@media (max-width: 1200px) {
+  .technology_mv_title {
+    position: absolute;
+    top: 67%;
+    left: 39%;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .main_title {
+    margin-top: 160px;
+    padding: 0 6em;
+  }
+  .common_text {
+    padding-top: 42px;
+    font-size: 18px;
+    letter-spacing: 0.4em;
+    line-height: 1.7em;
+  }
+  .explanation_box {
+    position: absolute;
+    left: 40vw;
+    top: 11vh;
+    padding: 4% 4%;
+    margin-right: 3%;
+  }
+  .explanation_text {
+    font-family: "Noto Sans JP";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    color: #222;
+    margin-top: 20px;
+    letter-spacing: 0.4em;
+    line-height: 1.6em;
+  }
+  .howitworks_vessel {
+    margin-top: 160px;
+  }
+  .howitworks_vessel_headline_box {
+    padding: 0 6em;
+  }
+  .howitworks_vessel_video_box video {
+    width: 75%;
+    margin-top: 80px;
+  }
+  .howitworks_vessel_text_box {
+    padding: 0 6em;
+  }
+  .explanation_box_our_technology {
+    right: 26vw;
+    top: 11vh;
+    padding: 5% 6%;
+  }
+  .explanation_text_our_technology {
+    margin-top: 20px;
+    letter-spacing: 0.4em;
+    line-height: 1.6em;
+  }
+}
+/* レスポンシブ（1040px） */
+@media (max-width: 1040px) {
+  .technology_mv_title {
+    position: absolute;
+    top: 65%;
+    left: 41%;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .technology_mv_description {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    margin-top: 30px;
+  }
+  .common_text {
+    padding-top: 42px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    line-height: 1.8em;
+  }
+  .explanation_box {
+    position: absolute;
+    left: 40vw;
+    top: 6vh;
+    margin-right: 3%;
+  }
+  .explanation_text {
+    font-size: 15px;
+    color: #222;
+    margin-top: 15px;
+    letter-spacing: 0.3em;
+    line-height: 1.5em;
+  }
+  .explanation_box_our_technology {
+    right: 26vw;
+    top: 5vh;
+    padding: 5% 6%;
+  }
+  .explanation_text_our_technology {
+    margin-top: 20px;
+    letter-spacing: 0.3em;
+    line-height: 1.5em;
+  }
+}
+/* レスポンシブ（940px） */
+@media (max-width: 940px) {
+  .technology_mv_title {
+    position: absolute;
+    top: 67%;
+    left: 40%;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .technology_mv_description {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    margin-top: 20px;
+  }
+  .main_title {
+    margin-top: 160px;
+    padding: 0 4em;
+  }
+  .explanation_box {
+    position: absolute;
+    left: 40vw;
+    top: 4vh;
+    margin-right: 3%;
+  }
+  .explanation_text {
+    font-size: 14px;
+    color: #222;
+    margin-top: 15px;
+    letter-spacing: 0.3em;
+    line-height: 1.5em;
+  }
+  .howitworks_vessel {
+    margin-top: 160px;
+  }
+  .howitworks_vessel_headline_box {
+    padding: 0 4em;
+  }
+  .howitworks_vessel_text_box {
+    padding: 0 4em;
+  }
+  .explanation_our_technology {
+    position: relative;
+    margin-top: 160px;
+    margin-bottom: 40px;
+  }
+  .explanation_box_our_technology {
+    right: 18vw;
+    top: 9vh;
+    padding: 5% 6%;
+  }
+  .explanation_text_our_technology {
+    font-size: 14px;
+  }
+}
+/* レスポンシブ（860px）ここから */
+@media (max-width: 860px) {
+  .mv_technology_PC {
+    display: none;
+  }
+  .mv_technology_tablet {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .technology_mv_title {
+    position: absolute;
+    top: 73%;
+    left: 45%;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .technology_mv_description {
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    margin-top: 15px;
+  }
+  .main_title {
+    margin-top: 160px;
+    padding: 0 3em;
+  }
+  .common_title {
+    color: #1b1c80;
+    font-family: "Oswald", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 1.2;
+  }
+  .common_text {
+    padding-top: 42px;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    line-height: 1.8em;
+  }
+  .background_img_vessel_PC {
+    display: none;
+  }
+  .background_img_vessel_tablet {
+    display: block;
+    width: 100%;
+  }
+  .explanation_box {
+    position: absolute;
+    left: 28vw;
+    top: 22vh;
+    margin-right: 3%;
+  }
+  .explanation_text {
+    font-size: 14px;
+    color: #222;
+    margin-top: 15px;
+    letter-spacing: 0.3em;
+    line-height: 1.6em;
+  }
+  .howitworks_vessel {
+    margin-top: 160px;
+  }
+  .howitworks_vessel_headline_box {
+    padding: 0 3em;
+  }
+  .howitworks_vessel_text_box {
+    padding: 0 3em;
+  }
+  .background_img_our_technology_PC {
+    display: none;
+  }
+  .background_img_our_technology_tablet {
+    display: block;
+    width: 100%;
+  }
+  .explanation_box_our_technology {
+    right: 15vw;
+    top: 7vh;
+    padding: 5% 6%;
+  }
+  .explanation_text_our_technology {
+    line-height: 1.6em;
+  }
+}
+/* レスポンシブ（768px）ここから mvキャッチコピーホワイトに変更*/
+@media (max-width: 768px) {
+  .technology_mv_title {
+    position: absolute;
+    top: 73%;
+    left: 40%;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .technology_mv_headline {
+    font-family: "Oswald", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 48px;
+    letter-spacing: 0.3em;
+  }
+  .technology_mv_description {
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+    white-space: normal;
+  }
+  .main_title {
+    margin-top: 130px;
+    padding: 0 2em;
+  }
+  .explanation_vessel {
+    position: relative;
+    margin-top: 70px;
+  }
+  .common_title {
+    color: #1b1c80;
+    font-family: "Oswald", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 58px;
+    line-height: 1.2;
+  }
+  .common_text {
+    padding-top: 32px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+  }
+  .explanation_box {
+    position: absolute;
+    left: 28vw;
+    top: 7vh;
+    margin-right: 3%;
+  }
+  .explanation_text {
+    font-size: 14px;
+    color: #222;
+    margin-top: 15px;
+    letter-spacing: 0.3em;
+    line-height: 1.6em;
+  }
+  .howitworks_vessel {
+    margin-top: 130px;
+  }
+  .howitworks_vessel_headline_box {
+    padding: 0 3em;
+  }
+  .howitworks_vessel_video_box video {
+    width: 78%;
+    margin-top: 80px;
+  }
+  .howitworks_vessel_text_box {
+    padding: 0 3em;
+  }
+  .howitworks_vessel_text_first {
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    line-height: 1.6em;
+  }
+  .howitworks_vessel_text_second {
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    line-height: 1.6em;
+    margin-top: 47px;
+    margin-bottom: 100px;
+  }
+  .explanation_our_technology {
+    margin-top: 130px;
+  }
+  .explanation_box_our_technology {
+    right: 16vw;
+    top: 6vh;
+    padding: 4% 4%;
+  }
+  .explanation_headline_our_technology {
+    font-size: 20px;
+    color: #222;
+    padding-left: 10px;
+    letter-spacing: 0.4em;
+    line-height: 1.8em;
+  }
+  .explanation_text_our_technology {
+    margin-top: 15px;
+    letter-spacing: 0.3em;
+    line-height: 1.6em;
+  }
+}
+/* レスポンシブ（680px）ここから */
+@media (max-width: 680px) {
+  .mv_technology_tablet {
+    display: none;
+  }
+  .mv_technology_SP {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .technology_mv_title {
+    position: absolute;
+    top: 74%;
+    left: 40%;
+  }
+  .technology_mv_headline {
+    font-size: 46px;
+    letter-spacing: 0.2em;
+  }
+  .common_text {
+    padding-top: 32px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+  }
+  .background_img_vessel_tablet {
+    display: none;
+  }
+  .background_img_vessel_SP {
+    display: block;
+    width: 100%;
+  }
+  .explanation_box {
+    position: absolute;
+    left: 28vw;
+    top: 13vh;
+    margin-right: 3%;
+  }
+  .explanation_headline {
+    font-size: 20px;
+    color: #222;
+    letter-spacing: 0.4em;
+    line-height: 1.8em;
+  }
+  .explanation_text {
+    font-size: 14px;
+    color: #222;
+    margin-top: 15px;
+    letter-spacing: 0.3em;
+    line-height: 1.6em;
+  }
+  .howitworks_vessel_headline {
+    font-size: 20px;
+    color: #222;
+    letter-spacing: 0.4em;
+    line-height: 1.8em;
+  }
+  .howitworks_vessel_video_box video {
+    width: 80%;
+    margin-top: 80px;
+  }
+  .background_img_our_technology_tablet {
+    display: none;
+  }
+  .background_img_our_technology_SP {
+    display: block;
+    width: 100%;
+  }
+  .explanation_box_our_technology {
+    right: 27vw;
+    top: 5vh;
+    padding: 4% 4%;
+  }
+}
+/* スマホ（570px）レスポンシブ ここから ボタンパネルtablet版からSP版に切り替え*/
+@media (max-width: 570px) {
+  .technology_mv_title {
+    position: absolute;
+    top: 72%;
+    left: 39%;
+  }
+  .technology_mv_headline {
+    font-size: 44px;
+    letter-spacing: 0.1em;
+  }
+  .common_title {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 1.2em;
+  }
+  .explanation_box {
+    position: absolute;
+    left: 28vw;
+    top: 7vh;
+    margin-right: 3%;
+  }
+  .explanation_text {
+    font-size: 13px;
+    color: #222;
+    margin-top: 15px;
+    letter-spacing: 0.3em;
+    line-height: 1.6em;
+  }
+  .howitworks_vessel_video_box video {
+    width: 90%;
+    margin-top: 80px;
+  }
+  .howitworks_vessel_text_first {
+    font-size: 13px;
+  }
+  .howitworks_vessel_text_second {
+    font-size: 13px;
+  }
+  .explanation_box_our_technology {
+    right: 16vw;
+    top: 2vh;
+    padding: 4% 4%;
+  }
+  .explanation_headline_our_technology {
+    font-size: 19px;
+    color: #222;
+    padding-left: 10px;
+    letter-spacing: 0.3em;
+    line-height: 1.6em;
+  }
+  .explanation_text_our_technology {
+    font-size: 13px;
+  }
+}
+/* スマホ（470px）レスポンシブ */
+@media (max-width: 470px) {
+  .technology_mv_title {
+    position: absolute;
+    top: 70%;
+    left: 39%;
+  }
+  .technology_mv_headline {
+    letter-spacing: 0.2em;
+  }
+  .technology_mv_description {
+    margin-top: 5px;
+    font-size: 14px;
+    white-space: normal;
+  }
+  .main_title {
+    margin-top: 110px;
+    padding: 0 2em;
+  }
+  .explanation_vessel {
+    position: relative;
+    margin-top: 55px;
+  }
+  .explanation_box {
+    position: absolute;
+    left: 28vw;
+    top: 1vh;
+    margin-right: 3%;
+  }
+  .explanation_text {
+    font-size: 13px;
+    color: #222;
+    margin-top: 10px;
+    letter-spacing: 0.2em;
+    line-height: 1.6em;
+  }
+  .howitworks_vessel_video_box video {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .howitworks_vessel_text_box {
+    margin-top: 90px;
+  }
+  .howitworks_vessel_text_first {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    line-height: 1.6em;
+  }
+  .howitworks_vessel_text_second {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    line-height: 1.6em;
+  }
+  .explanation_box_our_technology {
+    right: 2vw;
+    top: 2vh;
+    padding: 4% 4%;
+  }
+  .explanation_text_our_technology {
+    letter-spacing: 0.2em;
+  }
+}
+/* スマホ（400px）レスポンシブ */
+@media (max-width: 400px) {
+  .technology_mv_title {
+    position: absolute;
+    top: 70%;
+    left: 41%;
+  }
+  .technology_mv_description {
+    line-height: 1.5em;
+  }
+  .main_title {
+    margin-top: 95px;
+    padding: 0 2em;
+  }
+  .explanation_vessel {
+    position: relative;
+    margin-top: 45px;
+  }
+  .explanation_box {
+    position: absolute;
+    left: 28vw;
+    top: 1vh;
+    margin-right: 3%;
+  }
+  .explanation_headline {
+    font-size: 18px;
+    color: #222;
+    letter-spacing: 0.4em;
+    line-height: 1.5em;
+  }
+  .explanation_text {
+    font-size: 13px;
+    color: #222;
+    margin-top: 8px;
+    letter-spacing: 0.1em;
+    line-height: 1.6em;
+  }
+  .howitworks_vessel_headline {
+    font-size: 18px;
+    color: #222;
+    letter-spacing: 0.4em;
+    line-height: 1.5em;
+  }
+  .howitworks_vessel_text_box {
+    margin-top: 60px;
+  }
+  .howitworks_vessel_text_second {
+    margin-top: 47px;
+    margin-bottom: 80px;
+    font-weight: 500;
+  }
+  .explanation_our_technology {
+    margin-top: 90px;
+  }
+  .explanation_box_our_technology {
+    right: 2vw;
+    top: 0vh;
+    padding: 3% 4%;
+  }
+  .explanation_headline_our_technology {
+    font-size: 18px;
+    color: #222;
+    padding-left: 10px;
+    letter-spacing: 0.3em;
+    line-height: 1.6em;
+  }
+  .explanation_text_our_technology {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+  }
+}
+/* スマホ（375px）レスポンシブ */
+@media (max-width: 375px) {
+  .technology_mv_title {
+    position: absolute;
+    top: 69%;
+    left: 50%;
+  }
+  .explanation_box {
+    position: absolute;
+    left: 28vw;
+    top: 1vh;
+    padding: 3% 3%;
+    margin-right: 3%;
+  }
+  .explanation_headline {
+    font-size: 18px;
+    color: #222;
+    letter-spacing: 0.4em;
+    line-height: 1.5em;
+  }
+  .explanation_text {
+    font-size: 12px;
+    color: #222;
+    margin-top: 8px;
+    letter-spacing: 0.1em;
+    line-height: 1.6em;
+  }
+  .howitworks_vessel_text_first {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    line-height: 1.6em;
+  }
+  .howitworks_vessel_text_second {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    line-height: 1.6em;
+  }
+  .explanation_text_our_technology {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+}
+/*# sourceMappingURL=page_technology.css.map */

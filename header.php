@@ -82,7 +82,7 @@
             <nav class="header_nav">
               <ul>
                 <li>
-                  <a href="./technology/technology.html">Technology</a>
+                  <a href="/page-technology.php">Technology</a>
                 </li>
                 <li>
                   <a href="./products/products.html">Products</a>

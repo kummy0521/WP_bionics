@@ -1,150 +1,29 @@
-<!DOCTYPE html>
-<html lang="jp">
-  <head
-    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"
-  >
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="<?= get_template_directory_uri(); ?>/https://www.googletagmanager.com/gtag/js?id=G-DFB37W5BNK"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<?php get_header(); ?>
 
-      gtag("config", "G-DFB37W5BNK");
-    </script>
-    <meta name="robots" content="index, follow" />
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technology | バイオニクス株式会社</title>
-    <!-- ディスクリプション -->
-    <meta
-      name="description"
-      content="自社開発にこだわり、使い手のことを第一に考えたものづくりを続けて25年。光をあやつり血管を科学する私たちの血流認証技術をご紹介します。"
-    />
-    <!-- ファビコン -->
-    <link rel="icon" type="image/png" href="./img/favicon.ico" />
-
-    <!-- OGP※基本共通設定 -->
-    <!-- ※テストアップから本番アップ後は、絶対パスの修正を行うこと！testなど不要な部分は削除 -->
-    <meta property="og:title" content="Technology | バイオニクス株式会社" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.bionics-k.co.jp/technology" />
-    <meta
-      property="og:image"
-      content="https://www.bionics-k.co.jp/technology/img/OGP.jpg"
-    />
-    <meta property="og:site_name" content="Technology | バイオニクス株式会社" />
-    <meta
-      property="og:description"
-      content="自社開発にこだわり、使い手のことを第一に考えたものづくりを続けて25年。光をあやつり血管を科学する私たちの血流認証技術をご紹介します。"
-    />
-
-    <!-- リセットcss -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/destyle.css@2.0.2/destyle.css"
-    />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="./css/slick.css" />
-    <link rel="stylesheet" href="./css/base.css" />
-
-    <link rel="stylesheet" href="./css/technology.css" />
-  </head>
-  <body>
-    <!-- ↓ヘッダーここから -->
-    <header class="header">
-      <div class="header_inner">
-        <div class="header_wrap">
-          <div>
-            <a href="../index.html">
-              <img
-                src="<?= get_template_directory_uri(); ?>/./img/logo.png"
-                alt="バイオニクス株式会社のロゴマーク"
-                class="header_logo"
-              />
-            </a>
-          </div>
-          <div class="header_container">
-            <nav class="header_nav">
-              <ul>
-                <li><a href="./technology.html">Technology</a></li>
-                <li>
-                  <a href="../products/products.html">Products</a>
-                </li>
-                <li>
-                  <a href="../news/news.html">News</a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.bionics-k.co.jp/index.html#achievements_title"
-                    >Achievements</a
-                  >
-                </li>
-                <li>
-                  <a href="../aboutus/aboutus.html">About Us</a>
-                </li>
-              </ul>
-              <a href="https://forms.gle/xR1NrYDhrFhCGfrg7">
-                <div class="nav_button">Contact</div>
-              </a>
-              <a href="https://www.bionics-k.co.jp/en/">
-                <div class="nav_button_language">
-                  <span>Japanase / English</span>
-                </div>
-                <div class="under_bar"></div>
-              </a>
-            </nav>
-          </div>
-          <!-- ハンバーガー -->
-          <button class="nav_hamburger"></button>
-        </div>
-      </div>
-    </header>
-    <!-- ヘッダーここまで -->
-
+<main class="technology">
+    <!-- CSSの読み込み（必要であれば） -->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/object/project/page_technology.css">
+  <?php
     <!-- ===メインビジュアル === -->
 
-    <main class="technology_mv">
+    <div class="technology_mv">
       <div class="mv_technology_PC">
-        <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_mv.jpg"
+       <img
+            src="<?= get_template_directory_uri(); ?>../img/technology_img_mv.jpg"
           alt="パソコンに向かって技術を開発している社員のイメージ画像"
         />
       </div>
       <!-- レスポンシブ（860px）でmv画像tablet版 -->
       <div class="mv_technology_tablet">
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_mv_tablet.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_mv_tablet.jpg"
           alt="パソコンに向かって技術を開発している社員のイメージ画像（タブレット用）"
         />
       </div>
       <!-- レスポンシブ（680px）でmv画像版 -->
       <div class="mv_technology_SP">
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_mv_SP.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_mv_SP.jpg"
           alt="パソコンに向かって技術を開発している社員のイメージ画像（スマートフォン用）"
         />
       </div>
@@ -157,7 +36,7 @@
           光をあやつり血管を科学する私たちのテクノロジー。
         </p>
       </div>
-    </main>
+    </div>
 
     <!-- ===メインビジュアルここまで === -->
     <!-- ↓メインタイトル「血流認証とは」セクションここから -->
@@ -175,19 +54,19 @@
     <section class="explanation_vessel">
       <div class="background_img_vessel_PC">
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_1_PC.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_1_PC.jpg"
           alt="PC用の血流のイメージ画像"
         />
       </div>
       <div class="background_img_vessel_tablet">
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_1_tablet.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_1_tablet.jpg"
           alt="タブレット用の血流のイメージ画像"
         />
       </div>
       <div class="background_img_vessel_SP">
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_1_SP.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_1_SP.jpg"
           alt="スマホ用の血流のイメージ画像"
         />
       </div>
@@ -207,7 +86,7 @@
       </div>
       <div class="howitworks_vessel_video_box">
         <video
-          src="<?= get_template_directory_uri(); ?>/./movie/technology_movie_1.mp4"
+          src="<?= get_template_directory_uri(); ?>../movie/technology_movie_1.mp4"
           controls
           autoplay
           muted
@@ -229,31 +108,31 @@
     <ul class="slider">
       <li>
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_2.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_2.jpg"
           alt="技術開発の様子のイメージ画像その１"
         />
       </li>
       <li>
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_3.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_3.jpg"
           alt="技術開発の様子のイメージ画像その２"
         />
       </li>
       <li>
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_4.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_4.jpg"
           alt="技術開発の様子のイメージ画像その３"
         />
       </li>
       <li>
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_5.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_5.jpg"
           alt="技術開発の様子のイメージ画像その４"
         />
       </li>
       <li>
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_6.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_6.jpg"
           alt="技術開発の様子のイメージ画像その５"
         />
       </li>
@@ -263,17 +142,17 @@
     <!-- ↓「命と暮らしを守る私たちの技術」の説明セクションここから -->
     <section class="explanation_our_technology">
       <div class="background_img_our_technology_PC">
-        <img src="<?= get_template_directory_uri(); ?>/./img/technology_img_7_PC.jpg" alt="医療現場のイメージ画像" />
+        <img src="<?= get_template_directory_uri(); ?>../img/technology_img_7_PC.jpg" alt="医療現場のイメージ画像" />
       </div>
       <div class="background_img_our_technology_tablet">
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_7_tablet.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_7_tablet.jpg"
           alt="医療現場のイメージ画像（タブレット用）"
         />
       </div>
       <div class="background_img_our_technology_SP">
         <img
-          src="<?= get_template_directory_uri(); ?>/./img/technology_img_7_SP.jpg"
+          src="<?= get_template_directory_uri(); ?>../img/technology_img_7_SP.jpg"
           alt="医療現場のイメージ画像（タブレット用）"
         />
       </div>
@@ -325,69 +204,11 @@
           </div>
         </div>
         <div class="aboutus_inner_img">
-          <img src="<?= get_template_directory_uri(); ?>/./img/common_img_1.jpg" alt="オフィスのイメージ画像" />
+          <img src="<?= get_template_directory_uri(); ?>../img/common_img_1.jpg" alt="オフィスのイメージ画像" />
         </div>
       </div>
     </section>
 
-    <!-- ↓フッターここから -->
-    <footer class="footer">
-      <div class="footer_container">
-        <div class="footer_box_left">
-          <ul class="footer_list">
-            <li>
-              <img
-                src="<?= get_template_directory_uri(); ?>/./img/logo.png"
-                alt="バイオニクス株式会社のロゴマーク"
-                class="footer_logo"
-              />
-            </li>
-            <li class="companyinfo_list_address">
-              〒541-0053 大阪市中央区本町1丁目2番1号<br />本町リバーサイドビル
-              2F
-            </li>
-            <li class="companyinfo_list_tel_fax">
-              TEL：06-6267-2527&emsp;FAX：06-6267-2921
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer_box_right">
-          <div class="footer_minibox_right">
-            <a href="https://forms.gle/xR1NrYDhrFhCGfrg7">
-              <h2 class="contact_title">CONTACT</h2>
-            </a>
-            <a
-              class="contact_arrow_link"
-              href="https://forms.gle/xR1NrYDhrFhCGfrg7"
-            >
-              <div class="arrow">
-                <img src="<?= get_template_directory_uri(); ?>/./img/footer_img_2.png" alt="右向きの矢印の画像" />
-              </div>
-            </a>
-          </div>
-          <p class="contact_text">
-            お見積りや商品に関するご質問など、お気軽に<br />お問い合わせください。
-          </p>
-        </div>
-      </div>
-      <div class="copy_right">
-        <p class="copy_right_text">
-          Copyright © 2025 Bionics Co.,Ltd. All Rights Reserved.
-        </p>
-      </div>
-    </footer>
-    <script
-      src="<?= get_template_directory_uri(); ?>/https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="<?= get_template_directory_uri(); ?>/https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="<?= get_template_directory_uri(); ?>/https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="<?= get_template_directory_uri(); ?>/./js/script.js"></script>
-  </body>
-</html>
+  ?>
+</main>
+<?php get_footer(); ?>
