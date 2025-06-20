@@ -85,13 +85,14 @@
       </div>
       <div class="howitworks_vessel_video_box">
         <video
-          src="<?= get_template_directory_uri(); ?>../movie/technology_movie_1.mp4"
-          controls
-          autoplay
-          muted
-          playsinline
-          loop
-        ></video>
+  src="<?= get_template_directory_uri(); ?>/movie/technology_movie_1.mp4"
+  controls
+  autoplay
+  muted
+  playsinline
+  loop
+></video>
+
       </div>
       <div class="howitworks_vessel_text_box">
         <p class="howitworks_vessel_text_first">

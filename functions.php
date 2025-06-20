@@ -62,7 +62,7 @@ function my_theme_enqueue_assets() {
         // tech_slick.css（SCSSから変換）
         wp_enqueue_style(
             'tech-slick-style',
-            get_template_directory_uri() . '/css/tech_slick.css',
+            get_template_directory_uri() . '/css/object/project/tech_slick.css',
             array(),
             null
         );
@@ -70,7 +70,7 @@ function my_theme_enqueue_assets() {
         // page-technology.css（ページ専用スタイル）
         wp_enqueue_style(
             'page-technology-style',
-            get_template_directory_uri() . '/css/page-technology.css',
+            get_template_directory_uri() . '/css/object/project/page_technology.css',
             array(),
             null
         );
