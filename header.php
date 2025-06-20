@@ -82,7 +82,8 @@
             <nav class="header_nav">
               <ul>
                 <li>
-                  <a href="/page-technology.php">Technology</a>
+                  <a href="<?= esc_url( get_permalink( get_page_by_path('technology') ) ); ?>">Technology</a>
+
                 </li>
                 <li>
                   <a href="./products/products.html">Products</a>

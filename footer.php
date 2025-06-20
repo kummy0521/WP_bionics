@@ -1,3 +1,49 @@
+
+    <!-- ↓ABOUT USセクションここから -->
+
+    <section class="aboutus">
+      <div class="wrp_aboutus">
+        <div class="aboutus_inner_gradation">
+          <h2 class="aboutus_title">ABOUT US</h2>
+          <div class="aboutus_container">
+            <div class="aboutus_box_left">
+              <ul class="aboutus_list">
+                <li>
+                  <a href="./aboutus/aboutus.html#mission_title">企業理念</a>
+                </li>
+                <li>
+                  <a href="./aboutus/aboutus.html#company_prof_title"
+                    >会社概要</a
+                  >
+                </li>
+                <li>
+                  <a href="./aboutus/aboutus.html#history_title">沿革</a>
+                </li>
+              </ul>
+            </div>
+            <div class="aboutus_box_right">
+              <ul class="aboutus_list">
+                <li>
+                  <a href="./aboutus/aboutus.html#vision_title">ビジョン</a>
+                </li>
+                <li>
+                  <a href="./aboutus/aboutus.html#access_title">アクセス</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="button_area_aboutus">
+            <a class="button" href="./aboutus/aboutus.html">View more</a>
+          </div>
+        </div>
+        <div class="aboutus_inner_img">
+          <img src="<?= get_template_directory_uri(); ?>/img/common_img_1.jpg" alt="オフィスのイメージ画像" />
+        </div>
+      </div>
+    </section>
+
+
+
     <!-- ↓フッターここから -->
     <footer class="footer">
       <div class="footer_container">
@@ -47,4 +93,4 @@
     </footer>
 <?php wp_footer(); ?>  
   </body>
-</html>
+?>

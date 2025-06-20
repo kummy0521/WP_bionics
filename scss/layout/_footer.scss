@@ -1,3 +1,100 @@
+/* ↓ABOUT USセクション TOPページはmargin-top122px 他ページは適宜調整*/
+.aboutus {
+  margin-top: 122px;
+}
+.wrp_aboutus {
+  display: flex;
+}
+
+.aboutus_inner_gradation {
+  background: rgb(11, 37, 90);
+  background: linear-gradient(
+    11deg,
+    rgba(11, 37, 90, 1) 24%,
+    rgba(75, 119, 209, 1) 100%
+  );
+  width: 60%;
+  padding-left: 8em;
+  padding-top: 93px;
+}
+
+.aboutus_title {
+  display: inline;
+  color: #ffffff;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 70px;
+}
+
+.aboutus_title::before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.aboutus_container {
+  display: flex;
+  padding-top: 55px;
+  column-gap: 2em;
+}
+
+.aboutus_box_left {
+  width: 25%;
+  margin-right: 2%;
+}
+.aboutus_box_right {
+  width: 25%;
+}
+.aboutus_list li {
+  color: #fff;
+  border-bottom: solid 1px;
+  padding-bottom: 30px;
+  font-size: 16px;
+}
+
+/* リスト内の２番目から最後までを指定する */
+.aboutus_list li:nth-child(n + 2) {
+  padding-top: 32px;
+}
+
+.aboutus_inner_img {
+  width: 40%;
+}
+.aboutus_inner_img img {
+  width: 100;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 共通ボタン */
+.button_area_aboutus {
+  margin-top: 60px;
+  margin-bottom: 8em;
+  display: flex;
+}
+
+.button {
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: center;
+  font-size: 20px;
+
+  color: #222222;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.6s ease 0s;
+  stroke: #222222;
+  border: solid 1px;
+  background-color: #fff;
+  padding: 10px 65px;
+  display: block;
+}
+
+
 /* フッター */
 .footer {
   background-color: #f5f0dc;
@@ -78,6 +175,33 @@
   height: 18px;
   width: 46px;
 }
+
+/* レスポンシブ（1440px） フッター右側調整のみ*/
+@media (max-width: 1440px) {
+  .footer_box_right {
+    padding-left: 7em;
+  }
+}
+/* レスポンシブ（1230px） フッター左右調整*/
+@media (max-width: 1230px) {
+  .footer_box_right {
+    padding-left: 5em;
+  }
+  .footer_box_left {
+    padding-left: 4em;
+  }
+}
+/* レスポンシブ（1080px） フッター左右調整*/
+@media (max-width: 1080px) {
+  .footer_box_right {
+    padding-left: 4em;
+  }
+
+  .footer_box_left {
+    padding-left: 3em;
+  }
+}
+
 /* レスポンシブ（1040px）ヘッダー、ABOUT USセクション、フッター：レスポンシブデザインに切り替え */
 @media (max-width: 1040px) {
   .footer_container {
@@ -100,6 +224,40 @@
     padding-top: 5em;
     padding-left: 9em;
   }
+    .button_area {
+    margin-top: 80px;
+    margin-bottom: 190px;
+  }
+  .wrp_aboutus {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutus_inner_gradation {
+    width: 100%;
+  }
+
+  .aboutus_inner_img {
+    display: none;
+  }
+
+
+  .button_area {
+    margin-bottom: 180px;
+  }
+  .copy_right {
+    background-color: #444;
+    height: 38px;
+  }
+
+  .copy_right_text {
+    font-size: 13px;
+    text-align: right;
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 30px;
+  }
+
 }
 /* レスポンシブ（860px） */
 
@@ -107,6 +265,10 @@
   .contact_title {
     font-size: 68px;
   }
+    .aboutus_title {
+    font-size: 64px;
+  }
+
 }
 
 /* レスポンシブ（768px）フッターはスマホverへ */
@@ -122,6 +284,17 @@
   .companyinfo_list_address {
     margin-top: 12px;
   }
+    .aboutus_inner_gradation {
+    padding-left: 6em;
+    padding-top: 93px;
+  }
+  .aboutus_list li {
+    color: #fff;
+    border-bottom: solid 1px;
+    padding-bottom: 30px;
+    font-size: 14px;
+  }
+
 }
 /* スマホ（680px）レスポンシブ */
 @media (max-width: 680px) {
@@ -129,6 +302,10 @@
   .contact_title {
     font-size: 64px;
   }
+    .aboutus_title {
+    font-size: 60px;
+  }
+
 }
 /* スマホ（570px）レスポンシブ */
 @media (max-width: 570px) {
@@ -168,6 +345,15 @@
     display: flex;
     padding-left: 4em;
   }
+    .aboutus_title {
+    font-size: 50px;
+  }
+
+  .aboutus_inner_gradation {
+    padding-left: 3em;
+    padding-top: 93px;
+  }
+
 }
 
 /* スマホ（420px）レスポンシブ */

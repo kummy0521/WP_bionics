@@ -56,5 +56,33 @@ function my_theme_enqueue_assets() {
         null,
         true
     );
+
+    // --- 固定ページ「technology」専用のCSSとJS ---
+    if (is_page('technology')) {
+        // tech_slick.css（SCSSから変換）
+        wp_enqueue_style(
+            'tech-slick-style',
+            get_template_directory_uri() . '/css/tech_slick.css',
+            array(),
+            null
+        );
+
+        // page-technology.css（ページ専用スタイル）
+        wp_enqueue_style(
+            'page-technology-style',
+            get_template_directory_uri() . '/css/page-technology.css',
+            array(),
+            null
+        );
+
+        // technology.js（ページ専用スクリプト）
+        wp_enqueue_script(
+            'technology-script',
+            get_template_directory_uri() . '/js/technology.js',
+            array('jquery'),
+            null,
+            true
+        );
+    }
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');

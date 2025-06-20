@@ -2,28 +2,27 @@
 
 <main class="technology">
     <!-- CSSの読み込み（必要であれば） -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/object/project/page_technology.css">
-  <?php
+  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/object/project/page_technology.css"> -->
     <!-- ===メインビジュアル === -->
 
     <div class="technology_mv">
       <div class="mv_technology_PC">
        <img
-            src="<?= get_template_directory_uri(); ?>../img/technology_img_mv.jpg"
+            src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_mv.jpg"
           alt="パソコンに向かって技術を開発している社員のイメージ画像"
         />
       </div>
       <!-- レスポンシブ（860px）でmv画像tablet版 -->
       <div class="mv_technology_tablet">
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_mv_tablet.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_mv_tablet.jpg"
           alt="パソコンに向かって技術を開発している社員のイメージ画像（タブレット用）"
         />
       </div>
       <!-- レスポンシブ（680px）でmv画像版 -->
       <div class="mv_technology_SP">
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_mv_SP.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_mv_SP.jpg"
           alt="パソコンに向かって技術を開発している社員のイメージ画像（スマートフォン用）"
         />
       </div>
@@ -54,19 +53,19 @@
     <section class="explanation_vessel">
       <div class="background_img_vessel_PC">
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_1_PC.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_1_PC.jpg"
           alt="PC用の血流のイメージ画像"
         />
       </div>
       <div class="background_img_vessel_tablet">
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_1_tablet.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_1_tablet.jpg"
           alt="タブレット用の血流のイメージ画像"
         />
       </div>
       <div class="background_img_vessel_SP">
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_1_SP.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_1_SP.jpg"
           alt="スマホ用の血流のイメージ画像"
         />
       </div>
@@ -108,31 +107,31 @@
     <ul class="slider">
       <li>
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_2.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_2.jpg"
           alt="技術開発の様子のイメージ画像その１"
         />
       </li>
       <li>
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_3.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_3.jpg"
           alt="技術開発の様子のイメージ画像その２"
         />
       </li>
       <li>
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_4.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_4.jpg"
           alt="技術開発の様子のイメージ画像その３"
         />
       </li>
       <li>
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_5.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_5.jpg"
           alt="技術開発の様子のイメージ画像その４"
         />
       </li>
       <li>
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_6.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_6.jpg"
           alt="技術開発の様子のイメージ画像その５"
         />
       </li>
@@ -142,17 +141,17 @@
     <!-- ↓「命と暮らしを守る私たちの技術」の説明セクションここから -->
     <section class="explanation_our_technology">
       <div class="background_img_our_technology_PC">
-        <img src="<?= get_template_directory_uri(); ?>../img/technology_img_7_PC.jpg" alt="医療現場のイメージ画像" />
+        <img src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_7_PC.jpg" alt="医療現場のイメージ画像" />
       </div>
       <div class="background_img_our_technology_tablet">
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_7_tablet.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_7_tablet.jpg"
           alt="医療現場のイメージ画像（タブレット用）"
         />
       </div>
       <div class="background_img_our_technology_SP">
         <img
-          src="<?= get_template_directory_uri(); ?>../img/technology_img_7_SP.jpg"
+          src="<?= get_template_directory_uri(); ?>/img/technology_img/technology_img_7_SP.jpg"
           alt="医療現場のイメージ画像（タブレット用）"
         />
       </div>
@@ -166,49 +165,6 @@
         </p>
       </div>
     </section>
-    <!-- ↓ABOUT USセクションここから -->
 
-    <section class="aboutus">
-      <div class="wrp_aboutus">
-        <div class="aboutus_inner_gradation">
-          <h2 class="aboutus_title">ABOUT US</h2>
-          <div class="aboutus_container">
-            <div class="aboutus_box_left">
-              <ul class="aboutus_list">
-                <li>
-                  <a href="../aboutus/aboutus.html#mission_title">企業理念</a>
-                </li>
-                <li>
-                  <a href="../aboutus/aboutus.html#company_prof_title"
-                    >会社概要</a
-                  >
-                </li>
-                <li>
-                  <a href="../aboutus/aboutus.html#history_title">沿革</a>
-                </li>
-              </ul>
-            </div>
-            <div class="aboutus_box_right">
-              <ul class="aboutus_list">
-                <li>
-                  <a href="../aboutus/aboutus.html#vision_title">ビジョン</a>
-                </li>
-                <li>
-                  <a href="../aboutus/aboutus.html#access_title">アクセス</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="button_area_aboutus">
-            <a class="button" href="../aboutus/aboutus.html">View more</a>
-          </div>
-        </div>
-        <div class="aboutus_inner_img">
-          <img src="<?= get_template_directory_uri(); ?>../img/common_img_1.jpg" alt="オフィスのイメージ画像" />
-        </div>
-      </div>
-    </section>
-
-  ?>
 </main>
 <?php get_footer(); ?>
