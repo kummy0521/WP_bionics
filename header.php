@@ -86,7 +86,7 @@
 
                 </li>
                 <li>
-                  <a href="./products/products.html">Products</a>
+                  <a href="<?= esc_url( get_permalink( get_page_by_path('products') ) ); ?>">Products</a>
                 </li>
                 <li>
                   <a href="./news/news.html">News</a>
