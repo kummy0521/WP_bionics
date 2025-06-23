@@ -15,13 +15,12 @@ function my_theme_enqueue_assets() {
     wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css');
     
  // base.css の読み込み
-    wp_enqueue_style(
-        'base-style',
-        get_template_directory_uri() . '/css/base.css',
-        array(),
-        null
-    );
-
+wp_enqueue_style(
+    'base-style',
+    get_template_directory_uri() . '/css/base.css',
+    array(),
+    null
+);
     // --- JavaScript読み込み ---
 
     // jQuery（CDNに差し替え）
@@ -119,3 +118,6 @@ function my_theme_enqueue_assets() {
     }
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
+
+// アイキャッチ画像の有効化
+add_theme_support('post-thumbnails');
