@@ -25,13 +25,9 @@ if (have_posts()) {
 			    <!-- パンくずリスト -->
     <div class="breadcrumb">
       <ul>
-        <li><a href="../index.html">TOP</a></li>
-        <li><a href="../news/news.html">NEWS</a></li>
-        <li>
-          <span
-            >【書籍媒体】雑誌「発明」2025年4月号に社長インタビュー記事を掲載いただきました！</span
-          >
-        </li>
+        <li><a href="<?= home_url(); ?>">TOP</a></li>
+        <li><a href="<?= home_url('/news'); ?>">NEWS</a></li>
+        <li><span><?= get_the_title(); ?></span></li>
       </ul>
     </div>
 
@@ -78,7 +74,8 @@ if (have_posts()) {
 
     <!-- News一覧へボタン -->
     <ul class="gnavi">
-      <li class="gnavi_text"><a href="../news/news.html">ニュース一覧へ</a></li>
+      <li class="gnavi_text"><a href="<?= home_url('/news'); ?>">ニュース一覧へ</a>
+</li>
       <li>
         <span
           ><a class="news_arrow_link" href="../news/news.html">
