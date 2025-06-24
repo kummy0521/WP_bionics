@@ -1,0 +1,43 @@
+@use '../../foundation/settings/index' as *;
+
+// お知らせ
+.news_archive {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+  width: 90%;
+}
+
+.news_link {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 40px;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+
+  @include media() {
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 28px;
+    padding-left: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    display: block;
+    width: .4em;
+    height: .4em;
+    border: 1px solid;
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(-45deg) translateY(-50%);
+  }
+}
+
+.news_date {
+  font-family: var(--fontEnglish);
+}
