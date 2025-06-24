@@ -34,8 +34,13 @@ if (have_posts()) {
 
 			<div class="single_inner">
 
-				<!-- タイトル -->
-				<h1 class="single_title"><?php the_title(); ?></h1>
+<!-- タイトル / 投稿タイトルの横に、タクソノミー名をボタン風に表示-->
+<div class="single_title_wrap">
+  <?php if (!empty($terms) && !is_wp_error($terms)) : ?>
+    <span class="news_label"><?= esc_html($terms[0]->name); ?></span>
+  <?php endif; ?>
+  <h1 class="single_title"><?php the_title(); ?></h1>
+</div>
 
 				<!-- 投稿日・カテゴリー -->
 				<div class="single_data">

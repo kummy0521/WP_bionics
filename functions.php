@@ -52,15 +52,18 @@ wp_enqueue_style(
         true
     );
 
-    // テーマ共通スクリプト
-    wp_enqueue_script(
-        'custom-script',
-        get_template_directory_uri() . '/js/script.js',
-        array('jquery', 'slick-carousel', 'jquery-inview'),
-        null,
-        true
-    );
+    // TOPページだけで読み込むJS
+    if (is_front_page()) {
+        wp_enqueue_script(
+            'custom-script',
+            get_template_directory_uri() . '/js/script.js',
+            array('jquery', 'slick-carousel', 'jquery-inview'),
+            null,
+            true
+        );
+    }
 
+    
     // --- 固定ページ「technology」専用のCSSとJS ---
     if (is_page('technology')) {
         // tech_slick.css（SCSSから変換）
