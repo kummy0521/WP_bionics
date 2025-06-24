@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* サイト全体共通 */
+html {
+  scroll-padding-top: 211px;
+  /* モダンブラウザ向けの解決策 */
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: #222;
+  /* letter-spacing: 0.6em;
+      line-height: 1.8em; */
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+/* a:hover {
+  opacity: 0.7;
+} */
+/* コンテンツ幅1200px */
+.wrapper_big {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* コンテンツ幅960px */
+.wrapper_medium {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* コンテンツ幅800px */
+.wrapper_small {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* -----------------要素がふわっと現れるjsのクラス付与ここから----------------- */
+.effect-fade {
+  opacity: 0;
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
+  -webkit-transition: all 2000ms;
+  transition: all 2000ms;
+}
+
+.effect-scroll {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+/*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+/*# sourceMappingURL=_base.css.map */
