@@ -121,3 +121,60 @@ add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
 
 // アイキャッチ画像の有効化
 add_theme_support('post-thumbnails');
+
+// カスタム投稿タイプ「news」の登録
+function register_custom_post_type_news() {
+    register_post_type('news',
+        array(
+            'labels' => array(
+                'name' => 'ニュース',
+                'singular_name' => 'ニュース',
+                'add_new' => '新規追加',
+                'add_new_item' => '新規ニュースを追加',
+                'edit_item' => 'ニュースを編集',
+                'new_item' => '新しいニュース',
+                'view_item' => 'ニュースを表示',
+                'search_items' => 'ニュースを検索',
+                'not_found' => 'ニュースが見つかりません',
+                'menu_name' => 'ニュース',
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'menu_position' => 5,
+            'menu_icon' => 'dashicons-megaphone',
+            'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
+            'rewrite' => array('slug' => 'news'),
+            'show_in_rest' => true, // Gutenberg対応
+        )
+    );
+}
+add_action('init', 'register_custom_post_type_news');
+
+// カスタムタクソノミー「news_taxonomy」の登録
+function register_custom_taxonomy_news() {
+    register_taxonomy(
+        'news_taxonomy',
+        'news',
+        array(
+            'labels' => array(
+                'name'              => 'ニュース分類',
+                'singular_name'     => 'ニュース分類',
+                'search_items'      => '分類を検索',
+                'all_items'         => 'すべての分類',
+                'parent_item'       => '親分類',
+                'parent_item_colon' => '親分類:',
+                'edit_item'         => '分類を編集',
+                'update_item'       => '分類を更新',
+                'add_new_item'      => '新しい分類を追加',
+                'new_item_name'     => '新しい分類名',
+                'menu_name'         => 'ニュース分類',
+            ),
+            'hierarchical' => true, // true でカテゴリ型、false でタグ型
+            'show_ui' => true,
+            'show_admin_column' => true,
+            'rewrite' => array('slug' => 'news-category'),
+            'show_in_rest' => true, // Gutenberg対応
+        )
+    );
+}
+add_action('init', 'register_custom_taxonomy_news');

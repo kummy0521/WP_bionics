@@ -289,92 +289,67 @@
       </div>
     </section>
     <!-- ↓Newsセクションここから -->
-    <section class="news effect-fade">
-      <div class="news_wrapper">
-        <div class="news_container_left">
-          <h2 id="news_title" class="news_title">NEWS</h2>
+<section class="news effect-fade">
+  <div class="news_wrapper">
+    <div class="news_container_left">
+      <h2 id="news_title" class="news_title">NEWS</h2>
 
-          <ul class="gnavi">
-            <li class="gnavi_text">
-              <a href="./news/news.html">ニュース一覧へ</a>
-            </li>
-            <li>
-              <span
-                ><a class="news_arrow_link" href="./news/news.html">
-                  <div class="small_arrow">
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/top_small_arrow.jpg"
-                      alt="小さな右向き矢印"
-                      width="26px"
-                      height="24px"
-                    />
-                  </div> </a
-              ></span>
-            </li>
-          </ul>
-        </div>
+      <ul class="gnavi">
+        <li class="gnavi_text">
+          <a href="<?= get_post_type_archive_link('news'); ?>">ニュース一覧へ</a>
+        </li>
+        <li>
+          <span>
+            <a class="news_arrow_link" href="<?= get_post_type_archive_link('news'); ?>">
+              <div class="small_arrow">
+                <img
+                  src="<?= get_template_directory_uri(); ?>/img/top_small_arrow.jpg"
+                  alt="小さな右向き矢印"
+                  width="26"
+                  height="24"
+                />
+              </div>
+            </a>
+          </span>
+        </li>
+      </ul>
+    </div>
 
-        <ul class="news_container_right">
-          <li class="news_box_content">
-            <a href="./news_article/news_article_media-20250418.html">
-              <span class="news_label">お知らせ</span>
-              <time datetime="2025-04-18">2025.04.18</time>
-              <p class="news_text">弊社WEBサイトをリニューアルしました！</p>
-            </a>
-          </li>
+    <ul class="news_container_right">
+      <?php
+      $news_query = new WP_Query([
+        'post_type'      => 'news',
+        'posts_per_page' => 4,
+        'post_status'    => 'publish',
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+      ]);
 
-          <li class="news_box_content">
-            <a href="./news_article/news_article_pr_ducument_20250416.html">
-              <span class="news_label">お知らせ</span>
-              <time datetime="2025-04-16">2025.04.16</time>
-              <p class="news_text">
-                ドイツ警察ご担当者様が、
-                当社製品（AQUBIOⅡ）の導入物件を見学されました
-              </p>
-            </a>
-          </li>
+      if ($news_query->have_posts()) :
+        while ($news_query->have_posts()) :
+          $news_query->the_post();
 
-          <li class="news_box_content">
-            <a href="./news_article/news_article_media-20250407.html">
-              <span class="news_label">メディア掲載</span>
-              <time datetime="2025-04-07">2025.04.07</time>
-              <p class="news_text">
-                【書籍媒体】雑誌「発明」2025年4月号に社長インタビュー記事を掲載いただきました！
-              </p>
-            </a>
-          </li>
-
-          <li class="news_box_content">
-            <a href="./news_article/news_article_media-20250325.html">
-              <span class="news_label">メディア掲載</span>
-              <time datetime="2025-03-25">2025.03.25</time>
-              <p class="news_text">
-                【書籍媒体】雑誌「月刊コロンブス」2025年3月号に社長インタビュー記事を掲載いただきました！
-              </p>
-            </a>
-          </li>
-
-          <li class="news_box_content">
-            <a href="./news_article/news_article_media-20250306.html">
-              <span class="news_label">メディア掲載</span>
-              <time datetime="2025-03-06">2025.03.06</time>
-              <p class="news_text">
-                【書籍媒体】雑誌「月刊自動認識」2025年3月号に社長インタビュー記事を掲載いただきました！
-              </p>
-            </a>
-          </li>
-          <li class="news_box_content">
-            <a href="./news_article/news_article_media-20241223.html">
-              <span class="news_label">メディア掲載</span>
-              <time datetime="2024-12-23">2024.12.23</time>
-              <p class="news_text">
-                【書籍媒体】雑誌「MONOQLO」2025年2月号並びに季刊「監事」2025年1月号に社長インタビュー記事を掲載いただきました！
-              </p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+          // タクソノミー「news_taxonomy」の最初の名前を取得
+          $terms = get_the_terms(get_the_ID(), 'news_taxonomy');
+          $term_name = (!empty($terms) && !is_wp_error($terms)) ? $terms[0]->name : '';
+      ?>
+        <li class="news_box_content">
+          <a href="<?php the_permalink(); ?>">
+            <span class="news_label"><?= esc_html($term_name); ?></span>
+            <time datetime="<?= get_the_date('Y-m-d'); ?>"><?= get_the_date('Y.m.d'); ?></time>
+            <p class="news_text"><?= esc_html(get_the_title()); ?></p>
+          </a>
+        </li>
+      <?php
+        endwhile;
+        wp_reset_postdata();
+      else :
+      ?>
+        <li class="news_box_content">現在ニュースはありません。</li>
+      <?php endif; ?>
+    </ul>
+  </div>
+</section>
     <!-- ↓Achievementsセクションここから -->
     <section class="achievements effect-fade">
       <h2 id="achievements_title" class="achievements_title">ACHIEVEMENTS</h2>
