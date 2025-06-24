@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* ＝＝＝メインビジュアルなし＝＝＝ */
+/* パンくずリスト */
+.breadcrumb {
+  margin-top: 120px;
+  padding: 0 12em;
+}
+
+.breadcrumb ul {
+  display: flex;
+  font-size: 12px;
+}
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.breadcrumb li + li::before {
+  content: "";
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-right: 1px solid #222;
+  border-bottom: 1px solid #222;
+  transform: rotate(-45deg);
+  margin-right: 5px;
+}
+.breadcrumb li span {
+  color: #b4b4b4;
+}
+/* ===記事セクションここから=== */
+/* タイトル、サブタイトル、テキストはページ内共通 */
+.article {
+  margin-top: 60px;
+  padding: 0 12em;
+}
+.article_container {
+  border-top: solid 1px #d9d9d9;
+  border-bottom: solid 1px #d9d9d9;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.article_paragraph_third {
+  margin-top: 40px;
+}
+.article_paragraph_fourth {
+  margin-top: 40px;
+}
+.article_paragraph_fifth {
+  margin-top: 40px;
+}
+
+.article_paragraph_sixth {
+  margin-top: 40px;
+}
+
+.article_box span {
+  display: inline-block;
+  background-color: #d9d9d9;
+  border-radius: 6px;
+  padding: 4px 20px;
+}
+
+.article_box time {
+  display: inline-block;
+  margin-left: 1.5vw;
+}
+
+.article_box p {
+  display: inline-block;
+  margin-left: 1vw;
+  margin-top: 14px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.article_content {
+  margin: 40px 0;
+}
+.article_minibox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article_content_img {
+  width: 60%;
+}
+
+
+/*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+/* レスポンシブ（1440px以下） */
+@media (max-width: 1440px) {
+  .breadcrumb {
+    margin-top: 120px;
+    padding: 0 10em;
+  }
+  .article {
+    margin-top: 60px;
+    padding: 0 10em;
+  }
+}
+
+/* レスポンシブ（940px） */
+
+@media (max-width: 940px) {
+  .breadcrumb {
+    margin-top: 120px;
+    padding: 0 8em;
+  }
+  .article {
+    margin-top: 60px;
+    padding: 0 8em;
+  }
+}
+/* レスポンシブ（768px）ここから mvキャッチコピーホワイトに変更*/
+@media (max-width: 768px) {
+  .breadcrumb {
+    margin-top: 120px;
+    padding: 0 5em;
+  }
+  .article {
+    margin-top: 60px;
+    padding: 0 5em;
+  }
+  .article_container {
+    border-top: solid 1px #d9d9d9;
+    border-bottom: solid 1px #d9d9d9;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .article_box p {
+    display: inline-block;
+    margin-left: 1vw;
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .article_paragraph_first {
+    font-size: 14px;
+  }
+  .article_paragraph_second {
+    font-size: 14px;
+  }
+}
+
+/* スマホ（570px）レスポンシブ ここから ボタンパネルtablet版からSP版に切り替え*/
+@media (max-width: 570px) {
+  .breadcrumb {
+    margin-top: 120px;
+    padding: 0 4em;
+  }
+  .breadcrumb ul {
+    font-size: 10px;
+    flex-direction: column;
+  }
+  .article {
+    margin-top: 30px;
+    padding: 0 4em;
+  }
+}
+/* スマホ（470px）レスポンシブ */
+@media (max-width: 470px) {
+  .breadcrumb {
+    margin-top: 120px;
+    padding: 0 3em;
+  }
+  .article {
+    padding: 0 3em;
+  }
+  .article_paragraph_first {
+    font-size: 13px;
+  }
+
+  .article_paragraph_second {
+    font-size: 13px;
+  }
+}

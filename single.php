@@ -22,6 +22,19 @@ if (have_posts()) {
 ?>
 
 		<main class="main">
+			    <!-- パンくずリスト -->
+    <div class="breadcrumb">
+      <ul>
+        <li><a href="../index.html">TOP</a></li>
+        <li><a href="../news/news.html">NEWS</a></li>
+        <li>
+          <span
+            >【書籍媒体】雑誌「発明」2025年4月号に社長インタビュー記事を掲載いただきました！</span
+          >
+        </li>
+      </ul>
+    </div>
+
 
 			<div class="single_inner">
 
@@ -63,10 +76,23 @@ if (have_posts()) {
 				<?php endif; ?>
 			</div>
 
-			<!-- 一覧ボタン -->
-			<div class="button_area">
-				<a href="../" class="button">全てのお知らせを見る</a>
-			</div>
+    <!-- News一覧へボタン -->
+    <ul class="gnavi">
+      <li class="gnavi_text"><a href="../news/news.html">ニュース一覧へ</a></li>
+      <li>
+        <span
+          ><a class="news_arrow_link" href="../news/news.html">
+            <div class="small_arrow">
+              <img
+                src="<?= get_template_directory_uri(); ?>/img/top_small_arrow.jpg"
+                alt="小さな右向き矢印"
+                width="26px"
+                height="24px"
+              />
+            </div> </a
+        ></span>
+      </li>
+    </ul>
 
 		</main>
 
