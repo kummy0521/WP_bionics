@@ -2709,7 +2709,9 @@ a {
 
 .breadcrumb {
   font-size: 14px;
-  margin: 20px 0;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  padding: 0 10em;
 }
 .breadcrumb ul {
   display: -webkit-box;
@@ -2836,6 +2838,24 @@ a {
   vertical-align: middle;
 }
 
+/* レスポンシブ（940px） */
+@media (max-width: 940px) {
+  .breadcrumb {
+    padding: 0 8em;
+  }
+}
+/* レスポンシブ（768px） */
+@media (max-width: 768px) {
+  .breadcrumb {
+    padding: 0 5em;
+  }
+}
+/* レスポンシブ（570px） */
+@media (max-width: 570px) {
+  .breadcrumb {
+    padding: 0 4em;
+  }
+}
 /* TOPのProductsセクションのみに該当するボタン位置 */
 .button_area {
   display: -webkit-box;
