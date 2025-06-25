@@ -83,7 +83,7 @@ if (have_posts()) {
 </li>
       <li>
         <span
-          ><a class="news_arrow_link" href="../news/news.html">
+          ><a class="news_arrow_link" href="<?= home_url('/news'); ?>">
             <div class="small_arrow">
               <img
                 src="<?= get_template_directory_uri(); ?>/img/top_small_arrow.jpg"

@@ -89,11 +89,11 @@
                   <a href="<?= esc_url( get_permalink( get_page_by_path('products') ) ); ?>">Products</a>
                 </li>
                 <li>
-                  <a href="./news/news.html">News</a>
+                  <a href="<?= esc_url( get_permalink( get_page_by_path('news') ) ); ?>">News</a>
                 </li>
                 <li><a href="#achievements_title">Achievements</a></li>
                 <li>
-                  <a href="./aboutus/aboutus.html">About Us</a>
+                  <a href="<?= esc_url( get_permalink( get_page_by_path('aboutus') ) ); ?>">About Us</a>
                 </li>
               </ul>
               <a href="https://forms.gle/xR1NrYDhrFhCGfrg7">
