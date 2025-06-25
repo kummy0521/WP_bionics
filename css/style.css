@@ -2914,6 +2914,38 @@ a {
   min-width: 200px;
 }
 
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  gap: 8px;
+}
+.pagination .page-numbers {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: transparent;
+  color: #005247;
+  border: 1px solid #005247;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.pagination .page-numbers:hover {
+  background-color: #005247;
+  color: #fff;
+}
+.pagination .page-numbers.current {
+  background-color: #005247;
+  color: #fff;
+  pointer-events: none;
+}
+
 /* TOPのProductsセクションのみに該当するボタン位置 */
 .button_area {
   display: -webkit-box;
