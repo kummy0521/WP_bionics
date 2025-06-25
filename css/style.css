@@ -2763,6 +2763,17 @@ a {
   font-weight: bold;
 }
 
+.news_label {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-right: 10px;
+  background-color: #ccc;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
 .single_image {
   width: 100%;
   margin: 20px 0;
@@ -2856,6 +2867,53 @@ a {
     padding: 0 4em;
   }
 }
+.news_archive {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.news_archive .news_item {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+.news_archive .news_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-decoration: none;
+  color: inherit;
+}
+.news_archive .news_item a .news_label {
+  display: inline-block;
+  background-color: #d1d1d1;
+  color: #000;
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-right: 16px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+}
+.news_archive .news_item a time {
+  font-size: 14px;
+  color: #333;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+.news_archive .news_item a .news_text {
+  font-size: 15px;
+  color: #000;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 200px;
+}
+
 /* TOPのProductsセクションのみに該当するボタン位置 */
 .button_area {
   display: -webkit-box;

@@ -1,43 +1,46 @@
-@use '../../foundation/settings/index' as *;
+@charset "UTF-8";
 
-// お知らせ
 .news_archive {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 800px;
-  width: 90%;
-}
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-.news_link {
-  position: relative;
-  display: flex;
-  align-items: baseline;
-  gap: 40px;
-  padding: 16px;
-  border-bottom: 1px solid #ddd;
+  .news_item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
 
-  @include media() {
-    flex-direction: column;
-    gap: 10px;
-    padding-right: 28px;
-    padding-left: 0;
+    a {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; // スマホ対応
+      text-decoration: none;
+      color: inherit;
+
+      .news_label {
+        display: inline-block;
+        background-color: #d1d1d1;
+        color: #000;
+        font-size: 13px;
+        padding: 4px 12px;
+        border-radius: 6px;
+        margin-right: 16px;
+        margin-bottom: 6px;
+        white-space: nowrap;
+      }
+
+      time {
+        font-size: 14px;
+        color: #333;
+        margin-right: 20px;
+        white-space: nowrap;
+      }
+
+      .news_text {
+        font-size: 15px;
+        color: #000;
+        flex: 1;
+        min-width: 200px;
+      }
+    }
   }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    display: block;
-    width: .4em;
-    height: .4em;
-    border: 1px solid;
-    border-top: 0;
-    border-left: 0;
-    transform: rotate(-45deg) translateY(-50%);
-  }
-}
-
-.news_date {
-  font-family: var(--fontEnglish);
 }
