@@ -16,8 +16,8 @@
         'post_type' => 'news',
         'posts_per_page' => 8,
         'paged' => $paged,
-        'orderby' => 'menu_order',
-        'order' => 'DESC'          // 降順で並べると、新しい日付が最初、古い日付が最後になる
+        'orderby' => 'menu_order', // 管理画面の「並び順」に従う
+  'order' => 'ASC'           // 上にあるものから順に表示（ドラッグ順）
       ));
 
       // 投稿があればループで表示
