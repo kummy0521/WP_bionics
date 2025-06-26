@@ -17,7 +17,7 @@
         'posts_per_page' => 8,
         'paged' => $paged,
         'orderby' => 'menu_order',
-        'order' => 'ASC'
+        'order' => 'DESC'          // 降順で並べると、新しい日付が最初、古い日付が最後になる
       ));
 
       // 投稿があればループで表示
