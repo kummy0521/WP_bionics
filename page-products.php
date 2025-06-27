@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="technology">
+<main class="page-products">
     <!-- CSSの読み込み（必要であれば） -->
   <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/object/project/page_technology.css"> -->
     <!-- ===メインビジュアル === -->
