@@ -4620,26 +4620,26 @@ a {
   top: 67%;
   left: 32%;
   z-index: 1;
+  white-space: nowrap;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  white-space: nowrap;
 }
 
 .technology_mv_headline {
   color: #fff;
-  font-family: "Oswald", serif;
+  letter-spacing: 0.4em;
   font-weight: 500;
   font-style: normal;
   font-size: 58px;
-  letter-spacing: 0.4em;
+  font-family: "Oswald", serif;
 }
 
 .technology_mv_description {
-  color: #fff;
-  font-size: 20px;
-  letter-spacing: 0.5rem;
-  line-height: 1.7em;
   margin-top: 40px;
+  color: #fff;
+  letter-spacing: 0.5rem;
+  font-size: 20px;
+  line-height: 1.7em;
 }
 
 /* ===メインビジュアルここまで=== */
@@ -4650,20 +4650,20 @@ a {
 }
 
 .common_title_small_jp {
-  font-family: "Noto Sans JP";
+  padding-bottom: 8px;
+  color: #222;
   font-weight: 600;
   font-style: normal;
   font-size: 16px;
-  color: #222;
-  padding-bottom: 8px;
+  font-family: "Noto Sans JP";
 }
 
 .common_title {
   color: #1b1c80;
-  font-family: "Oswald", serif;
   font-weight: 600;
   font-style: normal;
   font-size: 64px;
+  font-family: "Oswald", serif;
 }
 
 .common_title::before {
@@ -4676,12 +4676,12 @@ a {
 
 .common_text {
   padding-top: 42px;
-  font-family: "Noto Sans JP";
+  color: #222;
+  letter-spacing: 0.5em;
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
-  color: #222;
-  letter-spacing: 0.5em;
+  font-family: "Noto Sans JP";
   line-height: 1.8em;
 }
 
@@ -4705,34 +4705,34 @@ a {
 
 .explanation_box {
   position: absolute;
-  left: 40vw;
   top: 27vh;
+  left: 40vw;
+  margin-right: 5%;
   padding: 4% 4%;
   background-color: #fff;
   opacity: 0.87;
-  margin-right: 5%;
 }
 
 .explanation_headline {
-  font-family: "Noto Sans JP";
+  padding-left: 10px;
+  border-left: solid 3px #b9b9b9;
+  color: #222;
+  letter-spacing: 0.5em;
   font-weight: 600;
   font-style: normal;
   font-size: 24px;
-  color: #222;
-  border-left: solid 3px #b9b9b9;
-  padding-left: 10px;
-  letter-spacing: 0.5em;
+  font-family: "Noto Sans JP";
   line-height: 1.8em;
 }
 
 .explanation_text {
-  font-family: "Noto Sans JP";
+  margin-top: 20px;
+  color: #222;
+  letter-spacing: 0.5em;
   font-weight: 500;
   font-style: normal;
   font-size: 15px;
-  color: #222;
-  margin-top: 20px;
-  letter-spacing: 0.5em;
+  font-family: "Noto Sans JP";
   line-height: 1.8em;
 }
 
@@ -4746,31 +4746,31 @@ a {
 }
 
 .howitworks_vessel_headline {
-  font-family: "Noto Sans JP";
+  padding-left: 10px;
+  border-left: solid 3px #b9b9b9;
+  color: #222;
   font-weight: 600;
   font-style: normal;
   font-size: 24px;
-  color: #222;
-  border-left: solid 3px #b9b9b9;
-  padding-left: 10px;
+  font-family: "Noto Sans JP";
 }
 
 .howitworks_vessel_video_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .howitworks_vessel_video_box video {
-  width: 65%;
   margin-top: 80px;
+  width: 65%;
 }
 
 .howitworks_vessel_text_box {
@@ -4779,16 +4779,16 @@ a {
 }
 
 .howitworks_vessel_text_first {
-  font-weight: 500;
   letter-spacing: 0.5em;
+  font-weight: 500;
   line-height: 1.4em;
 }
 
 .howitworks_vessel_text_second {
   margin-top: 47px;
   margin-bottom: 140px;
-  font-weight: 500;
   letter-spacing: 0.5em;
+  font-weight: 500;
   line-height: 1.4em;
 }
 
@@ -4813,33 +4813,33 @@ a {
 
 .explanation_box_our_technology {
   position: absolute;
-  right: 26vw;
   top: 24vh;
+  right: 26vw;
   padding: 5% 6%;
   background-color: #fff;
   opacity: 0.87;
 }
 
 .explanation_headline_our_technology {
-  font-family: "Noto Sans JP";
+  padding-left: 10px;
+  border-left: solid 3px #b9b9b9;
+  color: #222;
+  letter-spacing: 0.5em;
   font-weight: 600;
   font-style: normal;
   font-size: 24px;
-  color: #222;
-  border-left: solid 3px #b9b9b9;
-  padding-left: 10px;
-  letter-spacing: 0.5em;
+  font-family: "Noto Sans JP";
   line-height: 1.8em;
 }
 
 .explanation_text_our_technology {
-  font-family: "Noto Sans JP";
+  margin-top: 20px;
+  color: #222;
+  letter-spacing: 0.5em;
   font-weight: 500;
   font-style: normal;
   font-size: 15px;
-  color: #222;
-  margin-top: 20px;
-  letter-spacing: 0.5em;
+  font-family: "Noto Sans JP";
   line-height: 1.8em;
 }
 
@@ -4851,9 +4851,9 @@ a {
     top: 67%;
     left: 37%;
     z-index: 1;
+    white-space: nowrap;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    white-space: nowrap;
   }
   .main_title {
     margin-top: 160px;
@@ -4877,16 +4877,16 @@ a {
   }
   .common_text {
     padding-top: 42px;
-    font-size: 18px;
     letter-spacing: 0.4em;
+    font-size: 18px;
     line-height: 1.7em;
   }
   .explanation_box {
     position: absolute;
-    left: 40vw;
     top: 13vh;
-    padding: 4% 4%;
+    left: 40vw;
     margin-right: 5%;
+    padding: 4% 4%;
   }
   .howitworks_vessel {
     margin-top: 160px;
@@ -4898,8 +4898,8 @@ a {
     padding: 0 10em;
   }
   .explanation_box_our_technology {
-    right: 26vw;
     top: 16vh;
+    right: 26vw;
     padding: 5% 6%;
   }
 }
@@ -4910,9 +4910,9 @@ a {
     top: 67%;
     left: 39%;
     z-index: 1;
+    white-space: nowrap;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    white-space: nowrap;
   }
   .main_title {
     margin-top: 160px;
@@ -4920,25 +4920,25 @@ a {
   }
   .common_text {
     padding-top: 42px;
-    font-size: 18px;
     letter-spacing: 0.4em;
+    font-size: 18px;
     line-height: 1.7em;
   }
   .explanation_box {
     position: absolute;
-    left: 40vw;
     top: 11vh;
-    padding: 4% 4%;
+    left: 40vw;
     margin-right: 3%;
+    padding: 4% 4%;
   }
   .explanation_text {
-    font-family: "Noto Sans JP";
+    margin-top: 20px;
+    color: #222;
+    letter-spacing: 0.4em;
     font-weight: 500;
     font-style: normal;
     font-size: 15px;
-    color: #222;
-    margin-top: 20px;
-    letter-spacing: 0.4em;
+    font-family: "Noto Sans JP";
     line-height: 1.6em;
   }
   .howitworks_vessel {
@@ -4948,15 +4948,15 @@ a {
     padding: 0 6em;
   }
   .howitworks_vessel_video_box video {
-    width: 75%;
     margin-top: 80px;
+    width: 75%;
   }
   .howitworks_vessel_text_box {
     padding: 0 6em;
   }
   .explanation_box_our_technology {
-    right: 26vw;
     top: 11vh;
+    right: 26vw;
     padding: 5% 6%;
   }
   .explanation_text_our_technology {
@@ -4972,38 +4972,38 @@ a {
     top: 65%;
     left: 41%;
     z-index: 1;
+    white-space: nowrap;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    white-space: nowrap;
   }
   .technology_mv_description {
-    font-size: 20px;
-    letter-spacing: 0.2em;
     margin-top: 30px;
+    letter-spacing: 0.2em;
+    font-size: 20px;
   }
   .common_text {
     padding-top: 42px;
+    letter-spacing: 0.4em;
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: 0.4em;
     line-height: 1.8em;
   }
   .explanation_box {
     position: absolute;
-    left: 40vw;
     top: 6vh;
+    left: 40vw;
     margin-right: 3%;
   }
   .explanation_text {
-    font-size: 15px;
-    color: #222;
     margin-top: 15px;
+    color: #222;
     letter-spacing: 0.3em;
+    font-size: 15px;
     line-height: 1.5em;
   }
   .explanation_box_our_technology {
-    right: 26vw;
     top: 5vh;
+    right: 26vw;
     padding: 5% 6%;
   }
   .explanation_text_our_technology {
@@ -5019,14 +5019,14 @@ a {
     top: 67%;
     left: 40%;
     z-index: 1;
+    white-space: nowrap;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    white-space: nowrap;
   }
   .technology_mv_description {
-    font-size: 20px;
-    letter-spacing: 0.2em;
     margin-top: 20px;
+    letter-spacing: 0.2em;
+    font-size: 20px;
   }
   .main_title {
     margin-top: 160px;
@@ -5034,15 +5034,15 @@ a {
   }
   .explanation_box {
     position: absolute;
-    left: 40vw;
     top: 4vh;
+    left: 40vw;
     margin-right: 3%;
   }
   .explanation_text {
-    font-size: 14px;
-    color: #222;
     margin-top: 15px;
+    color: #222;
     letter-spacing: 0.3em;
+    font-size: 14px;
     line-height: 1.5em;
   }
   .howitworks_vessel {
@@ -5060,8 +5060,8 @@ a {
     margin-bottom: 40px;
   }
   .explanation_box_our_technology {
-    right: 18vw;
     top: 9vh;
+    right: 18vw;
     padding: 5% 6%;
   }
   .explanation_text_our_technology {
@@ -5074,24 +5074,24 @@ a {
     display: none;
   }
   .mv_technology_tablet {
-    display: block;
     position: relative;
-    overflow: hidden;
     z-index: -1;
+    display: block;
+    overflow: hidden;
   }
   .technology_mv_title {
     position: absolute;
     top: 73%;
     left: 45%;
     z-index: 1;
+    white-space: nowrap;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    white-space: nowrap;
   }
   .technology_mv_description {
-    font-size: 18px;
-    letter-spacing: 0.2em;
     margin-top: 15px;
+    letter-spacing: 0.2em;
+    font-size: 18px;
   }
   .main_title {
     margin-top: 160px;
@@ -5099,16 +5099,16 @@ a {
   }
   .common_title {
     color: #1b1c80;
-    font-family: "Oswald", serif;
     font-weight: 600;
     font-style: normal;
     font-size: 60px;
+    font-family: "Oswald", serif;
     line-height: 1.2;
   }
   .common_text {
     padding-top: 42px;
-    font-size: 16px;
     letter-spacing: 0.2em;
+    font-size: 16px;
     line-height: 1.8em;
   }
   .background_img_vessel_PC {
@@ -5120,15 +5120,15 @@ a {
   }
   .explanation_box {
     position: absolute;
-    left: 28vw;
     top: 22vh;
+    left: 28vw;
     margin-right: 3%;
   }
   .explanation_text {
-    font-size: 14px;
-    color: #222;
     margin-top: 15px;
+    color: #222;
     letter-spacing: 0.3em;
+    font-size: 14px;
     line-height: 1.6em;
   }
   .howitworks_vessel {
@@ -5148,8 +5148,8 @@ a {
     width: 100%;
   }
   .explanation_box_our_technology {
-    right: 15vw;
     top: 7vh;
+    right: 15vw;
     padding: 5% 6%;
   }
   .explanation_text_our_technology {
@@ -5163,22 +5163,22 @@ a {
     top: 73%;
     left: 40%;
     z-index: 1;
+    white-space: nowrap;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    white-space: nowrap;
   }
   .technology_mv_headline {
-    font-family: "Oswald", serif;
+    letter-spacing: 0.3em;
     font-weight: 500;
     font-style: normal;
     font-size: 48px;
-    letter-spacing: 0.3em;
+    font-family: "Oswald", serif;
   }
   .technology_mv_description {
-    font-size: 15px;
-    letter-spacing: 0.1em;
     margin-top: 20px;
     white-space: normal;
+    letter-spacing: 0.1em;
+    font-size: 15px;
   }
   .main_title {
     margin-top: 130px;
@@ -5190,29 +5190,29 @@ a {
   }
   .common_title {
     color: #1b1c80;
-    font-family: "Oswald", serif;
     font-weight: 600;
     font-style: normal;
     font-size: 58px;
+    font-family: "Oswald", serif;
     line-height: 1.2;
   }
   .common_text {
     padding-top: 32px;
-    font-size: 16px;
     letter-spacing: 0.1em;
+    font-size: 16px;
     line-height: 1.8em;
   }
   .explanation_box {
     position: absolute;
-    left: 28vw;
     top: 7vh;
+    left: 28vw;
     margin-right: 3%;
   }
   .explanation_text {
-    font-size: 14px;
-    color: #222;
     margin-top: 15px;
+    color: #222;
     letter-spacing: 0.3em;
+    font-size: 14px;
     line-height: 1.6em;
   }
   .howitworks_vessel {
@@ -5222,37 +5222,37 @@ a {
     padding: 0 3em;
   }
   .howitworks_vessel_video_box video {
-    width: 78%;
     margin-top: 80px;
+    width: 78%;
   }
   .howitworks_vessel_text_box {
     padding: 0 3em;
   }
   .howitworks_vessel_text_first {
-    font-size: 14px;
     letter-spacing: 0.3em;
+    font-size: 14px;
     line-height: 1.6em;
   }
   .howitworks_vessel_text_second {
-    font-size: 14px;
-    letter-spacing: 0.3em;
-    line-height: 1.6em;
     margin-top: 47px;
     margin-bottom: 100px;
+    letter-spacing: 0.3em;
+    font-size: 14px;
+    line-height: 1.6em;
   }
   .explanation_our_technology {
     margin-top: 130px;
   }
   .explanation_box_our_technology {
-    right: 16vw;
     top: 6vh;
+    right: 16vw;
     padding: 4% 4%;
   }
   .explanation_headline_our_technology {
-    font-size: 20px;
-    color: #222;
     padding-left: 10px;
+    color: #222;
     letter-spacing: 0.4em;
+    font-size: 20px;
     line-height: 1.8em;
   }
   .explanation_text_our_technology {
@@ -5267,10 +5267,10 @@ a {
     display: none;
   }
   .mv_technology_SP {
-    display: block;
     position: relative;
-    overflow: hidden;
     z-index: -1;
+    display: block;
+    overflow: hidden;
   }
   .technology_mv_title {
     position: absolute;
@@ -5278,13 +5278,13 @@ a {
     left: 40%;
   }
   .technology_mv_headline {
-    font-size: 46px;
     letter-spacing: 0.2em;
+    font-size: 46px;
   }
   .common_text {
     padding-top: 32px;
-    font-size: 15px;
     letter-spacing: 0.1em;
+    font-size: 15px;
     line-height: 1.5em;
   }
   .background_img_vessel_tablet {
@@ -5296,32 +5296,32 @@ a {
   }
   .explanation_box {
     position: absolute;
-    left: 28vw;
     top: 13vh;
+    left: 28vw;
     margin-right: 3%;
   }
   .explanation_headline {
-    font-size: 20px;
     color: #222;
     letter-spacing: 0.4em;
+    font-size: 20px;
     line-height: 1.8em;
   }
   .explanation_text {
-    font-size: 14px;
-    color: #222;
     margin-top: 15px;
+    color: #222;
     letter-spacing: 0.3em;
+    font-size: 14px;
     line-height: 1.6em;
   }
   .howitworks_vessel_headline {
-    font-size: 20px;
     color: #222;
     letter-spacing: 0.4em;
+    font-size: 20px;
     line-height: 1.8em;
   }
   .howitworks_vessel_video_box video {
-    width: 80%;
     margin-top: 80px;
+    width: 80%;
   }
   .background_img_our_technology_tablet {
     display: none;
@@ -5331,8 +5331,8 @@ a {
     width: 100%;
   }
   .explanation_box_our_technology {
-    right: 27vw;
     top: 5vh;
+    right: 27vw;
     padding: 4% 4%;
   }
 }
@@ -5344,8 +5344,8 @@ a {
     left: 39%;
   }
   .technology_mv_headline {
-    font-size: 44px;
     letter-spacing: 0.1em;
+    font-size: 44px;
   }
   .common_title {
     font-weight: 600;
@@ -5354,20 +5354,20 @@ a {
   }
   .explanation_box {
     position: absolute;
-    left: 28vw;
     top: 7vh;
+    left: 28vw;
     margin-right: 3%;
   }
   .explanation_text {
-    font-size: 13px;
-    color: #222;
     margin-top: 15px;
+    color: #222;
     letter-spacing: 0.3em;
+    font-size: 13px;
     line-height: 1.6em;
   }
   .howitworks_vessel_video_box video {
-    width: 90%;
     margin-top: 80px;
+    width: 90%;
   }
   .howitworks_vessel_text_first {
     font-size: 13px;
@@ -5376,15 +5376,15 @@ a {
     font-size: 13px;
   }
   .explanation_box_our_technology {
-    right: 16vw;
     top: 2vh;
+    right: 16vw;
     padding: 4% 4%;
   }
   .explanation_headline_our_technology {
-    font-size: 19px;
-    color: #222;
     padding-left: 10px;
+    color: #222;
     letter-spacing: 0.3em;
+    font-size: 19px;
     line-height: 1.6em;
   }
   .explanation_text_our_technology {
@@ -5403,8 +5403,8 @@ a {
   }
   .technology_mv_description {
     margin-top: 5px;
-    font-size: 14px;
     white-space: normal;
+    font-size: 14px;
   }
   .main_title {
     margin-top: 110px;
@@ -5416,37 +5416,37 @@ a {
   }
   .explanation_box {
     position: absolute;
-    left: 28vw;
     top: 1vh;
+    left: 28vw;
     margin-right: 3%;
   }
   .explanation_text {
-    font-size: 13px;
-    color: #222;
     margin-top: 10px;
+    color: #222;
     letter-spacing: 0.2em;
+    font-size: 13px;
     line-height: 1.6em;
   }
   .howitworks_vessel_video_box video {
-    width: 100%;
     margin-top: 80px;
+    width: 100%;
   }
   .howitworks_vessel_text_box {
     margin-top: 90px;
   }
   .howitworks_vessel_text_first {
-    font-size: 13px;
     letter-spacing: 0.2em;
+    font-size: 13px;
     line-height: 1.6em;
   }
   .howitworks_vessel_text_second {
-    font-size: 13px;
     letter-spacing: 0.2em;
+    font-size: 13px;
     line-height: 1.6em;
   }
   .explanation_box_our_technology {
-    right: 2vw;
     top: 2vh;
+    right: 2vw;
     padding: 4% 4%;
   }
   .explanation_text_our_technology {
@@ -5473,27 +5473,27 @@ a {
   }
   .explanation_box {
     position: absolute;
-    left: 28vw;
     top: 1vh;
+    left: 28vw;
     margin-right: 3%;
   }
   .explanation_headline {
-    font-size: 18px;
     color: #222;
     letter-spacing: 0.4em;
+    font-size: 18px;
     line-height: 1.5em;
   }
   .explanation_text {
-    font-size: 13px;
-    color: #222;
     margin-top: 8px;
+    color: #222;
     letter-spacing: 0.1em;
+    font-size: 13px;
     line-height: 1.6em;
   }
   .howitworks_vessel_headline {
-    font-size: 18px;
     color: #222;
     letter-spacing: 0.4em;
+    font-size: 18px;
     line-height: 1.5em;
   }
   .howitworks_vessel_text_box {
@@ -5508,20 +5508,20 @@ a {
     margin-top: 90px;
   }
   .explanation_box_our_technology {
-    right: 2vw;
     top: 0vh;
+    right: 2vw;
     padding: 3% 4%;
   }
   .explanation_headline_our_technology {
-    font-size: 18px;
-    color: #222;
     padding-left: 10px;
+    color: #222;
     letter-spacing: 0.3em;
+    font-size: 18px;
     line-height: 1.6em;
   }
   .explanation_text_our_technology {
-    font-size: 13px;
     letter-spacing: 0.1em;
+    font-size: 13px;
   }
 }
 /* スマホ（375px）レスポンシブ */
@@ -5533,37 +5533,98 @@ a {
   }
   .explanation_box {
     position: absolute;
-    left: 28vw;
     top: 1vh;
-    padding: 3% 3%;
+    left: 28vw;
     margin-right: 3%;
+    padding: 3% 3%;
   }
   .explanation_headline {
-    font-size: 18px;
     color: #222;
     letter-spacing: 0.4em;
+    font-size: 18px;
     line-height: 1.5em;
   }
   .explanation_text {
-    font-size: 12px;
-    color: #222;
     margin-top: 8px;
+    color: #222;
     letter-spacing: 0.1em;
+    font-size: 12px;
     line-height: 1.6em;
   }
   .howitworks_vessel_text_first {
-    font-size: 12px;
     letter-spacing: 0.2em;
+    font-size: 12px;
     line-height: 1.6em;
   }
   .howitworks_vessel_text_second {
-    font-size: 12px;
     letter-spacing: 0.2em;
+    font-size: 12px;
     line-height: 1.6em;
   }
   .explanation_text_our_technology {
-    font-size: 12px;
     letter-spacing: 0.1em;
+    font-size: 12px;
+  }
+}
+/*==================================================
+右から左へ複数の画像を流して見せるスライダーのためのcss
+===================================*/
+.slider-technology img {
+  width: 100%; /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+.slider-technology .slick-slide {
+  margin: 0 10px; /*スライド左右の余白調整*/
+}
+
+/*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+@media (min-width: 1471px) {
+  .slider-technology .slick-dots {
+    bottom: 10px;
+  }
+}
+/* レスポンシブ（1470px） mvスライダーのdots位置*/
+@media (max-width: 1470px) {
+  .slider-technology .slick-dots {
+    bottom: 35px;
+  }
+}
+/* レスポンシブ（1300px） mvスライダーのdots位置*/
+@media (max-width: 1300px) {
+  .slider-technology .slick-dots {
+    bottom: 90px;
+  }
+}
+/* レスポンシブ（1270px） mvスライダーのdots位置*/
+@media (max-width: 1270px) {
+  .slider-technology .slick-dots {
+    bottom: 90px;
+  }
+}
+/* レスポンシブ（1200px） mvスライダーのdots位置*/
+@media (max-width: 1200px) {
+  .slider-technology .slick-dots {
+    bottom: 140px;
+  }
+}
+/* レスポンシブ（1100px） mvスライダーのdots位置*/
+@media (max-width: 1100px) {
+  .slider-technology .slick-dots {
+    bottom: 250px;
+  }
+}
+/* レスポンシブ（940px） mvスライダーのdots位置*/
+@media (max-width: 940px) {
+  .slider-technology .slick-dots {
+    bottom: 310px;
+  }
+}
+/* レスポンシブ（840px） mvスライダーのdots位置*/
+@media (max-width: 840px) {
+  .slider-technology .slick-dots {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -69,15 +69,15 @@
     <header class="header">
       <div class="header_inner">
         <div class="header_wrap">
-          <h1>
-            <a href="#">
-              <img
-                src="<?= get_template_directory_uri(); ?>/img/logo.png"
-                alt="バイオニクス株式会社のロゴマーク"
-                class="header_logo"
-              />
-            </a>
-          </h1>
+<h1>
+  <a href="<?= esc_url( home_url( '/' ) ); ?>">
+    <img
+      src="<?= get_template_directory_uri(); ?>/img/logo.png"
+      alt="バイオニクス株式会社のロゴマーク"
+      class="header_logo"
+    />
+  </a>
+</h1>
           <div class="header_container">
             <nav class="header_nav">
               <ul>
