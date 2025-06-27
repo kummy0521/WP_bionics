@@ -1,0 +1,1070 @@
+@charset "UTF-8";
+/* ＝＝＝メインビジュアル＝＝＝ */
+
+/* mv上に配置のキャッチコピー */
+.aboutus_mv {
+  position: relative;
+  margin-bottom: 150px;
+  width: 100%;
+}
+
+.mv_aboutus_tablet {
+  display: none;
+}
+
+.mv_aboutus_SP {
+  display: none;
+}
+
+.aboutus_mv_title {
+  position: absolute;
+  top: 75%;
+  left: 32%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.aboutus_mv_headline {
+  color: #222;
+  font-family: "Oswald", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 58px;
+  letter-spacing: 0.4em;
+}
+
+.aboutus_mv_description {
+  font-size: 20px;
+  letter-spacing: 0.5rem;
+  line-height: 1.7em;
+  margin-top: 40px;
+}
+
+/* ===メインビジュアルここまで=== */
+
+/* ===ボタンパネルセクションここから=== */
+.button-panel {
+  margin-top: 74px;
+  padding: 0 6em;
+}
+.button-panel_wrap {
+  border: solid 1px #222;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.button-panel_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  column-gap: 2%;
+}
+
+.button-panel_box {
+  width: 32%;
+}
+/* 項目４番目から最後までを指定する */
+.button-panel_box:nth-child(n + 4) {
+  margin-top: 42px;
+  margin-bottom: 40px;
+}
+.button-panel_mission_tablet {
+  display: none;
+}
+.button-panel_vision_tablet {
+  display: none;
+}
+.button-panel_companyprof_tablet {
+  display: none;
+}
+.button-panel_access_tablet {
+  display: none;
+}
+.button-panel_history_tablet {
+  display: none;
+}
+
+.button-panel_mission_SP {
+  display: none;
+}
+.button-panel_vision_SP {
+  display: none;
+}
+.button-panel_companyprof_SP {
+  display: none;
+}
+.button-panel_access_SP {
+  display: none;
+}
+.button-panel_history_SP {
+  display: none;
+}
+
+/* ===MISSIONセクションここから=== */
+/* タイトル、サブタイトル、テキストはページ内共通 */
+.mission {
+  margin-top: 310px;
+  padding: 0 12em;
+}
+
+.common_title_small_jp {
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  color: #222;
+  padding-bottom: 8px;
+}
+
+.common_title {
+  color: #1b1c80;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 64px;
+}
+.common_title::before {
+  content: "";
+  display: block;
+  width: 16%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+.common_subtitle {
+  font-size: 28px;
+}
+.common_text {
+  font-size: 16px;
+  padding-top: 25px;
+  letter-spacing: 0.5em;
+  line-height: 1.8em;
+}
+
+/* ===visionセクションここから=== */
+
+.vision {
+  margin-top: 250px;
+  padding: 0 12em;
+  position: relative;
+}
+.vision_signature_box {
+  margin-top: 80px;
+  position: absolute;
+  bottom: -30%;
+  right: 14%;
+}
+.vision_company_name {
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #222;
+  letter-spacing: 0.1em;
+}
+
+.vision_company_title {
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #222;
+  letter-spacing: 0.1em;
+}
+
+.vision_company_ceo {
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 10px;
+  font-size: 42px;
+  color: #222;
+  letter-spacing: 0.2em;
+}
+
+/* ===COMPANY PROFILEセクションここから=== */
+
+.company_prof {
+  margin-top: 260px;
+  padding: 0 12em;
+}
+
+.company_prof_list {
+  margin-top: 64px;
+}
+.company_prof_box {
+  border-bottom: solid 1px #d9d9d9;
+  padding: 20px 45px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.company_prof_box:first-child {
+  border-top: solid 1px #d9d9d9;
+}
+
+dt.company_prof_items {
+  flex: 0 0 30%; /* 幅を40%に固定 */
+  font-weight: 500;
+  box-sizing: border-box; /* パディング等を含む幅の計算 */
+}
+
+dd.company_prof_contents {
+  flex: 0 0 70%; /* 幅を残りの60%に設定 */
+  box-sizing: border-box;
+}
+/* ===ACCESSセクションここから=== */
+.access {
+  margin-top: 200px;
+  padding: 0 12em;
+}
+.access_map {
+  margin-top: 30px;
+}
+.access_map iframe {
+  width: 100%;
+}
+
+.access_subtitle {
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #222;
+  margin-top: 16px;
+}
+.access_text {
+  margin-top: 10px;
+}
+/* ===HISTORYセクションここから=== */
+.history {
+  margin-top: 200px;
+  margin-bottom: 180px;
+  padding: 0 12em;
+}
+
+.common_title.history_title {
+  /* ==HISTORYセクションのタイトルのみmargin-bottomが必要== */
+  margin-bottom: 50px;
+}
+
+.corporate-history_list-year {
+  padding: 0 0 0 9.2rem;
+  position: relative;
+}
+.corporate-history_list-year::before {
+  position: absolute;
+  content: "";
+  background-color: #d2d7dc;
+  height: 100%;
+  width: 2px;
+  z-index: 2;
+  left: -1px;
+  top: 3rem;
+  display: block;
+}
+
+.corporate-history_list-year::after {
+  width: 1.4rem;
+  height: 1.4rem;
+  top: 2.5rem;
+  left: -0.7rem;
+  position: absolute;
+  border-radius: 100vmax;
+  content: "";
+  background-color: #d2d7dc;
+}
+
+.corporate-history_item-year {
+  display: grid;
+  grid-template-columns: 20.4rem auto;
+  padding: 1rem 0;
+  border-top: solid 1px #d9d9d9;
+  position: relative;
+}
+
+.corporate-history_term-year {
+  color: #222;
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  position: relative;
+}
+
+.corporate-history_list-month {
+  display: grid;
+}
+.corporate-history_item-month:first-child {
+  padding-top: 16px;
+}
+.corporate-history_item-month:last-child {
+  padding-top: 15px;
+}
+
+.corporate-history_term-month {
+  color: #222;
+  font-family: "Oswald", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+.corporate-history_term-month span {
+  color: #222;
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.corporate-history_desc-month {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.corporate-history_desc-month_first {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.corporate-history_desc-month_second {
+  font-size: 20px;
+  padding-top: 30px;
+}
+.corporate-history_container.last_list_container {
+  position: relative;
+}
+.corporate-history_list-year.modifier ::before {
+  position: absolute;
+  content: "";
+  display: none;
+}
+.corporate-history_desc-month_first {
+  font-size: 20px;
+  padding-top: 10px;
+}
+.corporate-history_desc-month_second {
+  font-size: 20px;
+  padding-top: 30px;
+}
+/*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+/* レスポンシブ（1440px以下） */
+@media (max-width: 1440px) {
+  .aboutus_mv_title {
+    position: absolute;
+    top: 67%;
+    left: 35%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .corporate-history_item-year {
+    display: grid;
+    grid-template-columns: 15.4rem auto;
+  }
+} /* レスポンシブ（1300px） */
+@media (max-width: 1300px) {
+  .vision_signature_box {
+    margin-top: 80px;
+    position: absolute;
+    bottom: -28%;
+    right: 15%;
+  }
+}
+
+/* レスポンシブ（1200px） */
+@media (max-width: 1200px) {
+  .aboutus_mv {
+    position: relative;
+    margin-bottom: 110px;
+  }
+  .common_text {
+    font-size: 14px;
+    padding-top: 25px;
+    letter-spacing: 0.4em;
+    line-height: 1.6em;
+  }
+  .vision_signature_box {
+    margin-top: 80px;
+    position: absolute;
+    bottom: -28%;
+    right: 18%;
+  }
+
+  .access_text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .company_prof_list {
+    margin-top: 64px;
+    font-size: 14px;
+  }
+  .access {
+    margin-top: 130px;
+    padding: 0 10em;
+  }
+  .corporate-history_item-year {
+    display: grid;
+    grid-template-columns: 11.4rem auto;
+    padding: 1rem 0;
+    border-top: solid 1px #d9d9d9;
+    position: relative;
+  }
+  .corporate-history_list-year {
+    padding: 0 0 0 8rem;
+    position: relative;
+  }
+}
+/* レスポンシブ（1040px） */
+
+@media (max-width: 1040px) {
+  .aboutus_mv {
+    position: relative;
+    margin-bottom: 85px;
+  }
+  .aboutus_mv_title {
+    position: absolute;
+    top: 65%;
+    left: 41%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .aboutus_mv_description {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    margin-top: 30px;
+  }
+  .button-panel {
+    margin-top: 74px;
+    padding: 0 3em;
+  }
+  .vision_signature_box {
+    margin-top: 80px;
+    position: absolute;
+    bottom: -25%;
+    right: 20%;
+  }
+
+  .corporate-history_item-year {
+    display: grid;
+    grid-template-columns: 9.4rem auto;
+    padding: 1rem 0;
+    position: relative;
+  }
+  .corporate-history_item-month:first-child {
+    padding-top: 8px;
+  }
+
+  .corporate-history_list-year {
+    padding: 0 0 0 7rem;
+    position: relative;
+  }
+
+  .corporate-history_desc-month {
+    font-size: 17px;
+    padding-top: 10px;
+  }
+  .corporate-history_desc-month_first {
+    font-size: 17px;
+    padding-top: 10px;
+  }
+  .corporate-history_desc-month_second {
+    font-size: 17px;
+    padding-top: 30px;
+  }
+}
+
+/* レスポンシブ（940px） */
+
+@media (max-width: 940px) {
+  .aboutus_mv_title {
+    position: absolute;
+    top: 67%;
+    left: 40%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .button-panel_wrap {
+    border: solid 1px #222;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .mission {
+    margin-top: 130px;
+    padding: 0 8em;
+  }
+  .vision {
+    margin-top: 130px;
+    padding: 0 8em;
+  }
+  .vision_signature_box {
+    margin-top: 80px;
+    position: absolute;
+    bottom: -23%;
+    right: 16%;
+  }
+
+  .company_prof {
+    margin-top: 240px;
+    padding: 0 8em;
+  }
+
+  .access {
+    margin-top: 130px;
+    padding: 0 8em;
+  }
+  .history {
+    margin-top: 140px;
+    margin-bottom: 180px;
+    padding: 0 8em;
+  }
+
+  .corporate-history_list-year {
+    padding: 0 0 0 5rem;
+    position: relative;
+  }
+
+  .corporate-history_term-year {
+    font-size: 44px;
+    position: relative;
+  }
+
+  .corporate-history_item-month:first-child {
+    padding-top: 10px;
+  }
+}
+/* レスポンシブ（860px）ここから */
+
+@media (max-width: 860px) {
+  .mv_aboutus_PC {
+    display: none;
+  }
+  .mv_aboutus_tablet {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .aboutus_mv_title {
+    position: absolute;
+    top: 73%;
+    left: 45%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .aboutus_mv_description {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    margin-top: 20px;
+  }
+
+  .button-panel_container {
+    flex-direction: column;
+    padding-top: 7%;
+    width: 100%;
+    height: auto;
+  }
+  .button-panel_box {
+    width: 100%;
+    padding-bottom: 7%;
+  }
+
+  .button-panel_mission {
+    display: none;
+  }
+
+  .button-panel_vision {
+    display: none;
+  }
+
+  .button-panel_companyprof {
+    display: none;
+  }
+
+  .button-panel_access {
+    display: none;
+  }
+
+  .button-panel_history {
+    display: none;
+  }
+  .button-panel_mission_tablet {
+    display: block;
+  }
+
+  .button-panel_vision_tablet {
+    display: block;
+  }
+
+  .button-panel_companyprof_tablet {
+    display: block;
+  }
+
+  .button-panel_access_tablet {
+    display: block;
+  }
+
+  .button-panel_history_tablet {
+    display: block;
+  }
+
+  .button-panel_box:nth-child(n + 4) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .vision_signature_box {
+    margin-top: 80px;
+    position: absolute;
+    bottom: -23%;
+    right: 16%;
+  }
+  .common_title {
+    font-size: 64px;
+  }
+  .corporate-history_item-year {
+    display: grid;
+    grid-template-columns: 8.4rem auto;
+    padding: 1rem 0;
+    position: relative;
+  }
+  .corporate-history_list-year {
+    padding: 0 0 0 4rem;
+    position: relative;
+  }
+}
+/* レスポンシブ（768px）ここから mvキャッチコピーホワイトに変更*/
+@media (max-width: 768px) {
+  .aboutus_mv_title {
+    position: absolute;
+    top: 73%;
+    left: 40%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .aboutus_mv_headline {
+    font-family: "Oswald", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 48px;
+    letter-spacing: 0.3em;
+  }
+  .aboutus_mv_description {
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+    white-space: normal;
+  }
+  .common_subtitle {
+    font-size: 26px;
+  }
+
+  .mission {
+    margin-top: 130px;
+    padding: 0 5em;
+  }
+
+  .vision {
+    margin-top: 130px;
+    padding: 0 5em;
+  }
+  .vision_signature_box {
+    margin-top: 80px;
+    position: absolute;
+    bottom: -20%;
+    right: 16%;
+  }
+  .vision_company_name {
+    font-size: 13px;
+  }
+
+  .vision_company_title {
+    font-size: 13px;
+  }
+
+  .vision_company_ceo {
+    font-size: 36px;
+    letter-spacing: 0.2em;
+    margin-top: 5px;
+  }
+  .company_prof {
+    margin-top: 230px;
+    padding: 0 5em;
+  }
+
+  .access {
+    margin-top: 130px;
+    padding: 0 5em;
+  }
+
+  .history {
+    margin-top: 140px;
+    margin-bottom: 180px;
+    padding: 0 5em;
+  }
+  .corporate-history_term-year {
+    font-size: 36px;
+    line-height: 1.2;
+    position: relative;
+  }
+  .corporate-history_item-month:first-child {
+    padding-top: 2px;
+  }
+
+  .corporate-history_term-month {
+    font-size: 30px;
+  }
+  .corporate-history_term-month span {
+    color: #222;
+    font-family: "Noto Sans JP";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+  }
+
+  .corporate-history_desc-month {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .corporate-history_desc-month_first {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .corporate-history_desc-month_second {
+    font-size: 16px;
+    padding-top: 30px;
+  }
+}
+/* レスポンシブ（680px）ここから */
+@media (max-width: 680px) {
+  .mv_aboutus_tablet {
+    display: none;
+  }
+  .mv_aboutus_SP {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .aboutus_mv_title {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+  }
+
+  .aboutus_mv_headline {
+    color: #fff;
+  }
+  .aboutus_mv_description {
+    color: #fff;
+  }
+  .vision_signature_box {
+    margin-top: 80px;
+    position: absolute;
+    bottom: -15%;
+    right: 16%;
+  }
+
+  .vision_company_ceo {
+    font-size: 34px;
+    letter-spacing: 0.2em;
+    margin-top: 5px;
+  }
+}
+
+/* スマホ（570px）レスポンシブ ここから ボタンパネルtablet版からSP版に切り替え*/
+@media (max-width: 570px) {
+  .button-panel_wrap {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .button-panel_container {
+    flex-direction: column;
+    padding-top: 5%;
+    width: 100%;
+    height: auto;
+  }
+  .button-panel_box {
+    padding-bottom: 5%;
+  }
+
+  .button-panel_mission_tablet {
+    display: none;
+  }
+
+  .button-panel_vision_tablet {
+    display: none;
+  }
+
+  .button-panel_companyprof_tablet {
+    display: none;
+  }
+
+  .button-panel_access_tablet {
+    display: none;
+  }
+
+  .button-panel_history_tablet {
+    display: none;
+  }
+
+  .button-panel_mission_SP {
+    display: block;
+  }
+
+  .button-panel_vision_SP {
+    display: block;
+  }
+
+  .button-panel_companyprof_SP {
+    display: block;
+  }
+
+  .button-panel_access_SP {
+    display: block;
+  }
+
+  .button-panel_history_SP {
+    display: block;
+  }
+
+  .mission {
+    margin-top: 130px;
+    padding: 0 4em;
+  }
+
+  .vision {
+    margin-top: 130px;
+    padding: 0 4em;
+  }
+  .vision_signature_box {
+    margin-top: 80px;
+    position: absolute;
+    bottom: -11%;
+    right: 12%;
+  }
+
+  .vision_company_ceo {
+    font-size: 31px;
+    letter-spacing: 0.2em;
+    margin-top: 5px;
+  }
+  .company_prof {
+    margin-top: 200px;
+    padding: 0 4em;
+  }
+
+  .access {
+    margin-top: 130px;
+    padding: 0 4em;
+  }
+
+  .history {
+    margin-top: 140px;
+    margin-bottom: 180px;
+    padding: 0 4em;
+  }
+  .corporate-history_item-year {
+    display: grid;
+    grid-template-columns: 7rem auto;
+    padding: 1rem 0;
+    position: relative;
+  }
+  .corporate-history_list-year {
+    padding: 0 0 0 3rem;
+    position: relative;
+  }
+  .corporate-history_desc-month {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .corporate-history_term-year {
+    font-size: 35px;
+    position: relative;
+  }
+  .corporate-history_item-month:first-child {
+    padding-top: 2%;
+  }
+  .corporate-history_desc-month_first {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .corporate-history_desc-month_second {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+}
+
+/* スマホ（470px）レスポンシブ */
+@media (max-width: 470px) {
+  .aboutus_mv_title {
+    position: absolute;
+    top: 70%;
+    left: 39%;
+  }
+  .aboutus_mv_headline {
+    letter-spacing: 0.2em;
+  }
+
+  .aboutus_mv_description {
+    color: #fff;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 1.5em;
+    white-space: normal;
+  }
+  .button-panel {
+    margin-top: 74px;
+    padding: 0 2em;
+  }
+
+  .common_title {
+    font-size: 55px;
+  }
+  .common_subtitle {
+    font-size: 23px;
+  }
+  .mission {
+    margin-top: 130px;
+    padding: 0 3em;
+  }
+  .vision {
+    margin-top: 130px;
+    padding: 0 3em;
+  }
+  .vision_signature_box {
+    margin-top: 80px;
+    position: absolute;
+    bottom: -10%;
+    right: 15%;
+  }
+
+  .vision_company_ceo {
+    font-size: 28px;
+    letter-spacing: 0.2em;
+    margin-top: 5px;
+  }
+
+  .company_prof {
+    margin-top: 190px;
+    padding: 0 3em;
+  }
+
+  .company_prof_box {
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .access {
+    margin-top: 130px;
+    padding: 0 3em;
+  }
+
+  .history {
+    margin-top: 140px;
+    margin-bottom: 180px;
+    padding: 0 3em;
+  }
+  .corporate-history_list-year::before {
+    top: 2rem;
+  }
+  .corporate-history_list-year::after {
+    top: 1.5rem;
+  }
+}
+/* スマホ（400px）レスポンシブ */
+@media (max-width: 400px) {
+  .aboutus_mv_title {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+  }
+  .common_subtitle {
+    font-size: 24px;
+  }
+  .common_text {
+    font-size: 13px;
+    padding-top: 25px;
+  }
+
+  .company_prof_box {
+    padding: 20px 2px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .company_prof_list {
+    margin-top: 64px;
+    font-size: 13px;
+  }
+
+  .mission {
+    margin-top: 90px;
+    padding: 0 3em;
+  }
+  .vision {
+    margin-top: 90px;
+    padding: 0 3em;
+  }
+  .vision_company_ceo {
+    font-size: 27px;
+    letter-spacing: 0.2em;
+    margin-top: 3px;
+  }
+  .company_prof {
+    margin-top: 170px;
+    padding: 0 3em;
+  }
+  .access {
+    margin-top: 90px;
+    padding: 0 3em;
+  }
+  .access_text {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .history {
+    margin-top: 90px;
+    margin-bottom: 120px;
+    padding: 0 3em;
+  }
+
+  .corporate-history_list-year {
+    padding: 0 0 0 1.5rem;
+    position: relative;
+  }
+  .corporate-history_term-year {
+    font-size: 32px;
+    position: relative;
+  }
+  .corporate-history_item-month:first-child {
+    padding-top: 0px;
+  }
+  .corporate-history_desc-month {
+    font-size: 14px;
+  }
+  .corporate-history_desc-month_first {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .corporate-history_desc-month_second {
+    font-size: 14px;
+    padding-top: 20px;
+  }
+}
+/* スマホ（375px）レスポンシブ */
+@media (max-width: 375px) {
+  .aboutus_mv_title {
+    position: absolute;
+    top: 69%;
+    left: 50%;
+  }
+}
+

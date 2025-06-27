@@ -119,6 +119,28 @@ wp_enqueue_style(
             true
         );
     }
+
+    // --- 固定ページ「aboutus」専用のCSSとJS ---
+    if (is_page('aboutus')) {
+        // aboutus.css（SCSSから変換されたCSSファイル）
+        wp_enqueue_style(
+            'page-aboutus-style',
+            get_template_directory_uri() . '/css/object/project/page-aboutus.css',
+            array('base-style'), // base.css の後に読み込ませる
+            null
+        );
+
+        // aboutus.js（ページ専用スクリプト）
+        wp_enqueue_script(
+            'aboutus-script',
+            get_template_directory_uri() . '/js/aboutus.js',
+            array('jquery'),
+            null,
+            true
+        );
+    }
+
+
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
 
