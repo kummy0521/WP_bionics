@@ -2946,6 +2946,14 @@ a {
   pointer-events: none;
 }
 
+.page-contact form {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 680px;
+  width: 90%;
+}
+
 /* TOPのProductsセクションのみに該当するボタン位置 */
 .button_area {
   display: -webkit-box;
