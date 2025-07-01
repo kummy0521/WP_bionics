@@ -4,7 +4,9 @@
 
 
 // 共通パーツ
-@use './object/component';
+// style.scss
+@use 'foundation/mixin';
+@use 'object/component';
 
 
 // ページ共通のレイアウト
