@@ -2,17 +2,13 @@
 @use './foundation/reset';
 @use './foundation/base';
 
-
 // 共通パーツ
-// style.scss
-@use 'foundation/mixin';
-@use 'object/component';
+@use './foundation/settings/mixin';
+@use './object/project/component';
 
-
-// ページ共通のレイアウト
+// ページ共通のレイアウト
 @use './layout/header';
 @use './layout/footer';
-
 
 // 特定のセクションやエリア
 @use './object/project/frontPage';
@@ -21,9 +17,7 @@
 @use './object/project/page';
 @use './object/project/top';
 @use './object/project/slider';
-@use './object/project/page-technology.scss';
-
-
+@use './object/project/page-technology'; // 拡張子 .scss は不要
 
 // 強制的に上書き
 @use './object/utility';
