@@ -6,7 +6,8 @@
 // フォーム
 form {
   p + p {
-    margin-top: 16px;
+    margin-top: -10px;
+    text-align: center;
   }
 }
 label {
@@ -30,7 +31,6 @@ input {
     }
   }
 }
-
 .wpcf7-form-control {
   display: flex;
   flex-direction: column;
@@ -78,9 +78,7 @@ textarea {
 }
 
 input[type='submit'] {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block; // ←ここを修正（元はflex）
   margin-top: 40px;
   margin-right: auto;
   margin-left: auto;
@@ -94,12 +92,14 @@ input[type='submit'] {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center; // ←文字中央揃えに必要
   cursor: pointer;
   transition: .3s;
 
   @include media() {
     line-height: 1;
   }
+
   @include hover {
     opacity: .8;
   }
