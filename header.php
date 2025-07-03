@@ -96,9 +96,10 @@
                   <a href="<?= esc_url( get_permalink( get_page_by_path('aboutus') ) ); ?>">About Us</a>
                 </li>
               </ul>
-              <a href="https://forms.gle/xR1NrYDhrFhCGfrg7">
-                <div class="nav_button">Contact</div>
-              </a>
+              <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">
+  <div class="nav_button">Contact</div>
+</a>
+
               <a href="https://www.bionics-k.co.jp/en/">
                 <div class="nav_button_language">
                   <span>Japanase / English</span>
