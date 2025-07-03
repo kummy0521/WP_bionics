@@ -5,8 +5,10 @@
 
 // 共通パーツ
 // style.scss
-@use 'foundation/mixin';
-@use 'object/component';
+@use 'foundation/settings/mixin';
+// /7/3 パスにsettingsを追加
+@use 'object/project/component';
+// /7/3 パスにprojectを追加
 
 
 // ページ共通のレイアウト
