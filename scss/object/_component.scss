@@ -1,5 +1,7 @@
 @use '../foundation/settings/index' as *;
-@use '../foundation/mixin';
+@use '../foundation/settings/mixin' as *;
+// /7/3 パスにsettingsを追加
+
 
 // フォーム
 form {
