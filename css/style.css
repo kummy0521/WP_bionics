@@ -3054,10 +3054,12 @@ input[type=submit] {
 }
 .pagination .page-numbers {
   display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 8px 12px;
   background-color: transparent;
-  color: #005247;
-  border: 1px solid #005247;
+  color: #1b1c80;
   border-radius: 4px;
   text-decoration: none;
   font-size: 14px;
@@ -3065,11 +3067,11 @@ input[type=submit] {
   transition: all 0.3s;
 }
 .pagination .page-numbers:hover {
-  background-color: #005247;
+  background-color: #d1d1d1;
   color: #fff;
 }
 .pagination .page-numbers.current {
-  background-color: #005247;
+  background-color: #1b1c80;
   color: #fff;
   pointer-events: none;
 }

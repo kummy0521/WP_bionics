@@ -147,31 +147,29 @@ add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
 // アイキャッチ画像の有効化
 add_theme_support('post-thumbnails');
 
-// カスタム投稿タイプ「news」の登録
 function register_custom_post_type_news() {
-    register_post_type('news',
-        array(
-            'labels' => array(
-                'name' => 'ニュース',
-                'singular_name' => 'ニュース',
-                'add_new' => '新規追加',
-                'add_new_item' => '新規ニュースを追加',
-                'edit_item' => 'ニュースを編集',
-                'new_item' => '新しいニュース',
-                'view_item' => 'ニュースを表示',
-                'search_items' => 'ニュースを検索',
-                'not_found' => 'ニュースが見つかりません',
-                'menu_name' => 'ニュース',
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'menu_position' => 5,
-            'menu_icon' => 'dashicons-megaphone',
-            'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
-            'rewrite' => array('slug' => 'news'),
-            'show_in_rest' => true, // Gutenberg対応
-        )
-    );
+  register_post_type('news', array(
+    'labels' => array(
+      'name' => 'NEWS',
+      'singular_name' => 'NEWS',
+      'add_new' => '新規追加',
+      'add_new_item' => '新規NEWSを追加',
+      'edit_item' => 'NEWSを編集',
+      'new_item' => '新しいNEWS',
+      'view_item' => 'NEWSを表示',
+      'search_items' => 'NEWSを検索',
+      'not_found' => 'NEWSが見つかりませんでした',
+      'not_found_in_trash' => 'ゴミ箱内にNEWSが見つかりませんでした',
+      'all_items' => 'NEWS一覧',
+    ),
+    'public' => true,
+    'has_archive' => true, // ← これでアーカイブとページネーションが有効に
+    'rewrite' => array('slug' => 'news'), // URLが /news/ になる
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-megaphone', // 管理画面アイコン（お好みで変更可）
+    'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+    'show_in_rest' => true, // ブロックエディタ使用時に必要
+  ));
 }
 add_action('init', 'register_custom_post_type_news');
 
@@ -203,3 +201,4 @@ function register_custom_taxonomy_news() {
     );
 }
 add_action('init', 'register_custom_taxonomy_news');
+
