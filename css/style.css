@@ -491,6 +491,10 @@ a {
 }
 
 /*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+:root {
+  --colorkey: #333333;
+}
+
 form p + p {
   margin-top: -10px;
   text-align: center;
@@ -590,7 +594,7 @@ textarea::placeholder {
 
 input[type=submit] {
   display: block;
-  margin-top: 40px;
+  margin-top: 15px;
   margin-right: auto;
   margin-left: auto;
   padding: 16px 0;
@@ -598,7 +602,7 @@ input[type=submit] {
   width: 100%;
   border: none;
   border-radius: 4px;
-  background-color: var(--colorKey);
+  background-color: #1b1c80;
   color: #fff;
   font-weight: 700;
   font-size: 16px;
