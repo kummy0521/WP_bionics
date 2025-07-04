@@ -180,10 +180,11 @@
     </section>
     <!-- technologyページへの誘導ボタン -->
     <ul class="technology_gnavi">
-      <li class="technology_gnavi_text">
-        <a href="./technology/technology.html">TECHNOLOGYについてもっと見る</a>
-      </li>
-    </ul>
+  <li class="technology_gnavi_text">
+    <a href="<?= esc_url( home_url( '/technology/' ) ); ?>">TECHNOLOGYについてもっと見る</a>
+  </li>
+</ul>
+
 
     <!-- ↓Productsセクションここから -->
 
@@ -192,8 +193,8 @@
       <div class="products_container_row_first">
         <div class="products_box">
           <div class="products_minibox">
-            <a href="./products/products.html#aqubio_series_title">
-              <div class="products_aqubio_img">
+<a href="<?= esc_url( home_url( '/products/#aqubio_series_title' ) ); ?>">              
+  <div class="products_aqubio_img">
                 <img
                   src="<?= get_template_directory_uri(); ?>/img/top_img_3.png"
                   alt="AQUBIOシリーズの製品の画像"
@@ -208,16 +209,15 @@
             </a>
           </div>
           <div class="button_area">
-            <a
-              class="btn bgskew"
-              href="./products/products.html#aqubio_fnc_spec_title"
-              ><span>View more</span></a
-            >
+<a
+  class="btn bgskew"
+  href="<?= esc_url( home_url( '/products/#aqubio_fnc_spec_title' ) ); ?>"
+><span>View more</span></a>
           </div>
         </div>
         <div class="products_box">
           <div class="products_minibox">
-            <a href="./products/products.html#bio_cobra_title">
+<a href="<?= esc_url( home_url( '/products/#bio_cobra_title' ) ); ?>">
               <div class="products_cobra_img">
                 <img src="<?= get_template_directory_uri(); ?>/img/top_img_4.png" alt="Bio-COBRAの製品の画像" />
               </div>
@@ -231,18 +231,17 @@
           </div>
 
           <div class="button_area">
-            <a
-              class="btn bgskew"
-              href="./products/products.html#bio_cobra_fnc_spec_title"
-              ><span>View more</span></a
-            >
+<a
+  class="btn bgskew"
+  href="<?= esc_url( home_url( '/products/#va-300_fnc_spec_title' ) ); ?>"
+><span>View more</span></a>
           </div>
         </div>
       </div>
       <div class="products_container_row_second">
         <div class="products_box">
           <div class="products_minibox">
-            <a href="./products/products.html#va-300_title">
+<a href="<?= esc_url( home_url( '/products/#va-300_title' ) ); ?>">
               <div class="products_va-300_img">
                 <img src="<?= get_template_directory_uri(); ?>/img/top_img_5.png" alt="VA-300の製品の画像" />
               </div>
@@ -255,12 +254,10 @@
             </a>
           </div>
           <div class="button_area">
-            <a
-              class="btn bgskew"
-              href="./products/products.html#va-300_fnc_spec_title"
-              ><span>View more</span></a
-            >
-          </div>
+<a
+  class="btn bgskew"
+  href="<?= esc_url( home_url( '/products/#bio_cobra_fnc_spec_title' ) ); ?>"
+><span>View more</span></a>          </div>
         </div>
         <div class="products_box">
           <div class="products_minibox">

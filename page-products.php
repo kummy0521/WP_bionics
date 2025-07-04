@@ -100,7 +100,7 @@
         </p>
         <div class="aqubio_spec_img">
           <img
-            src="<?= get_template_directory_uri(); ?>/img/products_img/products_img/products_img_4.png"
+            src="<?= get_template_directory_uri(); ?>/img/products_img/products_img_4.png"
             alt="AQUBIOのスペック表示のイラスト（パソコン表示用）"
           />
         </div>
