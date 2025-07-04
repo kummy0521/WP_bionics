@@ -91,9 +91,11 @@
             <li>
               <a href="<?php echo esc_url( get_permalink( get_page_by_path('news') ) ); ?>">News</a>
             </li>
+
             <li>
-              <a href="#achievements_title">Achievements</a>
-            </li>
+  <a href="<?php echo esc_url( home_url( '/#achievements_title' ) ); ?>">Achievements</a>
+</li>
+
             <li>
               <a href="<?php echo esc_url( get_permalink( get_page_by_path('aboutus') ) ); ?>">About Us</a>
             </li>
