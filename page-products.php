@@ -3,12 +3,12 @@
 <main class="page-products">
     <!-- CSSの読み込み（必要であれば） -->
   <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/object/project/page_technology.css"> -->
-    <!-- ===メインビジュアル === -->
+    
+  <!-- ===メインビジュアル === -->
 
-<div class="products_mv">
   <div class="mv_video">
     <video
-      src="<?= get_template_directory_uri(); ?>/movie/mov_aqubio_01.mp4"
+      src="<?php echo get_template_directory_uri(); ?>/movie/mov_aqubio_01.mp4"
       autoplay
       loop
       muted
@@ -16,16 +16,18 @@
     ></video>
   </div>
 
+  <!-- ▼タブレット用画像 -->
   <div class="mv_products_tablet">
     <img
-      src="<?= get_template_directory_uri(); ?>/img/products_img/products_img/products_img_mv.jpg"
+      src="<?php echo get_template_directory_uri(); ?>/img/products_img/products_img_mv.jpg"
       alt="AQUBIOの製品イメージ画像（タブレット用）"
     />
   </div>
 
+  <!-- ▼スマートフォン用画像 -->
   <div class="mv_products_SP">
     <img
-      src="<?= get_template_directory_uri(); ?>/img/products_img/products_img/products_img_mv_SP.jpg"
+      src="<?php echo get_template_directory_uri(); ?>/img/products_img/products_img_mv_SP.jpg"
       alt="AQUBIOの製品イメージ画像（スマートフォン用）"
     />
   </div>
