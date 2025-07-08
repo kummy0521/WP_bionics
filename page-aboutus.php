@@ -38,8 +38,8 @@
       <div class="button-panel_wrap">
         <div class="button-panel_container">
           <div class="button-panel_box">
-            <a href="#mission_title">
-              <img
+<a href="<?= esc_url( home_url( '/aboutus/#mission_title' ) ); ?>">
+                <img
                 src="<?= get_template_directory_uri(); ?>/img/aboutus_img/aboutus_img_1.jpg"
                 alt="クリックするとmissionセクションへとぶためのボタンパネル画像（パソコン表示用）"
                 class="button-panel_mission"
@@ -59,8 +59,8 @@
             </a>
           </div>
           <div class="button-panel_box">
-            <a href="#vision_title">
-              <img
+<a href="<?= esc_url( home_url( '/aboutus/#vision_title' ) ); ?>">
+                <img
                 src="<?= get_template_directory_uri(); ?>/img/aboutus_img/aboutus_img_2.jpg"
                 alt="クリックするとvisionセクションへとぶためのボタンパネル画像（パソコン表示用）"
                 class="button-panel_vision"
@@ -80,7 +80,7 @@
             </a>
           </div>
           <div class="button-panel_box">
-            <a href="#company_prof_title">
+            <a href="<?= esc_url( home_url( '/aboutus/#company_prof_title' ) ); ?>">
               <img
                 src="<?= get_template_directory_uri(); ?>/img/aboutus_img/aboutus_img_3.jpg"
                 alt="クリックするとcompany profileセクションへとぶためのボタンパネル画像（パソコン表示用）"
@@ -101,7 +101,7 @@
             </a>
           </div>
           <div class="button-panel_box">
-            <a href="#access_title">
+            <a href="<?= esc_url( home_url( '/aboutus/#access_title' ) ); ?>">
               <img
                 src="<?= get_template_directory_uri(); ?>/img/aboutus_img/aboutus_img_4.jpg"
                 alt="クリックするとaccessセクションへとぶためのボタンパネル画像（パソコン表示用）"
@@ -122,7 +122,7 @@
             </a>
           </div>
           <div class="button-panel_box">
-            <a href="#history_title">
+<a href="<?= esc_url( home_url( '/aboutus/#history_title' ) ); ?>">
               <img
                 src="<?= get_template_directory_uri(); ?>/img/aboutus_img/aboutus_img_5.jpg"
                 alt="クリックするとhistoryセクションへとぶためのボタンパネル画像（パソコン表示用）"

@@ -65,52 +65,58 @@
 </head>
 
   <body>
-    <!-- ↓ヘッダーここから -->
-    <header class="header">
-      <div class="header_inner">
-        <div class="header_wrap">
-<h1>
-  <a href="<?= esc_url( home_url( '/' ) ); ?>">
-    <img
-      src="<?= get_template_directory_uri(); ?>/img/logo.png"
-      alt="バイオニクス株式会社のロゴマーク"
-      class="header_logo"
-    />
-  </a>
-</h1>
-          <div class="header_container">
-            <nav class="header_nav">
-              <ul>
-                <li>
-                  <a href="<?= esc_url( get_permalink( get_page_by_path('technology') ) ); ?>">Technology</a>
+<!-- ↓ヘッダーここから -->
+<header class="header">
+  <div class="header_inner">
+    <div class="header_wrap">
+      <h1>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <img
+            src="<?php echo get_template_directory_uri(); ?>/img/logo.png"
+            alt="バイオニクス株式会社のロゴマーク"
+            class="header_logo"
+          />
+        </a>
+      </h1>
 
-                </li>
-                <li>
-                  <a href="<?= esc_url( get_permalink( get_page_by_path('products') ) ); ?>">Products</a>
-                </li>
-                <li>
-                  <a href="<?= esc_url( get_permalink( get_page_by_path('news') ) ); ?>">News</a>
-                </li>
-                <li><a href="#achievements_title">Achievements</a></li>
-                <li>
-                  <a href="<?= esc_url( get_permalink( get_page_by_path('aboutus') ) ); ?>">About Us</a>
-                </li>
-              </ul>
-              <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">
-  <div class="nav_button">Contact</div>
-</a>
+      <div class="header_container">
+        <nav class="header_nav">
+          <ul>
+            <li>
+              <a href="<?php echo esc_url( get_permalink( get_page_by_path('technology') ) ); ?>">Technology</a>
+            </li>
+            <li>
+              <a href="<?php echo esc_url( get_permalink( get_page_by_path('products') ) ); ?>">Products</a>
+            </li>
+            <li>
+              <a href="<?php echo esc_url( get_permalink( get_page_by_path('news') ) ); ?>">News</a>
+            </li>
 
-              <a href="https://www.bionics-k.co.jp/en/">
-                <div class="nav_button_language">
-                  <span>Japanase / English</span>
-                </div>
-                <div class="under_bar"></div>
-              </a>
-            </nav>
-          </div>
-          <!-- ハンバーガー -->
-          <button class="nav_hamburger"></button>
-        </div>
+            <li>
+  <a href="<?php echo esc_url( home_url( '/#achievements_title' ) ); ?>">Achievements</a>
+</li>
+
+            <li>
+              <a href="<?php echo esc_url( get_permalink( get_page_by_path('aboutus') ) ); ?>">About Us</a>
+            </li>
+          </ul>
+
+          <!-- Contact ボタン -->
+          <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="nav_button">Contact</a>
+
+          <!-- 言語切替 -->
+          <a href="https://www.bionics-k.co.jp/en/" class="nav_button_language_wrapper">
+            <div class="nav_button_language">
+              <span>Japanese / English</span>
+            </div>
+            <div class="under_bar"></div>
+          </a>
+        </nav>
       </div>
-    </header>
-    <!-- ヘッダーここまで -->
+
+      <!-- ハンバーガー -->
+      <button class="nav_hamburger"></button>
+    </div>
+  </div>
+</header>
+<!-- ヘッダーここまで -->

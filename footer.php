@@ -5,36 +5,35 @@
       <div class="wrp_aboutus">
         <div class="aboutus_inner_gradation">
           <h2 class="aboutus_title">ABOUT US</h2>
-          <div class="aboutus_container">
-            <div class="aboutus_box_left">
-              <ul class="aboutus_list">
-                <li>
-                  <a href="./aboutus/aboutus.html#mission_title">企業理念</a>
-                </li>
-                <li>
-                  <a href="./aboutus/aboutus.html#company_prof_title"
-                    >会社概要</a
-                  >
-                </li>
-                <li>
-                  <a href="./aboutus/aboutus.html#history_title">沿革</a>
-                </li>
-              </ul>
-            </div>
-            <div class="aboutus_box_right">
-              <ul class="aboutus_list">
-                <li>
-                  <a href="./aboutus/aboutus.html#vision_title">ビジョン</a>
-                </li>
-                <li>
-                  <a href="./aboutus/aboutus.html#access_title">アクセス</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="button_area_aboutus">
-            <a class="button" href="./aboutus/aboutus.html">View more</a>
-          </div>
+<div class="aboutus_container">
+  <div class="aboutus_box_left">
+    <ul class="aboutus_list">
+      <li>
+        <a href="<?php echo esc_url( home_url( '/aboutus/#mission_title' ) ); ?>">企業理念</a>
+      </li>
+      <li>
+        <a href="<?php echo esc_url( home_url( '/aboutus/#company_prof_title' ) ); ?>">会社概要</a>
+      </li>
+      <li>
+        <a href="<?php echo esc_url( home_url( '/aboutus/#history_title' ) ); ?>">沿革</a>
+      </li>
+    </ul>
+  </div>
+  <div class="aboutus_box_right">
+    <ul class="aboutus_list">
+      <li>
+        <a href="<?php echo esc_url( home_url( '/aboutus/#vision_title' ) ); ?>">ビジョン</a>
+      </li>
+      <li>
+        <a href="<?php echo esc_url( home_url( '/aboutus/#access_title' ) ); ?>">アクセス</a>
+      </li>
+    </ul>
+  </div>
+</div>
+          <<div class="button_area_aboutus">
+  <a class="button" href="<?php echo esc_url( get_permalink( get_page_by_path( 'aboutus' ) ) ); ?>">View more</a>
+</div>
+
         </div>
         <div class="aboutus_inner_img">
           <img src="<?= get_template_directory_uri(); ?>/img/common_img_1.jpg" alt="オフィスのイメージ画像" />
@@ -66,24 +65,24 @@
           </ul>
         </div>
 
-        <div class="footer_box_right">
-          <div class="footer_minibox_right">
-            <a href="https://forms.gle/xR1NrYDhrFhCGfrg7">
-              <h2 class="contact_title">CONTACT</h2>
-            </a>
-            <a
-              class="contact_arrow_link"
-              href="https://forms.gle/xR1NrYDhrFhCGfrg7"
-            >
-              <div class="arrow">
-                <img src="<?= get_template_directory_uri(); ?>/img/footer_img_2.png" alt="右向きの矢印の画像" />
-              </div>
-            </a>
-          </div>
-          <p class="contact_text">
-            お見積りや商品に関するご質問など、お気軽に<br />お問い合わせください。
-          </p>
-        </div>
+<div class="footer_box_right">
+  <div class="footer_minibox_right">
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">
+      <h2 class="contact_title">CONTACT</h2>
+    </a>
+    <a
+      class="contact_arrow_link"
+      href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"
+    >
+      <div class="arrow">
+        <img src="<?= get_template_directory_uri(); ?>/img/footer_img_2.png" alt="右向きの矢印の画像" />
+      </div>
+    </a>
+  </div>
+  <p class="contact_text">
+    お見積りや商品に関するご質問など、お気軽に<br />お問い合わせください。
+  </p>
+</div>
       </div>
       <div class="copy_right">
         <p class="copy_right_text">

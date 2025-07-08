@@ -8,16 +8,18 @@
 
     <ul class="news_archive">
       <?php
+
       // 現在のページ番号を取得（1ページ目なら1）
-      $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+$paged = max(1, get_query_var('paged'), get_query_var('page'));
 
       // カスタム投稿「news」を取得
       $news_query = new WP_Query(array(
         'post_type' => 'news',
         'posts_per_page' => 8,
         'paged' => $paged,
-        'orderby' => 'menu_order', // 管理画面の「並び順」に従う
-  'order' => 'ASC'           // 上にあるものから順に表示（ドラッグ順）
+        'orderby' => 'date', // 公開日の順で並べる
+'order' => 'DESC',   // 新しい→古い
+
       ));
 
       // 投稿があればループで表示

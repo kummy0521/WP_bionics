@@ -491,6 +491,138 @@ a {
 }
 
 /*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+:root {
+  --colorkey: #333333;
+}
+
+form p + p {
+  margin-top: -10px;
+  text-align: center;
+}
+
+label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+  margin-top: 8px;
+  padding: 13px 16px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder {
+  color: #aaa;
+}
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=tel]::-moz-placeholder {
+  color: #aaa;
+}
+input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder {
+  color: #aaa;
+}
+input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, input[type=tel]::-ms-input-placeholder {
+  color: #aaa;
+}
+input[type=text]::placeholder, input[type=email]::placeholder, input[type=tel]::placeholder {
+  color: #aaa;
+}
+
+.wpcf7-form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wpcf7-list-item {
+  display: block;
+  margin-top: 8px;
+  margin-left: 0;
+}
+.wpcf7-list-item label {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+textarea {
+  margin-top: 8px;
+  padding: 13px 16px;
+  min-height: 238px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+textarea::-webkit-input-placeholder {
+  color: #aaa;
+}
+textarea::-moz-placeholder {
+  color: #aaa;
+}
+textarea:-ms-input-placeholder {
+  color: #aaa;
+}
+textarea::-ms-input-placeholder {
+  color: #aaa;
+}
+textarea::placeholder {
+  color: #aaa;
+}
+
+.contact_privacy {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .contact_privacy {
+    margin-top: 0;
+  }
+}
+.contact_privacy a {
+  color: var(--colorKey);
+  text-decoration: underline;
+}
+
+input[type=submit] {
+  display: block;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 16px 0;
+  max-width: 400px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #1b1c80;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  input[type=submit] {
+    line-height: 1;
+  }
+}
+@media (hover: hover) {
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+}
+
 /* ヘッダー */
 .wrp_mv {
   position: relative;
@@ -2926,10 +3058,12 @@ a {
 }
 .pagination .page-numbers {
   display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 8px 12px;
   background-color: transparent;
-  color: #005247;
-  border: 1px solid #005247;
+  color: #1b1c80;
   border-radius: 4px;
   text-decoration: none;
   font-size: 14px;
@@ -2937,11 +3071,11 @@ a {
   transition: all 0.3s;
 }
 .pagination .page-numbers:hover {
-  background-color: #005247;
+  background-color: #d1d1d1;
   color: #fff;
 }
 .pagination .page-numbers.current {
-  background-color: #005247;
+  background-color: #1b1c80;
   color: #fff;
   pointer-events: none;
 }
@@ -2952,6 +3086,14 @@ a {
   margin-left: auto;
   max-width: 680px;
   width: 90%;
+}
+
+.section_title {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 /* TOPのProductsセクションのみに該当するボタン位置 */

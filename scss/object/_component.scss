@@ -1,11 +1,16 @@
 @use '../foundation/settings/index' as *;
 @use '../foundation/settings/mixin' as *;
+// /7/3 パスにsettingsを追加
 
+:root {
+--colorkey: #333333;
+}
 
 // フォーム
 form {
   p + p {
-    margin-top: 16px;
+    margin-top: -10px;
+    text-align: center;
   }
 }
 label {
@@ -29,7 +34,6 @@ input {
     }
   }
 }
-
 .wpcf7-form-control {
   display: flex;
   flex-direction: column;
@@ -77,10 +81,8 @@ textarea {
 }
 
 input[type='submit'] {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
+  display: block; // ←ここを修正（元はflex）
+  margin-top: 15px;
   margin-right: auto;
   margin-left: auto;
   padding: 16px 0;
@@ -88,17 +90,19 @@ input[type='submit'] {
   width: 100%;
   border: none;
   border-radius: 4px;
-  background-color: var(--colorKey);
+  background-color: #1b1c80;
   color: #fff;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
+  text-align: center; // ←文字中央揃えに必要
   cursor: pointer;
   transition: .3s;
 
   @include media() {
     line-height: 1;
   }
+
   @include hover {
     opacity: .8;
   }
