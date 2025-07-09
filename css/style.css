@@ -3006,7 +3006,12 @@ input[type=submit] {
 }
 .news_archive .news_item {
   border-bottom: 1px solid #ddd;
-  padding: 20px 0;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+.news_archive .news_item:first-child {
+  margin-top: 120px;
+  border-top: 1px solid #d9d9d9;
 }
 .news_archive .news_item a {
   display: -webkit-box;
@@ -3024,7 +3029,8 @@ input[type=submit] {
   display: inline-block;
   background-color: #d1d1d1;
   color: #000;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 15px;
   padding: 4px 12px;
   border-radius: 6px;
   margin-right: 16px;
@@ -3032,7 +3038,7 @@ input[type=submit] {
   white-space: nowrap;
 }
 .news_archive .news_item a time {
-  font-size: 14px;
+  font-size: 15px;
   color: #333;
   margin-right: 20px;
   white-space: nowrap;
@@ -3080,6 +3086,78 @@ input[type=submit] {
   pointer-events: none;
 }
 
+/*==================== ↓メディアクエリによるレスポンシブここから↓ ==========================*/
+/* レスポンシブ（1040px） */
+@media (max-width: 1040px) {
+  .news {
+    margin-top: 250px;
+    padding: 0 10em;
+  }
+  .gnavi {
+    padding: 0 10em;
+  }
+}
+/* レスポンシブ（940px） */
+@media (max-width: 940px) {
+  .news {
+    margin-top: 250px;
+    padding: 0 8em;
+  }
+  .gnavi {
+    padding: 0 8em;
+  }
+}
+/* レスポンシブ（768px）*/
+@media (max-width: 768px) {
+  .news {
+    margin-top: 210px;
+    padding: 0 5em;
+  }
+  .news_item:first-child {
+    margin-top: 80px;
+  }
+  .news_text {
+    font-size: 15px;
+  }
+  .gnavi {
+    padding: 0 5em;
+  }
+}
+/* スマホ（570px）レスポンシブ ここから ボタンパネルtablet版からSP版に切り替え*/
+@media (max-width: 570px) {
+  .news {
+    padding: 0 4em;
+  }
+  .news_text {
+    font-size: 14px;
+  }
+  .gnavi {
+    padding: 0 4em;
+  }
+}
+/* スマホ（470px）レスポンシブ */
+@media (max-width: 470px) {
+  .news {
+    margin-top: 180px;
+    padding: 0 3em;
+  }
+  .news_item:first-child {
+    margin-top: 50px;
+  }
+  .news_item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .gnavi {
+    padding: 0 3em;
+  }
+}
+/* スマホ（400px）レスポンシブ */
+@media (max-width: 400px) {
+  .news_text {
+    font-size: 13px;
+  }
+}
 .page-contact form {
   margin-top: 50px;
   margin-right: auto;
