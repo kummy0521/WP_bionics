@@ -594,7 +594,7 @@ textarea::placeholder {
 
 input[type=submit] {
   display: block;
-  margin-top: 15px;
+  margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
   padding: 16px 0;
