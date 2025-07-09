@@ -2834,9 +2834,8 @@ input[type=submit] {
 }
 .single_inner {
   margin: 0 auto;
-  max-width: 800px;
   width: 90%;
-  padding-bottom: 60px;
+  padding: 0 3em;
 }
 
 .breadcrumb {
@@ -2870,9 +2869,6 @@ input[type=submit] {
   font-size: 22px;
   font-weight: bold;
   padding: 12px 20px;
-  margin-bottom: 16px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
 }
 
 .single_data {
@@ -2886,13 +2882,32 @@ input[type=submit] {
           align-items: center;
   font-size: 14px;
   color: #666;
-  margin-bottom: 20px;
 }
 .single_data .single_time {
   margin-right: 20px;
 }
 .single_data .single_taxonomy span {
   font-weight: bold;
+}
+
+.single_title_wrap {
+  margin: 40px 0;
+}
+
+.single_meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+  border-top: solid 1px #d9d9d9;
+  border-bottom: solid 1px #d9d9d9;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .news_label {
@@ -2934,6 +2949,7 @@ input[type=submit] {
   margin-top: 40px;
   padding-top: 20px;
   border-top: 1px solid #ddd;
+  padding-left: 8em;
 }
 .single_nav .single_navItem {
   -webkit-box-flex: 1;
@@ -2963,6 +2979,7 @@ input[type=submit] {
           align-items: center;
   margin-top: 40px;
   gap: 10px;
+  padding-left: 8em;
 }
 .gnavi .gnavi_text a {
   font-weight: bold;
@@ -2991,6 +3008,19 @@ input[type=submit] {
 @media (max-width: 768px) {
   .breadcrumb {
     padding: 0 5em;
+  }
+  .single_meta {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 8px;
+  }
+  .single_title {
+    font-size: 20px;
   }
 }
 /* レスポンシブ（570px） */

@@ -31,38 +31,32 @@ if (have_posts()) {
       </ul>
     </div>
 
-
-			<div class="single_inner">
-
 <!-- タイトル / 投稿タイトルの横に、タクソノミー名をボタン風に表示-->
-<div class="single_title_wrap">
-  <?php if (!empty($terms) && !is_wp_error($terms)) : ?>
-    <span class="news_label"><?= esc_html($terms[0]->name); ?></span>
-  <?php endif; ?>
-  <h1 class="single_title"><?php the_title(); ?></h1>
+<div class="single_inner">
+
+  <div class="single_title_wrap">
+    <div class="single_meta">
+      <?php if (!empty($terms) && !is_wp_error($terms)) : ?>
+        <span class="news_label"><?= esc_html($terms[0]->name); ?></span>
+      <?php endif; ?>
+
+      <time class="single_data" data-time="<?= $single_time; ?>"><?= $single_time; ?></time>
+
+      <h1 class="single_title"><?php the_title(); ?></h1>
+    </div>
+  </div>
+
+  <?php
+  // アイキャッチ画像
+  echo $single_image;
+  ?>
+
+  <!-- 投稿内容 -->
+  <div class="single_content">
+    <?php the_content(); ?>
+  </div>
+
 </div>
-
-				<!-- 投稿日・カテゴリー -->
-				<div class="single_data">
-					<time class="single_time" data-time="<?= $single_time; ?>"><?= $single_time; ?></time>
-
-					<?= $single_taxonomy; ?>
-				</div>
-
-				<?php
-				// アイキャッチ画像
-				echo $single_image;
-				?>
-
-				<!-- 投稿内容 -->
-				<div class="single_content">
-					<?php
-					the_content();
-					?>
-				</div>
-
-			</div>
-
 			<!-- ナビボタン -->
 			<div class="single_nav">
 				<?php if (get_previous_post_link()) : ?>
