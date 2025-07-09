@@ -1,0 +1,13 @@
+.contact_text_pc_none {
+    @media (min-width: 767px) {
+        display: none !important;
+        
+    }
+}
+
+.contact_text_sp_none {
+    @media (max-width: 768px) {
+        display: none !important;
+        
+    }
+}

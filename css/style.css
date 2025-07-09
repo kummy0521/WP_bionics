@@ -5777,4 +5777,15 @@ input[type=submit] {
     display: none;
   }
 }
+@media (min-width: 767px) {
+  .contact_text_pc_none {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact_text_sp_none {
+    display: none !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
