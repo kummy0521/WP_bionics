@@ -61,12 +61,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // ===↓↓↓「news一覧へ」テキスト下線と「→」円の同時ホバー時に出現させるアニメーション
-  document.addEventListener("DOMContentLoaded", function () {
-    const gnavi = document.querySelector(".gnavi_news");
+document.addEventListener("DOMContentLoaded", function () {
+  const gnavi = document.querySelector(".gnavi_news");
+  const gnaviTextLink = document.querySelector(".gnavi_text_news a");
+  const newsArrowLink = document.querySelector(".news_arrow_link");
 
-    const gnaviTextLink = document.querySelector(".gnavi_text a");
-    const newsArrowLink = document.querySelector(".news_arrow_link");
-
+  if (gnavi && gnaviTextLink && newsArrowLink) {
     gnavi.addEventListener("mouseenter", function () {
       gnaviTextLink.classList.add("hover-effect");
       newsArrowLink.classList.add("hover-effect");
@@ -76,5 +76,5 @@ document.addEventListener("DOMContentLoaded", function () {
       gnaviTextLink.classList.remove("hover-effect");
       newsArrowLink.classList.remove("hover-effect");
     });
-  });
-
+  }
+});

@@ -72,8 +72,8 @@ if (have_posts()) {
 			</div>
 
     <!-- News一覧へボタン -->
-    <ul class="gnavi">
-      <li class="gnavi_text"><a href="<?= home_url('/news'); ?>">ニュース一覧へ</a>
+    <ul class="gnavi_news">
+      <li class="gnavi_text_news"><a href="<?= home_url('/news'); ?>">ニュース一覧へ</a>
 </li>
       <li>
         <span

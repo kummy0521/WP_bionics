@@ -132,33 +132,110 @@
 }
 
 // ニュース一覧へリンク
-.gnavi {
+.gnavi_news {
   display: flex;
-  align-items: center;
-  margin-top: 40px;
-  gap: 10px;
-  padding-left: 8em;
-
-  .gnavi_text {
-    a {
-      font-weight: bold;
-      text-decoration: none;
-      color: #333;
-      position: relative;
-      &::after {
-        content: "→";
-        margin-left: 6px;
-      }
-    }
-  }
-
-  .news_arrow_link {
-    display: inline-block;
-    .small_arrow img {
-      vertical-align: middle;
-    }
-  }
+  flex-wrap: wrap;
+  /*スマホ表示折り返し用なのでPCのみなら不要*/
+  margin: 50px 0 50px 0;
+  list-style: none;
+  padding: 0 12em;
 }
+  .gnavi_news li a{
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: #333;
+    }
+
+/*==================================================
+5-3-3 左から右に線が伸びる（テキストの下部）ここから↓
+===================================*/
+.gnavi_news li a {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+}
+
+/* .gnavi li.current a, */
+.gnavi_news li a:hover {
+  color: #333;
+}
+
+.gnavi_news li a::after {
+  content: "";
+  /*絶対配置でテキスト下に配置する線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+  /*線の形状*/
+  width: 99%;
+  height: 3px;
+  background: #1b1c80;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  /*X方向0、Y方向1*/
+  transform-origin: left top;
+  /*左上基点*/
+}
+
+/*hoverの設定*/
+.gnavi_news li a:hover::after {
+  transform: scale(1, 1);
+  /*X方向にスケール拡大*/
+}
+/*==================================================
+　左から右に縁で囲われる（矢印の周囲）
+===================================*/
+.gnavi_news li span a {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  margin-right: 2%;
+}
+
+.gnavi_news li span a::after {
+  content: "";
+  /*絶対配置で矢印の周囲に配置する丸線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /*線の形状*/
+  width: 45px;
+  height: 45px;
+  border: solid 3px #1b1c80;
+  border-radius: 50%;
+  background: transparent;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0, 0);
+  /*X方向0、Y方向1*/
+  transform-origin: center;
+  /*左上基点*/
+}
+/* ホバーしたときに小さな矢印が動く速度 */
+.news_arrow_link .small_arrow {
+  transition: 0.3s;
+}
+
+/* news_arrow_link（aのクラス名）がホバーした時に、小さな矢印を右に8px移動させる */
+.news_arrow_link:hover .small_arrow {
+  transform: translateX(8px);
+}
+/* ホバー時に出現させるためのJSで追加される hover-effect クラス付与、「news一覧へ」テキスト下線と「→」円の同時出現 */
+.gnavi_news li a.hover-effect::after {
+  transform: scale(1, 1);
+}
+
+.gnavi_news li span a.hover-effect::after {
+  transform: scale(1, 1);
+}
+
+/* 矢印も移動させたい場合は以下も追加 */
+.news_arrow_link.hover-effect .small_arrow {
+  transform: translateX(8px);
+}
+/* ===============================================
+ここまで↑左から右に縁で囲われる（矢印の周囲） */
+
 /* レスポンシブ（940px） */
 
 @media (max-width: 940px) {

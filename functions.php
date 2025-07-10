@@ -139,7 +139,16 @@ wp_enqueue_style(
             true
         );
     }
-
+// シングル投稿ページ（例：news の single.php）専用のJS
+if (is_singular('news')) {
+    wp_enqueue_script(
+        'single-news_script',
+        get_template_directory_uri() . '/js/single_news.js',
+        array('jquery'),
+        null,
+        true
+    );
+}
 
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
