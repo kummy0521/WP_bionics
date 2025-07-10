@@ -217,3 +217,4 @@ if (empty($_SERVER['HTTPS'])) {
 	header("Location: https://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}");
 	exit;
 }
+define( 'AI1WM_MAX_FILE_SIZE', 536870912 ); // 512MB = 512 * 1024 * 1024
