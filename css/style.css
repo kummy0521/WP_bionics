@@ -1320,6 +1320,15 @@ input[type=submit] {
     font-size: 12px;
   }
 }
+.page404_text {
+  text-align: center;
+}
+
+.button {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+}
+
 /* TOPのProductsセクションのみに該当するボタン位置 */
 .button_area {
   margin-top: 54px;
