@@ -1,8 +1,20 @@
 @charset "UTF-8";
-/* メインビジュアル 動画をループ再生で表示させる（後で動画に差し替え） */
+/* メインビジュアル 動画をループ再生で表示させる */
 .mv_video {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.mv_video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* mv上に配置のキャッチコピー */
