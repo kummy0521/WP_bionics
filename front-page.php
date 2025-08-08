@@ -312,39 +312,51 @@
       </ul>
     </div>
 
-    <ul class="news_container_right">
-      <?php
-      $news_query = new WP_Query([
-        'post_type'      => 'news',
-        'posts_per_page' => 4,
-        'post_status'    => 'publish',
-        'orderby'        => 'date',
-        'order'          => 'DESC',
-      ]);
+<ul class="news_container_right">
+  <?php
+  $news_query = new WP_Query([
+    'post_type'      => 'news',
+    'posts_per_page' => 4,
+    'post_status'    => 'publish',
+    'orderby'        => 'date',
+    'order'          => 'DESC',
+  ]);
 
-      if ($news_query->have_posts()) :
-        while ($news_query->have_posts()) :
-          $news_query->the_post();
+  if ($news_query->have_posts()) :
+    while ($news_query->have_posts()) :
+      $news_query->the_post();
 
-          // タクソノミー「news_taxonomy」の最初の名前を取得
-          $terms = get_the_terms(get_the_ID(), 'news_taxonomy');
-          $term_name = (!empty($terms) && !is_wp_error($terms)) ? $terms[0]->name : '';
-      ?>
-        <li class="news_box_content">
-          <a href="<?php the_permalink(); ?>">
-            <span class="news_label"><?= esc_html($term_name); ?></span>
-            <time datetime="<?= get_the_date('Y-m-d'); ?>"><?= get_the_date('Y.m.d'); ?></time>
-            <p class="news_text"><?= esc_html(get_the_title()); ?></p>
-          </a>
-        </li>
-      <?php
-        endwhile;
-        wp_reset_postdata();
-      else :
-      ?>
-        <li class="news_box_content">現在ニュースはありません。</li>
-      <?php endif; ?>
-    </ul>
+      // タクソノミー「news_taxonomy」の最初の名前を取得
+      $terms = get_the_terms(get_the_ID(), 'news_taxonomy');
+      $term_name = (!empty($terms) && !is_wp_error($terms)) ? $terms[0]->name : '';
+
+      // ACFの「link_url」フィールドを取得
+      $link_url = get_field('link_url');
+      // ACFの「target_blank」フィールドを取得（trueなら別タブ）
+      $target_blank = get_field('target_blank');
+
+      // 「link_url」があればそちらをリンクに使い、なければ投稿ページのリンクを使う
+      $href = !empty($link_url) ? esc_url($link_url) : get_permalink();
+
+      // target属性の設定（trueなら target="_blank"、そうでなければ空文字）
+      $target_attr = ($target_blank === true) ? ' target="_blank" rel="noopener noreferrer"' : '';
+  ?>
+      <li class="news_box_content">
+        <a href="<?php echo $href; ?>"<?php echo $target_attr; ?>>
+          <span class="news_label"><?= esc_html($term_name); ?></span>
+          <time datetime="<?= get_the_date('Y-m-d'); ?>"><?= get_the_date('Y.m.d'); ?></time>
+          <p class="news_text"><?= esc_html(get_the_title()); ?></p>
+        </a>
+      </li>
+  <?php
+    endwhile;
+    wp_reset_postdata();
+  else :
+  ?>
+    <li class="news_box_content">現在ニュースはありません。</li>
+  <?php endif; ?>
+</ul>
+
   </div>
 </section>
     <!-- ↓Achievementsセクションここから -->
